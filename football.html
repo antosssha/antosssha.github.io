@@ -2,7 +2,7 @@
 <header class="nav-wrap"><nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">A</span><span>A/<b>LAB</b></span></a><div class="nav-links"><a href="index.html#projects">Projects</a><a href="index.html#log">Log</a><a href="index.html#about">About</a></div><div class="nav-actions"><button class="lang-switch" type="button" data-lang-switch="ru" aria-label="Русская версия">RU</button><a class="button button-small" href="index.html#contact">Contact</a></div></nav></header>
 <main class="container project-page"><a class="back-link" href="index.html">← Back to A/LAB</a>
 <section class="project-hero reveal"><div><span class="kicker">Project 02 / Data Intelligence</span><h1>Football <span>Intelligence</span></h1><p class="case-lead">A multi-factor framework for turning football evidence into explicit probabilities, challenging its own assumptions and learning from post-match error.</p></div><aside class="project-status"><span>Status</span><strong>Active R&amp;D</strong><span>Focus</span><strong>Probability</strong><span>Validation</span><strong>Continuous</strong></aside></section>
-<nav class="case-nav"><a href="#problem">Problem</a><a href="#layers">Layers</a><a href="#process">Process</a><a href="#bias">Anti-bias</a><a href="#validation">Validation</a><a href="#evidence">Evidence</a></nav>
+<nav class="case-nav"><a href="#problem">Problem</a><a href="#layers">Layers</a><a href="#process">Process</a><a href="#bias">Anti-bias</a><a href="#validation">Validation</a><a href="#metrics">Metrics</a><a href="#evidence">Evidence</a></nav>
 <section class="case-visual reveal" aria-label="Conceptual football intelligence pipeline">
   <div class="visual-label"><span>PUBLIC CONCEPT VIEW</span><strong>Decision architecture</strong><small>Internal weights and formulas are intentionally not shown</small></div>
   <div class="football-demo">
@@ -33,7 +33,27 @@
 <div class="metric-tags"><span>Calibration</span><span>CLV</span><span>ROI</span><span>Brier score</span><span>Log loss</span><span>Market split</span><span>Fragility</span></div>
 <div class="callout">A full system audit is planned after 100 formalized forecasts. Until then, small-sample outcomes are treated as development evidence rather than proof of predictive edge.</div></section>
 
-<section id="evidence" class="case-block reveal"><div class="case-block-head"><span class="index">06</span><div><h2>Working-standard evidence</h2><p>The methodology is backed by a maintained internal working standard. The private document is not published; this section exposes only the safe, high-level rules.</p></div></div>
+<section id="metrics" class="case-block reveal"><div class="case-block-head"><span class="index">06</span><div><h2>Current research snapshot</h2><p>The current sample is useful for development tracking, but it is still too small to claim a stable predictive edge.</p></div></div>
+<div class="stats-grid">
+  <article><span>FORMALIZED FORECASTS</span><strong>35</strong><small>audited sample</small></article>
+  <article><span>WINS</span><strong>25</strong><small>current sample</small></article>
+  <article><span>LOSSES</span><strong>9</strong><small>current sample</small></article>
+  <article><span>PUSH</span><strong>1</strong><small>excluded from hit rate</small></article>
+  <article class="accent"><span>HIT RATE</span><strong>73.5%</strong><small>excluding push</small></article>
+</div>
+<div class="sample-chart" aria-label="Current research sample outcome distribution">
+  <div><span>Wins</span><i style="--w:73.5%"></i><b>25</b></div>
+  <div><span>Losses</span><i style="--w:26.5%"></i><b>9</b></div>
+  <div><span>Push</span><i style="--w:2.9%"></i><b>1</b></div>
+</div>
+<div class="metric-status">
+  <div><span>TRACKED NOW</span><p>Outcome accuracy, scenario quality and post-match error reasons.</p></div>
+  <div><span>NOT YET COMPUTED</span><p>ROI, CLV, calibration, Brier score and log loss.</p></div>
+  <div><span>NEXT AUDIT</span><p>Full structured review after 100 formalized forecasts.</p></div>
+</div>
+<div class="callout">Development evidence only. A 35-forecast sample can reveal process problems, but it is not sufficient evidence of a durable forecasting advantage.</div></section>
+
+<section id="evidence" class="case-block reveal"><div class="case-block-head"><span class="index">07</span><div><h2>Working-standard evidence</h2><p>The methodology is backed by a maintained internal working standard. The private document is not published; this section exposes only the safe, high-level rules.</p></div></div>
 <div class="evidence-grid">
   <article class="evidence-card"><span class="evidence-type">PRIMARY RULE</span><h3>Football before market</h3><p>The documented standard requires building the most probable football scenario first. Only after that is a market chosen to represent the scenario.</p><div class="evidence-meta"><b>Goal</b><i>Reduce price anchoring</i></div></article>
   <article class="evidence-card"><span class="evidence-type">MANDATORY INPUTS</span><h3>Multi-factor checklist</h3><p>Squads, opponent quality, tactics, xG, chance quality, PPDA, field tilt, set pieces, goalkeepers, bench depth, venue, fatigue and motivation are explicitly tracked.</p><div class="evidence-meta"><b>Rule</b><i>Missing data is a gap, not invented precision</i></div></article>
