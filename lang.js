@@ -38,7 +38,7 @@
   modal.className = 'language-prompt';
   modal.innerHTML = `
     <div class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-title">
-      <span class="language-kicker">A/LAB / LANGUAGE</span>
+      <span class="language-kicker">A-LAB / LANGUAGE</span>
       <h2 id="language-title">${suggested === 'ru' ? 'Продолжить на русском?' : 'Continue in English?'}</h2>
       <p>${suggested === 'ru'
         ? 'Язык браузера похож на русский. Выбор можно изменить в любой момент в шапке сайта.'
