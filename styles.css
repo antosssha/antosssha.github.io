@@ -75,3 +75,5 @@ h1,h2,h3,p{margin-top:0}h1{font-size:clamp(54px,7vw,92px);line-height:.96;letter
 
 .project-proof{margin:20px 0 2px;border:1px solid rgba(155,92,255,.18);border-radius:12px;padding:13px 14px;background:rgba(155,92,255,.03);display:grid;grid-template-columns:1fr auto;gap:3px 12px;align-items:center}.project-proof>span{grid-column:1/-1;font-size:8px;letter-spacing:.13em;color:var(--purple);font-weight:900}.project-proof strong{font-size:11px;color:#ddd6e7}.project-proof small{font-size:8px;color:#746e7c;text-align:right}
 @media(max-width:620px){.project-proof{grid-template-columns:1fr}.project-proof small{text-align:left}}
+
+.about-role{margin:18px 0 0!important;color:#d7c8ff!important;font-size:11px!important;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
