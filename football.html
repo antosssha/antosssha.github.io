@@ -1,8 +1,19 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A/LAB case study: multi-factor football probability and validation framework."><title>Football Intelligence — A/LAB</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="project.css"></head><body><div class="noise"></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A/LAB case study: multi-factor football probability and validation framework."><meta name="theme-color" content="#07070b"><link rel="icon" href="favicon.svg" type="image/svg+xml"><title>Football Intelligence — A/LAB</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="project.css"></head><body><div class="noise"></div>
 <header class="nav-wrap"><nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">A</span><span>A/<b>LAB</b></span></a><div class="nav-links"><a href="index.html#projects">Projects</a><a href="index.html#log">Log</a><a href="index.html#about">About</a></div><a class="button button-small" href="index.html#contact">Contact</a></nav></header>
 <main class="container project-page"><a class="back-link" href="index.html">← Back to A/LAB</a>
 <section class="project-hero reveal"><div><span class="kicker">Project 02 / Data Intelligence</span><h1>Football <span>Intelligence</span></h1><p class="case-lead">A multi-factor framework for turning football evidence into explicit probabilities, challenging its own assumptions and learning from post-match error.</p></div><aside class="project-status"><span>Status</span><strong>Active R&amp;D</strong><span>Focus</span><strong>Probability</strong><span>Validation</span><strong>Continuous</strong></aside></section>
 <nav class="case-nav"><a href="#problem">Problem</a><a href="#layers">Layers</a><a href="#process">Process</a><a href="#bias">Anti-bias</a><a href="#validation">Validation</a></nav>
+<section class="case-visual reveal" aria-label="Conceptual football intelligence pipeline">
+  <div class="visual-label"><span>PUBLIC CONCEPT VIEW</span><strong>Decision architecture</strong><small>Internal weights and formulas are intentionally not shown</small></div>
+  <div class="football-demo">
+    <div class="fd-inputs"><span>PERFORMANCE</span><span>SQUAD</span><span>TACTICS</span><span>CONTEXT</span><span>RISK</span><span>MARKET</span></div>
+    <div class="fd-arrow">→</div>
+    <div class="fd-core"><small>BALANCED VIEW</small><strong>PROBABILITY</strong><i></i></div>
+    <div class="fd-arrow">→</div>
+    <div class="fd-output"><span>FREEZE</span><span>RESULT</span><span>AUDIT</span><span>REVISE</span></div>
+  </div>
+</section>
+
 
 <section id="problem" class="case-block reveal"><div class="case-block-head"><span class="index">01</span><div><h2>The problem</h2><p>A football forecast can look convincing while quietly over-weighting recent form, reputation, a low market price or one attractive statistic. The model is designed to expose those hidden assumptions before a probability is accepted.</p></div></div>
 <div class="principles"><div class="principle"><em>01</em><b>Normalize the opposition</b><span>A winning streak against weak opponents is not treated like the same streak against elite opposition.</span></div><div class="principle"><em>02</em><b>Use the actual squad</b><span>Match-day squad strength matters more than a team's theoretical strongest XI.</span></div><div class="principle"><em>03</em><b>Challenge the thesis</b><span>Important signals must have explicit counter-arguments before the final probability is produced.</span></div><div class="principle"><em>04</em><b>Audit the miss</b><span>After the match, the system records which assumptions were over- or under-weighted.</span></div></div>
