@@ -67,7 +67,7 @@
           <span class="kicker">Selected work</span>
           <h2>Projects in development</h2>
         </div>
-        <p>Not polished demos created after the fact — living case studies updated as the systems evolve.</p>
+        <p>Two active R&D projects documented as living case studies. Public pages show verified progress while private implementation details remain private.</p>
       </div>
 
       <div class="project-grid">
@@ -84,7 +84,7 @@
             <p class="project-subtitle">Human-like game agent with fair perception constraints.</p>
             <p>A research project exploring how an autonomous player can navigate, perceive threats and fight without access to hidden enemy coordinates or wallhack-style state.</p>
             <div class="tags"><span>Game AI</span><span>Perception</span><span>Automation</span><span>Python / C#</span></div>
-            <a class="text-link" href="#cs2">View case study →</a>
+            <a class="text-link" href="cs2.html">View case study →</a>
           </div>
         </article>
 
@@ -101,170 +101,9 @@
             <p class="project-subtitle">Multi-factor probability model for football matches.</p>
             <p>A structured decision system combining performance data, squad strength, tactics, context, market price and post-match error analysis.</p>
             <div class="tags"><span>Data Analysis</span><span>Probability</span><span>Sports Analytics</span><span>Validation</span></div>
-            <a class="text-link" href="#football">View case study →</a>
+            <a class="text-link" href="football.html">View case study →</a>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section id="cs2" class="section case-section container">
-      <div class="case-hero reveal">
-        <div>
-          <span class="kicker">Project 01 / Game Intelligence</span>
-          <h2>CS2 <span>AI</span></h2>
-          <p class="case-lead">Can an AI learn to play Counter-Strike while being limited to information a human player could reasonably perceive?</p>
-        </div>
-        <div class="case-badge">BOMBAS<br><b>v0.7.3</b></div>
-      </div>
-
-      <div class="split-grid">
-        <div class="panel reveal">
-          <span class="panel-number">01</span>
-          <h3>The constraint</h3>
-          <p>The project deliberately avoids giving the agent hidden enemy coordinates or omniscient state. The aim is not to build a cheat-like bot — it is to develop a fair-observation player.</p>
-          <div class="constraint-list">
-            <div>✦ No hidden enemy coordinates</div>
-            <div>✦ No wallhack-state</div>
-            <div>✦ Human-like reaction delay</div>
-            <div>✦ Visibility can be incomplete or uncertain</div>
-          </div>
-        </div>
-        <div class="panel reveal delay-1">
-          <span class="panel-number">02</span>
-          <h3>System architecture</h3>
-          <div class="pipeline">
-            <div><b>01</b><span>Observation</span><small>fair sensor</small></div><em>→</em>
-            <div><b>02</b><span>Perception</span><small>visibility &amp; memory</small></div><em>→</em>
-            <div><b>03</b><span>Decision</span><small>action selection</small></div><em>→</em>
-            <div><b>04</b><span>Control</span><small>movement &amp; combat</small></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel wide reveal">
-        <div class="panel-title-row">
-          <div><span class="panel-number">03</span><h3>Current state</h3></div>
-          <p>Public status is intentionally split into verified, experimental and planned.</p>
-        </div>
-        <div class="state-grid">
-          <div class="state-card verified">
-            <div class="state-title"><span></span> VERIFIED</div>
-            <ul>
-              <li>Navigation and movement</li>
-              <li>FOV, walls and vertical visibility</li>
-              <li>18-segment partial-body visibility</li>
-              <li>Human-like reaction delay</li>
-              <li>Smoke / flash / Molotov perception</li>
-              <li>Aim, counter-strafe, cover and reload behavior</li>
-              <li>Short-term perception memory</li>
-            </ul>
-          </div>
-          <div class="state-card experimental">
-            <div class="state-title"><span></span> EXPERIMENTAL</div>
-            <ul>
-              <li>More complex combat scenarios</li>
-              <li>Longer autonomous behavior loops</li>
-              <li>Perception calibration</li>
-              <li>Memory and movement edge cases</li>
-              <li>Leakage / fairness audit</li>
-            </ul>
-          </div>
-          <div class="state-card planned">
-            <div class="state-title"><span></span> PLANNED</div>
-            <ul>
-              <li>Screen-based computer vision input</li>
-              <li>Visual enemy / teammate classification</li>
-              <li>HE visual effect modeling</li>
-              <li>Multi-target attention</li>
-              <li>Full sound / radar integration</li>
-              <li>Scoped perception model</li>
-            </ul>
-          </div>
-        </div>
-        <div class="proof-strip">
-          <span>Latest verified combat run</span>
-          <strong>3 shots</strong><i>→</i><strong>3 hits</strong><i>→</i><strong>2 kills</strong>
-          <small>Development result, not a benchmark claim.</small>
-        </div>
-      </div>
-
-      <div class="panel wide reveal">
-        <div class="panel-title-row">
-          <div><span class="panel-number">04</span><h3>Perception research</h3></div>
-          <p>The current agent uses a geometric fair-observation sensor, not raw screen CV yet.</p>
-        </div>
-        <div class="feature-grid">
-          <div><b>FOV</b><span>Targets outside the current view are not perceived.</span></div>
-          <div><b>Verticality</b><span>Visibility accounts for enemies above and below the agent.</span></div>
-          <div><b>Partial body</b><span>Only visible body segments contribute to target confidence.</span></div>
-          <div><b>Smoke</b><span>Real smoke can block acquisition and visibility.</span></div>
-          <div><b>Flash</b><span>Perception is interrupted and recovers after the effect.</span></div>
-          <div><b>Molotov</b><span>Fire can degrade or fully obscure target acquisition.</span></div>
-        </div>
-        <div class="callout warning">Transparency note: team identity is still supplied by server-side information. Visual CT/T classification is a future milestone.</div>
-      </div>
-    </section>
-
-    <section id="football" class="section case-section container">
-      <div class="case-hero reveal">
-        <div>
-          <span class="kicker">Project 02 / Data Intelligence</span>
-          <h2>Football <span>Intelligence</span></h2>
-          <p class="case-lead">A multi-factor framework designed to turn football evidence into probabilities, challenge its own conclusions and learn from the result.</p>
-        </div>
-        <div class="case-badge">MODEL<br><b>R&amp;D</b></div>
-      </div>
-
-      <div class="panel wide reveal">
-        <div class="panel-title-row">
-          <div><span class="panel-number">01</span><h3>Decision loop</h3></div>
-          <p>Every conclusion is expected to survive both evidence and counter-evidence.</p>
-        </div>
-        <div class="pipeline football-pipeline">
-          <div><b>01</b><span>Data</span><small>match &amp; context</small></div><em>→</em>
-          <div><b>02</b><span>Probability</span><small>fair estimate</small></div><em>→</em>
-          <div><b>03</b><span>Market</span><small>price &amp; EV</small></div><em>→</em>
-          <div><b>04</b><span>Result</span><small>what happened</small></div><em>→</em>
-          <div><b>05</b><span>Feedback</span><small>model adjustment</small></div>
-        </div>
-      </div>
-
-      <div class="panel wide reveal">
-        <div class="panel-title-row">
-          <div><span class="panel-number">02</span><h3>Feature layers</h3></div>
-          <p>Form is never treated as a single number; opponent strength and match-day squad quality matter.</p>
-        </div>
-        <div class="factor-grid">
-          <div><b>Performance</b><span>xG, open-play xG, chance quality, game state</span></div>
-          <div><b>Strength</b><span>strength of schedule, opponent normalization</span></div>
-          <div><b>Squad</b><span>lineup, injuries, rotation, bench depth</span></div>
-          <div><b>Tactical</b><span>PPDA, pressing, field tilt, matchup</span></div>
-          <div><b>Situational</b><span>home/away, fatigue, schedule, motivation</span></div>
-          <div><b>Players</b><span>key-player and goalkeeper form</span></div>
-          <div><b>External</b><span>referee, weather, set pieces</span></div>
-          <div><b>Risk</b><span>tail-risk, fragility, upset-veto</span></div>
-          <div><b>Market</b><span>implied probability, fair odds, EV, line move</span></div>
-          <div><b>Validation</b><span>post-match audit, CLV, calibration</span></div>
-        </div>
-      </div>
-
-      <div class="split-grid">
-        <div class="panel reveal">
-          <span class="panel-number">03</span>
-          <h3>Anti-bias rule</h3>
-          <p>Every important factor is analyzed symmetrically. For each selected scenario, the model records arguments <b>for</b> and <b>against</b> before producing the final probability.</p>
-          <div class="balance">
-            <div><span>FOR</span><i style="width:72%"></i></div>
-            <div><span>AGAINST</span><i style="width:51%"></i></div>
-          </div>
-        </div>
-        <div class="panel reveal delay-1">
-          <span class="panel-number">04</span>
-          <h3>Validation plan</h3>
-          <p>The system keeps a frozen post-match journal rather than rewriting forecasts after the result.</p>
-          <div class="metric-tags"><span>Calibration</span><span>CLV</span><span>ROI</span><span>Brier score</span><span>Log loss</span><span>Fragility</span></div>
-          <div class="callout">Current log: 35 formalized predictions. A larger system audit is planned after 100. Early results are treated as a sample, not a performance guarantee.</div>
-        </div>
       </div>
     </section>
 
@@ -274,8 +113,8 @@
         <p>Important milestones become portfolio entries only after they are recorded and separated from future scope.</p>
       </div>
       <div class="timeline">
-        <article class="timeline-item reveal"><time>06 OCT 2026</time><div><h3>BOMBAS v0.7.3 — verified combat &amp; perception snapshot</h3><p>Navigation, vertical / partial-body visibility and smoke / flash / Molotov perception are in the verified column. Raw screen CV and visual team classification remain future work.</p></div></article>
-        <article class="timeline-item reveal"><time>05 OCT 2026</time><div><h3>Football model — stronger validation discipline</h3><p>Strength-of-schedule normalization, symmetric FOR/AGAINST analysis, tail-risk and post-match error logging are formalized as mandatory parts of the workflow.</p></div></article>
+        <article class="timeline-item reveal"><time>06 OCT 2026</time><div><h3>BOMBAS v0.7.3 — public case study added</h3><p>The portfolio now separates verified capability, current limitations and future research instead of presenting roadmap items as finished work.</p></div></article>
+        <article class="timeline-item reveal"><time>06 OCT 2026</time><div><h3>Football Intelligence — methodology case study added</h3><p>The public page documents the model’s multi-factor workflow, anti-bias rules and validation framework without exposing internal weighting or private implementation.</p></div></article>
         <article class="timeline-item reveal"><time>NEXT</time><div><h3>Portfolio evolves with the projects</h3><p>New entries will be added only for meaningful, verifiable milestones — not routine activity.</p></div></article>
       </div>
     </section>
