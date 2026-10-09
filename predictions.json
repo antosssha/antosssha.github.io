@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "number": 1,
+    "date": "2026-10-07",
+    "match": "Крузейро — Сан-Паулу",
+    "match_en": "Cruzeiro — São Paulo",
+    "pick": "П1 (Крузейро)",
+    "pick_en": "Cruzeiro to win (1)",
+    "score": "2:0",
+    "status": "win",
+    "official": true,
+    "competition": "Бразилия · Серия A",
+    "competition_en": "Brazil · Série A",
+    "source": "Итоговый ролик 07.10.2026",
+    "source_en": "Results video · 7 Oct 2026"
+  },
+  {
+    "number": 2,
+    "date": "2026-10-07",
+    "match": "Ботафого — Васко да Гама",
+    "match_en": "Botafogo — Vasco da Gama",
+    "pick": "Ботафого Ф(+0,25)",
+    "pick_en": "Botafogo +0.25 Asian handicap",
+    "score": "1:2",
+    "status": "loss",
+    "official": true,
+    "competition": "Бразилия · Серия A",
+    "competition_en": "Brazil · Série A",
+    "source": "Итоговый ролик 07.10.2026",
+    "source_en": "Results video · 7 Oct 2026"
+  }
+]
