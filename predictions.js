@@ -134,14 +134,12 @@
     viewport.addEventListener("scroll",()=>{
       if(scrollFrame)cancelAnimationFrame(scrollFrame);
       scrollFrame=requestAnimationFrame(()=>{
-        const candidates=[...track.querySelectorAll(".journey-match-card")];
-        if(!candidates.length)return;
-        const edge=viewport.getBoundingClientRect().left;
-        let nearest=0,best=Infinity;
-        candidates.forEach((card,i)=>{
-          const difference=Math.abs(card.getBoundingClientRect().left-edge);
-          if(difference<best){best=difference;nearest=i;}
-        });
+        const cards=track.querySelectorAll(".journey-match-card");
+        if(!cards.length)return;
+        const first=cards[0];
+        const stride=cards.length>1?cards[1].offsetLeft-first.offsetLeft:first.offsetWidth;
+        if(stride<=0)return;
+        const nearest=Math.max(0,Math.min(cards.length-1,Math.round((viewport.scrollLeft-first.offsetLeft)/stride)));
         if(nearest!==activeIndex){activeIndex=nearest;updateCarouselNav();}
       });
     },{passive:true});
