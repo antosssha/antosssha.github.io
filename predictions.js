@@ -11,7 +11,7 @@
     matchesTitle: "All selected matches", gridTitle: "100-pick progress", noMatches: "No official predictions recorded yet.",
     emptyCell: "Not recorded yet", pick: "Prediction", score: "Final score",
     source: "Recorded in", win: "Won", loss: "Lost", wait: "Pending",
-    advance: "Official series", invalid: "Verified records are temporarily unavailable",
+    advance: "Official series", invalid: "Live refresh is unavailable; showing the last saved results.",
     archive: "Prior validation / separate series", archivedNote: "Historical analysis from 6 October. These nine picks are not counted toward the public 100.",
     archiveWins: "won", archiveLosses: "lost", archivalProbability: "Model estimate",
     note: "8 Oct: no new officially recorded picks. Unselected and observational matches are excluded.",
@@ -24,7 +24,7 @@
     matchesTitle: "Все выбранные матчи", gridTitle: "Прогресс — 100 прогнозов", noMatches: "Официальных прогнозов пока нет.",
     emptyCell: "Прогноз ещё не зафиксирован", pick: "Ставка", score: "Итоговый счёт",
     source: "Зафиксировано в", win: "Прошла", loss: "Не прошла", wait: "Ожидает результата",
-    advance: "Официальная серия", invalid: "Подтверждённые данные временно недоступны",
+    advance: "Официальная серия", invalid: "Не удалось обновить данные; показаны последние сохранённые результаты.",
     archive: "Предыдущая проверка / отдельно от серии", archivedNote: "Историческая проверка за 6 октября. Эти девять прогнозов не входят в публичную серию 100.",
     archiveWins: "прошло", archiveLosses: "не прошло", archivalProbability: "Оценка модели",
     note: "8 октября: новых зачётных прогнозов не было. Наблюдения и пропущенные матчи не учитываются.",
@@ -175,7 +175,6 @@
     console.warn("Journey data:",err);
     set("hint",lang.invalid);
     $("grid").replaceChildren();
-    $("match-cards").replaceChildren(text("p",lang.invalid,"journey-match-loading"));
   });
   getData("predictions-archive.json").then(renderArchive).catch(err=>{
     console.warn("Archive data:",err);
