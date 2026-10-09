@@ -84,11 +84,19 @@
     result.append(score);
     card.append(result);
 
-    if(record.odds || record.probability) {
-      const more = document.createElement("div");
-      more.className = "journey-match-card-more";
-      if(record.odds)more.append(text("span",(english?"Odds ":"Коэффициент ")+record.odds));
-      if(record.probability)more.append(text("span",lang.archivalProbability+": "+record.probability));
+    if(record.odds || record.odds_reference) {
+      const odds=document.createElement("div");
+      odds.className="journey-match-card-odds";
+      const isReference=!record.odds;
+      odds.append(text("span",isReference?(english?"Pre-match odds (indicative)":"Предматчевый кф. (ориентир)"):(english?"Recorded odds":"Зафиксированный кф.")));
+      odds.append(text("strong",isReference?translated(record,"odds_reference"):String(record.odds)));
+      if(isReference)odds.append(text("small",english?"Not a verified placed-bet price":"Не подтверждённый кф. ставки"));
+      card.append(odds);
+    }
+    if(record.probability) {
+      const more=document.createElement("div");
+      more.className="journey-match-card-more";
+      more.append(text("span",lang.archivalProbability+": "+record.probability));
       card.append(more);
     }
     if(record.source)card.append(text("p",lang.source+": "+translated(record,"source"),"journey-match-card-source"));
