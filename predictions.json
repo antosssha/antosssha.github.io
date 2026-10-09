@@ -12,7 +12,11 @@
     "competition": "Бразилия · Серия A",
     "competition_en": "Brazil · Série A",
     "source": "Итоговый ролик 07.10.2026",
-    "source_en": "Results video · 7 Oct 2026"
+    "source_en": "Results video · 7 Oct 2026",
+    "odds_reference": "от 1,85",
+    "odds_reference_en": "1.85+",
+    "odds_reference_type": "indicative",
+    "odds_source_url": "https://t.me/AIStavitPro/6"
   },
   {
     "number": 2,
@@ -27,6 +31,10 @@
     "competition": "Бразилия · Серия A",
     "competition_en": "Brazil · Série A",
     "source": "Итоговый ролик 07.10.2026",
-    "source_en": "Results video · 7 Oct 2026"
+    "source_en": "Results video · 7 Oct 2026",
+    "odds_reference": "≈ 1,80",
+    "odds_reference_en": "~1.80",
+    "odds_reference_type": "indicative",
+    "odds_source_url": "https://t.me/AIStavitPro/6"
   }
 ]
