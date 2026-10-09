@@ -100,3 +100,12 @@
 @media(max-width:750px){.journey-match-cards{grid-template-columns:1fr}.journey-match-card-main{min-height:0}.journey-match-card{padding:16px}.journey-match-card-name{font-size:19px}}
 @media(max-width:420px){.journey-match-card-facts{grid-template-columns:minmax(0,1fr) minmax(60px,auto)}.journey-match-card-pick strong{font-size:13px}.journey-match-card-score strong{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.journey-match-card{transition:none}}
+/* Public pre-match odds — labeled as indicative, never mixed into ROI. */
+.journey-match-card-odds{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:14px;row-gap:5px;align-items:baseline;margin-top:14px;padding:11px 13px;border:1px solid rgba(190,146,249,.27);border-radius:12px;background:rgba(127,72,204,.10)}
+.journey-match-card-odds>span{color:#ceb2e9;font-size:12px;font-weight:600}
+.journey-match-card-odds>strong{color:#ebd7ff;font-size:clamp(19px,2.1vw,23px);font-weight:800;letter-spacing:-.035em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.journey-match-card-odds>small{grid-column:1/-1;color:#a798b9;font-size:10px;line-height:1.35}
+.journey-odds-footnote{margin:-10px 0 21px;color:#a798b9;font-size:11px;line-height:1.5}
+.journey-odds-footnote a{color:#d6b5ff;text-decoration:underline;text-underline-offset:3px}
+.journey-odds-footnote a:hover{color:#fff}
+@media(max-width:420px){.journey-match-card-odds{gap:5px 10px;padding:10px}.journey-match-card-odds>span{font-size:11px}.journey-match-card-odds>strong{font-size:18px}}
