@@ -14,8 +14,8 @@
     advance: "Official series", invalid: "Live refresh is unavailable; showing the last saved results.",
     archive: "Prior validation / separate series", archivedNote: "Historical analysis from 6 October. These nine picks are not counted toward the public 100.",
     archiveWins: "won", archiveLosses: "lost", archivalProbability: "Model estimate",
-    note: "8 Oct: no new officially recorded picks. Unselected and observational matches are excluded.",
-    published: "As of 9 Oct 2026", noOdds: "Odds are shown only where recorded."
+    note: "9 Oct: 8 predictions were posted before kick-off and admitted to the public 100 after results on 10 Oct by user decision; odds are indicative, not verified wagers.",
+    published: "As of 10 Oct 2026", noOdds: "Odds are shown only where recorded."
   } : {
     eyebrow: "ИИ СТАВИТ / ПУБЛИЧНЫЙ ЭКСПЕРИМЕНТ", title: "Путь к 100 прогнозам",
     subtitle: "Каждый официальный прогноз и его фактический исход. Без исправлений задним числом.",
@@ -27,8 +27,8 @@
     advance: "Официальная серия", invalid: "Не удалось обновить данные; показаны последние сохранённые результаты.",
     archive: "Предыдущая проверка / отдельно от серии", archivedNote: "Историческая проверка за 6 октября. Эти девять прогнозов не входят в публичную серию 100.",
     archiveWins: "прошло", archiveLosses: "не прошло", archivalProbability: "Оценка модели",
-    note: "8 октября: новых зачётных прогнозов не было. Наблюдения и пропущенные матчи не учитываются.",
-    published: "Актуально на 9 октября 2026", noOdds: "Коэффициенты показаны только там, где подтверждены."
+    note: "9 октября: 8 прогнозов опубликованы до матчей и включены в серию 10 октября по решению автора уже после результатов. Коэффициенты — ориентиры, не подтверждённые ставки.",
+    published: "Актуально на 10 октября 2026", noOdds: "Коэффициенты показаны только там, где подтверждены."
   };
   const $ = name => root.querySelector('[data-journey="' + name + '"]');
   const set = (name, value) => { const node=$(name); if(node)node.textContent=value; };
