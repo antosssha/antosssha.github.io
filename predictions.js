@@ -7,7 +7,8 @@
     eyebrow: "AI STAVIT / PUBLIC EXPERIMENT", title: "Journey to 100 predictions",
     subtitle: "Every officially recorded pick and its actual result. No hindsight edits.",
     picks: "Picks", wins: "Won", losses: "Lost", pending: "Awaiting result",
-    remaining: "Remaining", hint: "Select a highlighted cell to view the prediction.",
+    remaining: "Remaining", hint: "Choose a highlighted number to focus its match card.",
+    matchesTitle: "All selected matches", gridTitle: "100-pick progress", noMatches: "No official predictions recorded yet.",
     emptyCell: "Not recorded yet", pick: "Prediction", score: "Final score",
     source: "Recorded in", win: "Won", loss: "Lost", wait: "Pending",
     advance: "Official series", invalid: "Verified records are temporarily unavailable",
@@ -19,7 +20,8 @@
     eyebrow: "ИИ СТАВИТ / ПУБЛИЧНЫЙ ЭКСПЕРИМЕНТ", title: "Путь к 100 прогнозам",
     subtitle: "Каждый официальный прогноз и его фактический исход. Без исправлений задним числом.",
     picks: "Прогнозов", wins: "Прошло", losses: "Не прошло", pending: "Ожидают результата",
-    remaining: "Осталось", hint: "Нажмите на цветную ячейку, чтобы увидеть прогноз.",
+    remaining: "Осталось", hint: "Нажмите на номер прогноза, чтобы выделить его карточку.",
+    matchesTitle: "Все выбранные матчи", gridTitle: "Прогресс — 100 прогнозов", noMatches: "Официальных прогнозов пока нет.",
     emptyCell: "Прогноз ещё не зафиксирован", pick: "Ставка", score: "Итоговый счёт",
     source: "Зафиксировано в", win: "Прошла", loss: "Не прошла", wait: "Ожидает результата",
     advance: "Официальная серия", invalid: "Подтверждённые данные временно недоступны",
@@ -50,26 +52,47 @@
     if(!Array.isArray(data))throw Error("Invalid predictions format");
     return data;
   }
-  function detailCard(record,index) {
-    const pane=$("detail");
-    pane.replaceChildren();
-    pane.append(text("span",lang.advance+" · #"+index,"journey-detail-index"));
-    pane.append(text("div",formatDate(record.date)+(record.competition?" · "+translated(record,"competition"):""),"journey-detail-date"));
-    pane.append(text("h3",translated(record,"match"),"journey-detail-match"));
-    const pill=text("span",statusText(record.status),"journey-pill journey-pill--"+record.status);
-    pane.append(pill);
-    const grid=document.createElement("div");grid.className="journey-detail-facts";
-    const addFact=(label,value)=>{
-      if(!value)return;
-      const item=document.createElement("div");item.className="journey-fact";
-      item.append(text("span",label),text("strong",value));grid.append(item);
-    };
-    addFact(lang.pick,translated(record,"pick"));
-    addFact(lang.score,record.score);
-    if(record.odds)addFact(english?"Odds":"Коэффициент",String(record.odds));
-    if(record.probability)addFact(lang.archivalProbability,record.probability);
-    pane.append(grid);
-    if(record.source)pane.append(text("div",lang.source+": "+translated(record,"source"),"journey-source"));
+  function makeMatchCard(record,index) {
+    const card = document.createElement("article");
+    card.className = "journey-match-card journey-match-card--" + record.status;
+    card.id = "prediction-match-" + index;
+    card.tabIndex = -1;
+    card.setAttribute("aria-label",lang.advance+" #"+index+": "+translated(record,"match")+" — "+statusText(record.status));
+
+    const header = document.createElement("div");
+    header.className = "journey-match-card-header";
+    header.append(text("span","#"+String(index).padStart(2,"0")+" · "+formatDate(record.date),"journey-match-card-date"));
+    header.append(text("span",statusText(record.status),"journey-match-card-status journey-match-card-status--"+record.status));
+    card.append(header);
+
+    const matchup = document.createElement("div");
+    matchup.className = "journey-match-card-main";
+    matchup.append(text("h4",translated(record,"match"),"journey-match-card-name"));
+    const competition = translated(record,"competition");
+    if(competition)matchup.append(text("p",competition,"journey-match-card-league"));
+    card.append(matchup);
+
+    const result = document.createElement("div");
+    result.className = "journey-match-card-facts";
+    const prediction = document.createElement("div");
+    prediction.className = "journey-match-card-pick";
+    prediction.append(text("span",lang.pick),text("strong",translated(record,"pick")));
+    result.append(prediction);
+    const score = document.createElement("div");
+    score.className = "journey-match-card-score";
+    score.append(text("span",lang.score),text("strong",record.score || "—"));
+    result.append(score);
+    card.append(result);
+
+    if(record.odds || record.probability) {
+      const more = document.createElement("div");
+      more.className = "journey-match-card-more";
+      if(record.odds)more.append(text("span",(english?"Odds ":"Коэффициент ")+record.odds));
+      if(record.probability)more.append(text("span",lang.archivalProbability+": "+record.probability));
+      card.append(more);
+    }
+    if(record.source)card.append(text("p",lang.source+": "+translated(record,"source"),"journey-match-card-source"));
+    return card;
   }
   function renderOfficial(items) {
     const verified=items.filter(x=>x && x.official===true && Number.isInteger(x.number) && x.number>=1 && x.number<=100 && ["win","loss","pending"].includes(x.status));
@@ -81,10 +104,20 @@
     set("eyebrow",lang.eyebrow);set("title",lang.title);set("subtitle",lang.subtitle);
     set("picks-title",lang.picks);set("wins-title",lang.wins);set("losses-title",lang.losses);
     set("n",String(n));set("picks-metric",n+" / 100");set("wins",String(wins));set("losses",String(losses));set("remaining",String(100-n));
-    set("hint",lang.hint);set("note",lang.note);set("updated",lang.published);
+    set("hint",lang.hint);set("grid-title",lang.gridTitle);set("matches-title",lang.matchesTitle);set("matches-count",String(n));set("note",lang.note);set("updated",lang.published);
     const track=$("track");track.style.width=n+"%";$("track-container").setAttribute("aria-valuenow",String(n));
     $("track-container").setAttribute("aria-label",lang.picks+": "+n+" / 100");
     if(pending)set("note",lang.note+" · "+lang.pending+": "+pending);
+    const sorted=[...by.entries()].sort((a,b)=>a[0]-b[0]);
+    const cards=new Map();
+    const cardContainer=$("match-cards");
+    cardContainer.replaceChildren();
+    for(const [index,record] of sorted) {
+      const card=makeMatchCard(record,index);
+      cardContainer.append(card);
+      cards.set(index,card);
+    }
+    if(!sorted.length)cardContainer.append(text("p",lang.noMatches,"journey-match-loading"));
     const grid=$("grid");grid.replaceChildren();
     const buttons=new Map();
     for(let i=1;i<=100;i++){
@@ -95,19 +128,26 @@
       button.setAttribute("aria-label","#"+i+": "+(record?translated(record,"match")+" · "+translated(record,"pick")+" · "+statusText(record.status):lang.emptyCell));
       button.title=record?translated(record,"match")+" · "+statusText(record.status):lang.emptyCell;
       button.disabled=!record;
-      if(record)button.addEventListener("click",()=>{
-        for(const b of buttons.values())b.setAttribute("aria-pressed","false");
-        button.setAttribute("aria-pressed","true");
-        detailCard(record,i);
-      });
+      if(record)button.addEventListener("click",()=>selectPrediction(i,true));
       if(record)button.setAttribute("aria-pressed","false");
       buttons.set(i,button);grid.append(button);
     }
+    function selectPrediction(index,scroll) {
+      for(const button of buttons.values())button.setAttribute("aria-pressed","false");
+      for(const card of cards.values())card.classList.remove("is-selected");
+      buttons.get(index)?.setAttribute("aria-pressed","true");
+      const card=cards.get(index);
+      if(card) {
+        card.classList.add("is-selected");
+        if(scroll) {
+          const reduced=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          card.scrollIntoView({behavior:reduced?"auto":"smooth",block:"nearest"});
+        }
+      }
+    }
     if(by.size){
-      const latest=[...by.keys()].sort((a,b)=>b-a)[0];
-      buttons.get(latest).click();
-    }else{
-      $("detail").replaceChildren(text("p",lang.invalid));
+      const latest=sorted[sorted.length-1][0];
+      selectPrediction(latest,false);
     }
   }
   function renderArchive(records){
@@ -135,7 +175,7 @@
     console.warn("Journey data:",err);
     set("hint",lang.invalid);
     $("grid").replaceChildren();
-    $("detail").textContent=lang.invalid;
+    $("match-cards").replaceChildren(text("p",lang.invalid,"journey-match-loading"));
   });
   getData("predictions-archive.json").then(renderArchive).catch(err=>{
     console.warn("Archive data:",err);
