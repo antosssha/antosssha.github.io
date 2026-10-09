@@ -126,7 +126,7 @@
     if(!target)return;
     const newLeft=viewport.scrollLeft+target.getBoundingClientRect().left-viewport.getBoundingClientRect().left;
     if(typeof viewport.scrollTo==="function"){
-      viewport.scrollTo({left:newLeft,behavior:animate&&!reducedMotion()?"smooth":"instant"});
+      viewport.scrollTo({left:newLeft,behavior:animate&&!reducedMotion()?"smooth":"auto"});
     }else viewport.scrollLeft=newLeft;
   }
 
@@ -187,7 +187,9 @@
     header.className="journey-review-header";
     header.append(text("span",lang.review+" / #"+String(record.number).padStart(2,"0"),"journey-review-kicker"));
     header.append(text("div",formatDate(record.date)+" · "+translated(record,"competition"),"journey-review-date"));
-    header.append(text("h2",translated(record,"match"),"journey-review-title"));
+    const heading=text("h2",translated(record,"match"),"journey-review-title");
+    heading.id="journey-review-title";
+    header.append(heading);
     header.append(text("span",stateLabel(record.status),"journey-match-card-status journey-match-card-status--"+record.status));
     body.append(header);
 
@@ -209,7 +211,7 @@
     if(review){
       appendSection(body,lang.why,review.reason);
       appendSection(body,lang.risk,review.risk);
-      appendSection(body,record.status==="pending"?lang.next:lang.happened,record.status==="pending"?review.outcome:review.outcome);
+      appendSection(body,record.status==="pending"?lang.next:lang.happened,review.outcome);
       appendSection(body,lang.lesson,review.lesson);
     }else{
       appendSection(body,lang.happened,record.status==="pending"?lang.pendingOutcome:lang.noReview);
