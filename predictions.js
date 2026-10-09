@@ -80,9 +80,9 @@
     const n=by.size;
     set("eyebrow",lang.eyebrow);set("title",lang.title);set("subtitle",lang.subtitle);
     set("picks-title",lang.picks);set("wins-title",lang.wins);set("losses-title",lang.losses);
-    set("n",String(n));set("wins",String(wins));set("losses",String(losses));set("remaining",String(100-n));
+    set("n",String(n));set("picks-metric",n+" / 100");set("wins",String(wins));set("losses",String(losses));set("remaining",String(100-n));
     set("hint",lang.hint);set("note",lang.note);set("updated",lang.published);
-    const track=$("track");track.style.width=n+"%";
+    const track=$("track");track.style.width=n+"%";$("track-container").setAttribute("aria-valuenow",String(n));
     $("track-container").setAttribute("aria-label",lang.picks+": "+n+" / 100");
     if(pending)set("note",lang.note+" · "+lang.pending+": "+pending);
     const grid=$("grid");grid.replaceChildren();
