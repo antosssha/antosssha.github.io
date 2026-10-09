@@ -16,7 +16,21 @@
     "odds_reference": "от 1,85",
     "odds_reference_en": "1.85+",
     "odds_reference_type": "indicative",
-    "odds_source_url": "https://t.me/AIStavitPro/6"
+    "odds_source_url": "https://t.me/AIStavitPro/6",
+    "public_review": {
+      "ru": {
+        "reason": "Домашнее преимущество Крузейро и кадровые вопросы Сан-Паулу делали победу хозяев обоснованным сценарием. Мы выбрали П1, без ставки на крупный счёт.",
+        "risk": "Даже сильный фаворит не обязан выигрывать с большой разницей; оставался риск неожиданного гола гостей.",
+        "outcome": "Крузейро победил 2:0. Прогноз П1 прошёл.",
+        "lesson": "Вероятность победы и ожидание разгрома — разные вещи. Это важно при выборе между П1 и форой."
+      },
+      "en": {
+        "reason": "Cruzeiro’s home advantage and São Paulo’s squad concerns supported a straight home-win pick without demanding a wide margin.",
+        "risk": "A stronger favourite does not necessarily win by several goals; an away goal was a meaningful risk.",
+        "outcome": "Cruzeiro won 2–0. The home-win pick succeeded.",
+        "lesson": "The chance of winning and the chance of winning big are different forecasts; a straight win is not a handicap."
+      }
+    }
   },
   {
     "number": 2,
@@ -35,7 +49,21 @@
     "odds_reference": "≈ 1,80",
     "odds_reference_en": "~1.80",
     "odds_reference_type": "indicative",
-    "odds_source_url": "https://t.me/AIStavitPro/6"
+    "odds_source_url": "https://t.me/AIStavitPro/6",
+    "public_review": {
+      "ru": {
+        "reason": "Домашний профиль Ботафого и предположение, что рынок переоценивает форму Васко, привели к выбору форы +0,25. Ничья давала частичную защиту.",
+        "risk": "Гостевая атака Васко могла оказаться опаснее ожиданий, а домашний фактор — недостаточным.",
+        "outcome": "Васко выиграл 2:1. Фора Ботафого +0,25 не прошла.",
+        "lesson": "Мы недооценили атакующую форму Васко. Домашнее поле нельзя считать гарантией результата."
+      },
+      "en": {
+        "reason": "Botafogo’s home profile and a view that the market might overrate Vasco’s recent form led to a +0.25 handicap, giving some draw protection.",
+        "risk": "Vasco’s attack could outperform expectations, while home advantage might not be enough.",
+        "outcome": "Vasco won 2–1. Botafogo +0.25 lost.",
+        "lesson": "Vasco’s attacking form was underestimated. Home advantage alone should not dominate a match assessment."
+      }
+    }
   },
   {
     "number": 3,
@@ -58,7 +86,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Проверяли наиболее прямой сценарий победы фаворита: П1 на Галатасарай без дополнительной форы и без требования разгрома.",
+        "risk": "Фаворит может пропустить или не удержать преимущество. Невысокий коэффициент не равен автоматически выгодной ставке.",
+        "outcome": "Галатасарай победил 3:1. П1 прошла.",
+        "lesson": "Футбольный прогноз оказался верным, но выгодность ставки оценивается отдельно от факта победы."
+      },
+      "en": {
+        "reason": "The pick tested a straightforward favourite-win scenario: Galatasaray to win, without an additional goal handicap.",
+        "risk": "Even a favourite may concede or drop points. Short odds do not automatically make a bet good value.",
+        "outcome": "Galatasaray won 3–1. The home-win pick succeeded.",
+        "lesson": "The football call was right; whether the odds offered value is a separate question."
+      }
+    }
   },
   {
     "number": 4,
@@ -81,7 +123,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Вместо выбора победителя рассматривали результативность: для ТБ 1,5 достаточно двух голов от любой из команд.",
+        "risk": "Закрытый темп и низовая игра с одним голом или без голов оставались главной угрозой.",
+        "outcome": "Викинг выиграл 2:0. Двух голов хватило для прохода ТБ 1,5.",
+        "lesson": "Рынок тоталов позволяет не зависеть от угадывания победителя; однако низкий коэффициент требует отдельной оценки."
+      },
+      "en": {
+        "reason": "The pick focused on total goals rather than the winner: over 1.5 needs only two goals from either side.",
+        "risk": "A slow, low-scoring match ending 0–0 or 1–0 was the main downside.",
+        "outcome": "Viking won 2–0. The two goals were enough for over 1.5.",
+        "lesson": "A goals market can be right without predicting the winning team, but a very short price still needs scrutiny."
+      }
+    }
   },
   {
     "number": 5,
@@ -104,7 +160,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Был выбран осторожный сценарий по общему тоталу: ТМ 3,5 проходит при любом победителе, если команды забьют не больше трёх мячей.",
+        "risk": "Ранний гол, удаление или открытая игра могут быстро изменить темп и поднять общий тотал.",
+        "outcome": "Жил Висенте выиграл 1:0. ТМ 3,5 прошёл.",
+        "lesson": "Даже уверенный проход широкого тотала не доказывает выгодность коэффициента — нужна оценка цены."
+      },
+      "en": {
+        "reason": "The selection was a conservative total-goals scenario: under 3.5 wins with either victor so long as the match has three or fewer goals.",
+        "risk": "An early goal, red card or an open game could change the tempo and push the total up.",
+        "outcome": "Gil Vicente won 1–0. Under 3.5 succeeded.",
+        "lesson": "A comfortable under does not, by itself, prove the quoted odds offered value."
+      }
+    }
   },
   {
     "number": 6,
@@ -127,7 +197,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Для ПСВ выбран сценарий победы фаворита дома. Прогноз П1 не требовал конкретного счёта или победы с форой.",
+        "risk": "Состав, реализация моментов и возможная ротация могли снизить преимущество фаворита.",
+        "outcome": "ПСВ выиграл 2:0. П1 прошла.",
+        "lesson": "Верный исход полезен для проверки футбольной гипотезы, но короткая линия требует внимательной оценки цены."
+      },
+      "en": {
+        "reason": "The pick backed the home favourite PSV to win, without predicting an exact score or a handicap margin.",
+        "risk": "Line-up changes, finishing variance and possible rotation could reduce the favourite’s edge.",
+        "outcome": "PSV won 2–0. The home-win pick succeeded.",
+        "lesson": "A correct match call supports the football hypothesis, but short odds still need a value check."
+      }
+    }
   },
   {
     "number": 7,
@@ -150,7 +234,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "П1 на Боруссию отражал сценарий победы хозяев, но не предусматривал страховку от ничьей.",
+        "risk": "Даже преимущество по ходу игры может исчезнуть: нельзя исключать поздний камбэк соперника.",
+        "outcome": "Боруссия вела 2:0, но Вердер сравнял. Итог 2:2 — прогноз П1 не прошёл.",
+        "lesson": "Ход игры и итоговый исход — разные вещи. Необходимо лучше учитывать риск потери преимущества."
+      },
+      "en": {
+        "reason": "The Dortmund home-win pick reflected a plausible hosts’ victory but carried no protection against a draw.",
+        "risk": "An in-game lead can disappear; a late comeback is an important tail risk.",
+        "outcome": "Dortmund led 2–0, but Bremen came back to draw 2–2. The home-win pick lost.",
+        "lesson": "Reading parts of a game correctly is not the same as predicting its final outcome; lead-protection risk matters."
+      }
+    }
   },
   {
     "number": 8,
@@ -173,7 +271,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Выбрали ТБ 1,5: прогнозу требовались два гола за матч, а не победа конкретной команды.",
+        "risk": "Осторожный сценарий с низким темпом мог оставить матч на отметке одного гола.",
+        "outcome": "Ланс победил 2:1, всего забито три гола. ТБ 1,5 прошёл.",
+        "lesson": "Правильный выбор типа рынка иногда важнее попытки назвать победителя."
+      },
+      "en": {
+        "reason": "Over 1.5 targeted at least two match goals instead of trying to name a winner.",
+        "risk": "A cagey, slow-paced game could leave the total at one goal or less.",
+        "outcome": "Lens won 2–1; the three goals cleared over 1.5.",
+        "lesson": "Choosing the right market can matter more than forcing a winner pick."
+      }
+    }
   },
   {
     "number": 9,
@@ -196,7 +308,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Сценарий ТБ 1,5 опирался на необходимость всего двух голов суммарно, независимо от распределения между командами.",
+        "risk": "Счёт 0:0, 1:0 или 0:1 не позволил бы прогнозу пройти.",
+        "outcome": "Матч закончился 1:1: ровно два гола, ТБ 1,5 прошёл.",
+        "lesson": "Это проход по минимальной границе. Успех ставки не отменяет проверки того, была ли цена достаточной."
+      },
+      "en": {
+        "reason": "Over 1.5 needed just two goals in total, regardless of which side scored them.",
+        "risk": "A 0–0, 1–0 or 0–1 result would have lost.",
+        "outcome": "It ended 1–1: exactly two goals, so over 1.5 succeeded.",
+        "lesson": "This cleared the line by the minimum margin. The result alone says little about the quality of the price."
+      }
+    }
   },
   {
     "number": 10,
@@ -219,7 +345,21 @@
     "original_category": "experimental_prematch",
     "accepted_into_series_on": "2026-10-10",
     "inclusion_basis": "User decision after match results; not originally confirmed PLAY",
-    "batch": "2026-10-09-8-prematch-picks"
+    "batch": "2026-10-09-8-prematch-picks",
+    "public_review": {
+      "ru": {
+        "reason": "Ставка ТМ 3,5 предполагала, что суммарная результативность останется в пределах трёх голов.",
+        "risk": "Обмен атаками, быстрые голы или поздний четвёртый мяч могли разрушить низовой сценарий.",
+        "outcome": "Спортинг победил 3:1: четыре гола, ТМ 3,5 не прошёл.",
+        "lesson": "Был недооценён риск открытой игры и четвёртого гола. Такой сценарий нельзя игнорировать даже при привлекательном прогнозе на низ."
+      },
+      "en": {
+        "reason": "Under 3.5 assumed the teams would combine for no more than three goals.",
+        "risk": "End-to-end attacks, early strikes or a late fourth goal could break the under.",
+        "outcome": "Sporting won 3–1: four goals, so under 3.5 lost.",
+        "lesson": "The risk of an open match and a fourth goal was underestimated. Conservative totals still have tail risk."
+      }
+    }
   },
   {
     "match": "Челси — Борнмут",
@@ -250,7 +390,21 @@
     "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
     "user_authorized_to_count": true,
     "model_version": "football_scenario_plus_market_screening",
-    "no_verified_placed_bet": true
+    "no_verified_placed_bet": true,
+    "public_review": {
+      "ru": {
+        "reason": "Предварительный сценарий — не больше трёх голов в матче. Здесь анализируется тотал, а не предполагаемый победитель.",
+        "risk": "Четыре гола, быстрый обмен атаками или изменения стартовых составов могут сделать вариант слабее. Решение о выгодной ставке не подтверждено.",
+        "outcome": "Матч ещё не завершён. Итог и разбор появятся после финального счёта.",
+        "lesson": "Проверим реальный темп игры, число голов и то, насколько предматчевый сценарий соответствовал ходу матча."
+      },
+      "en": {
+        "reason": "The preliminary scenario is a match total of no more than three goals. It assesses scoring rather than choosing a winner.",
+        "risk": "Four goals, a fast exchange of attacks or late line-up changes could undermine it. No value bet has been confirmed.",
+        "outcome": "The match has not finished. The result and review will appear after the final whistle.",
+        "lesson": "We will compare the final total and game tempo with the original public scenario."
+      }
+    }
   },
   {
     "match": "Астон Вилла — Брентфорд",
@@ -283,7 +437,21 @@
     "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
     "user_authorized_to_count": true,
     "model_version": "football_scenario_plus_market_screening",
-    "no_verified_placed_bet": true
+    "no_verified_placed_bet": true,
+    "public_review": {
+      "ru": {
+        "reason": "Х2 означает, что Брентфорд не должен проиграть: подходит как победа гостей, так и ничья. Это предварительный сценарий, а не утверждение о явном преимуществе.",
+        "risk": "Домашний фактор Астон Виллы и неопределённость по составам. По доступным внешним оценкам преимущество над коэффициентом не подтверждено — статус WATCH.",
+        "outcome": "Матч ещё не завершён. Результат добавим после игры.",
+        "lesson": "Отдельно проверим футбольный сценарий и отдельно — оправдывал ли возможный коэффициент риск."
+      },
+      "en": {
+        "reason": "X2 means Brentford avoid defeat: either a draw or an away win. It is a preliminary scenario, not a claim of clear superiority.",
+        "risk": "Villa’s home advantage and line-up uncertainty matter. Available external estimates did not establish value at the quoted price: WATCH.",
+        "outcome": "The match has not finished. Its result will be added afterwards.",
+        "lesson": "We will judge the football scenario and the price-to-risk decision independently."
+      }
+    }
   },
   {
     "match": "Лилль — Гавр",
@@ -314,7 +482,21 @@
     "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
     "user_authorized_to_count": true,
     "model_version": "football_scenario_plus_market_screening",
-    "no_verified_placed_bet": true
+    "no_verified_placed_bet": true,
+    "public_review": {
+      "ru": {
+        "reason": "ТМ 3,5 — предварительная оценка, что матч останется в пределах трёх голов. Внешние публичные оценки поддерживали рассмотрение такой линии.",
+        "risk": "Ранний гол, неожиданный пенальти или открытые переходы могут резко увеличить тотал. Это наблюдение, а не подтверждённая ставка.",
+        "outcome": "Матч ещё не завершён. Итог будет опубликован после игры.",
+        "lesson": "Проверим, соответствовали ли реальная результативность и темп исходному осторожному сценарию."
+      },
+      "en": {
+        "reason": "Under 3.5 is a preliminary view that the match will finish with three goals or fewer. Public third-party projections supported evaluating this line.",
+        "risk": "An early strike, penalty or open transitions could push the total higher. This remains an observation, not a confirmed wager.",
+        "outcome": "The game has not finished. The result will be published afterwards.",
+        "lesson": "We will compare the actual scoring and tempo against the original conservative scenario."
+      }
+    }
   },
   {
     "match": "Барселона — Хетафе",
@@ -346,6 +528,20 @@
     "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
     "user_authorized_to_count": true,
     "model_version": "football_scenario_plus_market_screening",
-    "no_verified_placed_bet": true
+    "no_verified_placed_bet": true,
+    "public_review": {
+      "ru": {
+        "reason": "ОЗ — нет означает, что хотя бы одна команда не забьёт. Это отдельный сценарий, не равный обязательной сухой победе фаворита.",
+        "risk": "Достаточно гола каждой команды, чтобы прогноз проиграл. Публичные оценки расходятся, поэтому вариант остаётся предварительным WATCH.",
+        "outcome": "Матч ещё не завершён. Результат и вывод появятся после финального свистка.",
+        "lesson": "Проверим, насколько обоснованным было ожидание сухого матча для одной из сторон."
+      },
+      "en": {
+        "reason": "Both teams to score — No means at least one side fails to score. It is not the same as requiring a favourite’s clean-sheet victory.",
+        "risk": "Just one goal from each side would lose the pick. Published estimates disagree, so this is still preliminary WATCH.",
+        "outcome": "The match has not finished. The result and conclusions will follow the final whistle.",
+        "lesson": "We will assess whether expecting at least one side to draw a blank was justified."
+      }
+    }
   }
 ]
