@@ -1,0 +1,535 @@
+{
+  "scope": "All top-five domestic leagues on 10 October 2026",
+  "date": "2026-10-10",
+  "assessment_time_msk": "2026-10-10T03:14:14+03:00",
+  "phase": "preliminary; NOT the official N/100",
+  "status": "Candidates may be removed or markets changed before kickoff; only final confirmed picks count.",
+  "initial_preliminary_versions": [
+    {
+      "match": "Челси — Борнмут",
+      "match_en": "Chelsea — AFC Bournemouth",
+      "kickoff_msk": "2026-10-10T17:00:00+03:00",
+      "competition": "Англия · АПЛ",
+      "competition_en": "England · Premier League",
+      "pick": "ТМ 3,5",
+      "pick_en": "Under 3.5 goals",
+      "odds_reference": "≈ 1,65",
+      "odds_reference_en": "~1.65",
+      "external_model_probability": "67.68% (Sports Mole)",
+      "threshold_probability": "60.61%",
+      "odds_source_url": "https://www.ladbrokes.com/en/sports/event/football/english/premier-league/chelsea-v-afc-bournemouth/258656822/goals",
+      "analysis_sources": [
+        "https://www.sportsmole.co.uk/football/premier-league/chelsea-vs-bournemouth_game_259624.html"
+      ],
+      "bet_value_status": "watch_external_only",
+      "number": 11,
+      "date": "2026-10-10",
+      "score": "",
+      "status": "pending",
+      "official": true,
+      "pre_match_recorded": true,
+      "recorded_at_msk": "2026-10-10T02:04:52+03:00",
+      "odds_reference_type": "indicative_unverified_not_placed",
+      "source": "Предматчевый предварительный анализ в чате 10.10.2026, 02:04 МСК",
+      "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
+      "user_authorized_to_count": true,
+      "model_version": "football_scenario_plus_market_screening",
+      "no_verified_placed_bet": true,
+      "public_review": {
+        "ru": {
+          "reason": "Предварительный сценарий — не больше трёх голов в матче. Здесь анализируется тотал, а не предполагаемый победитель.",
+          "risk": "Четыре гола, быстрый обмен атаками или изменения стартовых составов могут сделать вариант слабее. Решение о выгодной ставке не подтверждено.",
+          "outcome": "Матч ещё не завершён. Итог и разбор появятся после финального счёта.",
+          "lesson": "Проверим реальный темп игры, число голов и то, насколько предматчевый сценарий соответствовал ходу матча."
+        },
+        "en": {
+          "reason": "The preliminary scenario is a match total of no more than three goals. It assesses scoring rather than choosing a winner.",
+          "risk": "Four goals, a fast exchange of attacks or late line-up changes could undermine it. No value bet has been confirmed.",
+          "outcome": "The match has not finished. The result and review will appear after the final whistle.",
+          "lesson": "We will compare the final total and game tempo with the original public scenario."
+        }
+      },
+      "archived_as": "original_preliminary",
+      "withdrawn_from_official_count_reason": "Initial registration preceded final approval; maintained as a timestamped provisional version.",
+      "archived_at_msk": "2026-10-10T03:14:14+03:00"
+    },
+    {
+      "match": "Астон Вилла — Брентфорд",
+      "match_en": "Aston Villa — Brentford",
+      "kickoff_msk": "2026-10-10T17:00:00+03:00",
+      "competition": "Англия · АПЛ",
+      "competition_en": "England · Premier League",
+      "pick": "Х2 (Брентфорд не проиграет)",
+      "pick_en": "Brentford or draw (X2)",
+      "odds_reference": "≈ 1,51",
+      "odds_reference_en": "~1.51",
+      "external_model_probability": "65.40% (Sports Mole, combined X+2); estimates vary",
+      "threshold_probability": "66.23%",
+      "odds_source_url": "https://www.sportytrader.com/en/odds/aston-villa-brentford-8559253/",
+      "analysis_sources": [
+        "https://www.sportsmole.co.uk/football/premier-league/aston-villa-vs-brentford_game_259625.html",
+        "https://www.avfc.co.uk/news/2026/october/09/prematch-team-news-for-brentford-encounter/",
+        "https://www.brentfordfc.com/en/news/first-team-news-aston-villa-v-brentford-premier-league-10-10-2026"
+      ],
+      "bet_value_status": "watch_below_external_break_even",
+      "number": 12,
+      "date": "2026-10-10",
+      "score": "",
+      "status": "pending",
+      "official": true,
+      "pre_match_recorded": true,
+      "recorded_at_msk": "2026-10-10T02:04:52+03:00",
+      "odds_reference_type": "indicative_unverified_not_placed",
+      "source": "Предматчевый предварительный анализ в чате 10.10.2026, 02:04 МСК",
+      "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
+      "user_authorized_to_count": true,
+      "model_version": "football_scenario_plus_market_screening",
+      "no_verified_placed_bet": true,
+      "public_review": {
+        "ru": {
+          "reason": "Х2 означает, что Брентфорд не должен проиграть: подходит как победа гостей, так и ничья. Это предварительный сценарий, а не утверждение о явном преимуществе.",
+          "risk": "Домашний фактор Астон Виллы и неопределённость по составам. По доступным внешним оценкам преимущество над коэффициентом не подтверждено — статус WATCH.",
+          "outcome": "Матч ещё не завершён. Результат добавим после игры.",
+          "lesson": "Отдельно проверим футбольный сценарий и отдельно — оправдывал ли возможный коэффициент риск."
+        },
+        "en": {
+          "reason": "X2 means Brentford avoid defeat: either a draw or an away win. It is a preliminary scenario, not a claim of clear superiority.",
+          "risk": "Villa’s home advantage and line-up uncertainty matter. Available external estimates did not establish value at the quoted price: WATCH.",
+          "outcome": "The match has not finished. Its result will be added afterwards.",
+          "lesson": "We will judge the football scenario and the price-to-risk decision independently."
+        }
+      },
+      "archived_as": "original_preliminary",
+      "withdrawn_from_official_count_reason": "Initial registration preceded final approval; maintained as a timestamped provisional version.",
+      "archived_at_msk": "2026-10-10T03:14:14+03:00"
+    },
+    {
+      "match": "Лилль — Гавр",
+      "match_en": "Lille — Le Havre",
+      "kickoff_msk": "2026-10-10T18:15:00+03:00",
+      "competition": "Франция · Лига 1",
+      "competition_en": "France · Ligue 1",
+      "pick": "ТМ 3,5",
+      "pick_en": "Under 3.5 goals",
+      "odds_reference": "≈ 1,53",
+      "odds_reference_en": "~1.53",
+      "external_model_probability": "73.98% Sports Mole; 67% MyBetOracle",
+      "threshold_probability": "65.36%",
+      "odds_source_url": "https://paris-sportifs.lefigaro.fr/pronostics/lille-le-havre-10-10-2026/",
+      "analysis_sources": [
+        "https://www.sportsmole.co.uk/football/ligue-1/lille-vs-le-havre_game_259669.html"
+      ],
+      "bet_value_status": "watch_external_value_not_our_calibrated_model",
+      "number": 13,
+      "date": "2026-10-10",
+      "score": "",
+      "status": "pending",
+      "official": true,
+      "pre_match_recorded": true,
+      "recorded_at_msk": "2026-10-10T02:04:52+03:00",
+      "odds_reference_type": "indicative_unverified_not_placed",
+      "source": "Предматчевый предварительный анализ в чате 10.10.2026, 02:04 МСК",
+      "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
+      "user_authorized_to_count": true,
+      "model_version": "football_scenario_plus_market_screening",
+      "no_verified_placed_bet": true,
+      "public_review": {
+        "ru": {
+          "reason": "ТМ 3,5 — предварительная оценка, что матч останется в пределах трёх голов. Внешние публичные оценки поддерживали рассмотрение такой линии.",
+          "risk": "Ранний гол, неожиданный пенальти или открытые переходы могут резко увеличить тотал. Это наблюдение, а не подтверждённая ставка.",
+          "outcome": "Матч ещё не завершён. Итог будет опубликован после игры.",
+          "lesson": "Проверим, соответствовали ли реальная результативность и темп исходному осторожному сценарию."
+        },
+        "en": {
+          "reason": "Under 3.5 is a preliminary view that the match will finish with three goals or fewer. Public third-party projections supported evaluating this line.",
+          "risk": "An early strike, penalty or open transitions could push the total higher. This remains an observation, not a confirmed wager.",
+          "outcome": "The game has not finished. The result will be published afterwards.",
+          "lesson": "We will compare the actual scoring and tempo against the original conservative scenario."
+        }
+      },
+      "archived_as": "original_preliminary",
+      "withdrawn_from_official_count_reason": "Initial registration preceded final approval; maintained as a timestamped provisional version.",
+      "archived_at_msk": "2026-10-10T03:14:14+03:00"
+    },
+    {
+      "match": "Барселона — Хетафе",
+      "match_en": "Barcelona — Getafe",
+      "kickoff_msk": "2026-10-10T19:30:00+03:00",
+      "competition": "Испания · Ла Лига",
+      "competition_en": "Spain · La Liga",
+      "pick": "ОЗ — нет",
+      "pick_en": "Both teams to score — No",
+      "odds_reference": "≈ 1,65",
+      "odds_reference_en": "~1.65",
+      "external_model_probability": "71.01% (Sports Mole); independent models disagree",
+      "threshold_probability": "60.61%",
+      "odds_source_url": "https://statsbet.org/football/matches/fc-barcelona-vs-getafe-2026-10-10",
+      "analysis_sources": [
+        "https://www.sportsmole.co.uk/football/la-liga/barcelona-vs-getafe_game_259685.html",
+        "https://www.laliga.com/en-ES/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-getafe-cf-8"
+      ],
+      "bet_value_status": "watch_models_disagree",
+      "number": 14,
+      "date": "2026-10-10",
+      "score": "",
+      "status": "pending",
+      "official": true,
+      "pre_match_recorded": true,
+      "recorded_at_msk": "2026-10-10T02:04:52+03:00",
+      "odds_reference_type": "indicative_unverified_not_placed",
+      "source": "Предматчевый предварительный анализ в чате 10.10.2026, 02:04 МСК",
+      "source_en": "Pre-match preliminary analysis, chat 10 Oct 2026 02:04 MSK",
+      "user_authorized_to_count": true,
+      "model_version": "football_scenario_plus_market_screening",
+      "no_verified_placed_bet": true,
+      "public_review": {
+        "ru": {
+          "reason": "ОЗ — нет означает, что хотя бы одна команда не забьёт. Это отдельный сценарий, не равный обязательной сухой победе фаворита.",
+          "risk": "Достаточно гола каждой команды, чтобы прогноз проиграл. Публичные оценки расходятся, поэтому вариант остаётся предварительным WATCH.",
+          "outcome": "Матч ещё не завершён. Результат и вывод появятся после финального свистка.",
+          "lesson": "Проверим, насколько обоснованным было ожидание сухого матча для одной из сторон."
+        },
+        "en": {
+          "reason": "Both teams to score — No means at least one side fails to score. It is not the same as requiring a favourite’s clean-sheet victory.",
+          "risk": "Just one goal from each side would lose the pick. Published estimates disagree, so this is still preliminary WATCH.",
+          "outcome": "The match has not finished. The result and conclusions will follow the final whistle.",
+          "lesson": "We will assess whether expecting at least one side to draw a blank was justified."
+        }
+      },
+      "archived_as": "original_preliminary",
+      "withdrawn_from_official_count_reason": "Initial registration preceded final approval; maintained as a timestamped provisional version.",
+      "archived_at_msk": "2026-10-10T03:14:14+03:00"
+    }
+  ],
+  "prior_official_journal_count_excluding_preliminary": 10,
+  "sources": [
+    "https://www.dratings.com/predictor/english-premier-league-predictions/?conference_id=55",
+    "https://www.dratings.com/predictor/german-bundesliga-predictions/",
+    "https://www.dratings.com/predictor/spain-la-liga-predictions/",
+    "https://www.dratings.com/predictor/italy-serie-a-predictions/",
+    "https://www.dratings.com/predictor/france-ligue-1-predictions/",
+    "https://www.sportsmole.co.uk/"
+  ],
+  "probability_note": "Indicative ranges are rounded minima and maxima from independent public model approximations (Sports Mole; DRatings Poisson assumptions where needed). They are NOT forecasts calculated by NINETYLAB's executable proprietary model, and are not confidence intervals.",
+  "matches": [
+    {
+      "competition": "АПЛ",
+      "kickoff_msk": "2026-10-10T14:30:00+03:00",
+      "match": "Арсенал — Лидс",
+      "match_en": "Arsenal — Leeds",
+      "preliminary_pick": "П1",
+      "preliminary_pick_en": "Arsenal to win",
+      "decision": "candidate",
+      "argument": "Дома класс хозяев выше; потеря Салиба и серия «Лидса» без поражений уменьшают уверенность.",
+      "independent_external_probability_range_pct": [
+        68,
+        80
+      ]
+    },
+    {
+      "competition": "АПЛ",
+      "kickoff_msk": "2026-10-10T17:00:00+03:00",
+      "match": "Астон Вилла — Брентфорд",
+      "match_en": "Aston Villa — Brentford",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "candidate",
+      "argument": "Внешние модели расходятся по победителю, но сходятся на сценарии минимум двух голов.",
+      "independent_external_probability_range_pct": [
+        76,
+        81
+      ]
+    },
+    {
+      "competition": "АПЛ",
+      "kickoff_msk": "2026-10-10T17:00:00+03:00",
+      "match": "Челси — Борнмут",
+      "match_en": "Chelsea — Bournemouth",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "candidate",
+      "argument": "Модели близки по вероятности; нестабильность обороны «Челси» — основной риск.",
+      "independent_external_probability_range_pct": [
+        68,
+        69
+      ]
+    },
+    {
+      "competition": "АПЛ",
+      "kickoff_msk": "2026-10-10T17:00:00+03:00",
+      "match": "Ипсвич — Фулхэм",
+      "match_en": "Ipswich — Fulham",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "candidate",
+      "argument": "Нет устойчивого фаворита; более предсказуем умеренный тотал.",
+      "independent_external_probability_range_pct": [
+        73,
+        79
+      ]
+    },
+    {
+      "competition": "АПЛ",
+      "kickoff_msk": "2026-10-10T17:00:00+03:00",
+      "match": "Сандерленд — Брайтон",
+      "match_en": "Sunderland — Brighton",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "watch",
+      "argument": "Потери атакующих игроков с обеих сторон; темп матчей и результаты крупных соперников искажают статистику.",
+      "independent_external_probability_range_pct": [
+        69,
+        80
+      ]
+    },
+    {
+      "competition": "АПЛ",
+      "kickoff_msk": "2026-10-10T19:30:00+03:00",
+      "match": "Манчестер Юнайтед — Тоттенхэм",
+      "match_en": "Manchester United — Tottenham",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "candidate",
+      "argument": "Победитель неочевиден, внешние модели согласны по двум голам; риски из-за низкой результативности гостей.",
+      "independent_external_probability_range_pct": [
+        79,
+        82
+      ]
+    },
+    {
+      "competition": "Ла Лига",
+      "kickoff_msk": "2026-10-10T15:00:00+03:00",
+      "match": "Райо Вальекано — Атлетик",
+      "match_en": "Rayo Vallecano — Athletic Bilbao",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "candidate",
+      "argument": "Невысокие голевые ожидания обеих команд; 1X2 сбалансирован.",
+      "independent_external_probability_range_pct": [
+        73,
+        83
+      ]
+    },
+    {
+      "competition": "Ла Лига",
+      "kickoff_msk": "2026-10-10T17:15:00+03:00",
+      "match": "Алавес — Атлетико",
+      "match_en": "Alaves — Atletico Madrid",
+      "preliminary_pick": "Х2",
+      "preliminary_pick_en": "Atletico or draw",
+      "decision": "candidate",
+      "argument": "Разница в классе гостей против сильного домашнего профиля хозяев; не выбираем П2 автоматически.",
+      "independent_external_probability_range_pct": [
+        70,
+        78
+      ]
+    },
+    {
+      "competition": "Ла Лига",
+      "kickoff_msk": "2026-10-10T19:30:00+03:00",
+      "match": "Барселона — Хетафе",
+      "match_en": "Barcelona — Getafe",
+      "preliminary_pick": "ИТБ Барселоны 1,5",
+      "preliminary_pick_en": "Barcelona over 1.5 team goals",
+      "decision": "candidate",
+      "argument": "Атакующий потенциал хозяев устойчивее исхода ОЗ нет к одному редкому голу гостей.",
+      "independent_external_probability_range_pct": [
+        70,
+        78
+      ]
+    },
+    {
+      "competition": "Ла Лига",
+      "kickoff_msk": "2026-10-10T22:00:00+03:00",
+      "match": "Реал Мадрид — Вильярреал",
+      "match_en": "Real Madrid — Villarreal",
+      "preliminary_pick": "П1",
+      "preliminary_pick_en": "Real Madrid to win",
+      "decision": "candidate",
+      "argument": "Класс и домашняя атака выше, но травмы защиты и форма гостей уменьшают уверенность.",
+      "independent_external_probability_range_pct": [
+        65,
+        72
+      ]
+    },
+    {
+      "competition": "Бундеслига",
+      "kickoff_msk": "2026-10-10T16:30:00+03:00",
+      "match": "Хоффенхайм — Гамбург",
+      "match_en": "Hoffenheim — Hamburg",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "watch",
+      "argument": "Голевой базовый прогноз высокий, но фактическая атакующая форма гостей противоречит модели.",
+      "independent_external_probability_range_pct": null
+    },
+    {
+      "competition": "Бундеслига",
+      "kickoff_msk": "2026-10-10T16:30:00+03:00",
+      "match": "Аугсбург — Бавария",
+      "match_en": "Augsburg — Bayern Munich",
+      "preliminary_pick": "ИТБ Баварии 1,5",
+      "preliminary_pick_en": "Bayern over 1.5 team goals",
+      "decision": "candidate",
+      "argument": "Выше качество атак хозяев против, возможная потеря Мусиалы и международная пауза.",
+      "independent_external_probability_range_pct": [
+        66,
+        77
+      ]
+    },
+    {
+      "competition": "Бундеслига",
+      "kickoff_msk": "2026-10-10T16:30:00+03:00",
+      "match": "Майнц — Байер",
+      "match_en": "Mainz — Bayer Leverkusen",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "candidate",
+      "argument": "Оба коллектива создают моменты; вопросы по вратарю «Майнца» и календарю.",
+      "independent_external_probability_range_pct": null
+    },
+    {
+      "competition": "Бундеслига",
+      "kickoff_msk": "2026-10-10T16:30:00+03:00",
+      "match": "Унион Берлин — Эльверсберг",
+      "match_en": "Union Berlin — Elversberg",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "candidate",
+      "argument": "Разные модели спорят о победителе. Общее ожидание двух голов устойчивее.",
+      "independent_external_probability_range_pct": [
+        71,
+        76
+      ]
+    },
+    {
+      "competition": "Бундеслига",
+      "kickoff_msk": "2026-10-10T16:30:00+03:00",
+      "match": "Падерборн — Штутгарт",
+      "match_en": "Paderborn — Stuttgart",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "watch",
+      "argument": "Результативность гостей и качество соперников в прошлом месяце не дают устойчивого прогноза.",
+      "independent_external_probability_range_pct": null
+    },
+    {
+      "competition": "Бундеслига",
+      "kickoff_msk": "2026-10-10T19:30:00+03:00",
+      "match": "РБ Лейпциг — Айнтрахт",
+      "match_en": "RB Leipzig — Eintracht Frankfurt",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "watch",
+      "argument": "Модель ждёт голы, но прессинг хозяев, кадровые изменения и реакция на паузу повышают риск.",
+      "independent_external_probability_range_pct": null
+    },
+    {
+      "competition": "Серия А",
+      "kickoff_msk": "2026-10-10T16:00:00+03:00",
+      "match": "Дженоа — Фиорентина",
+      "match_en": "Genoa — Fiorentina",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "candidate",
+      "argument": "Оба коллектива в слабой атакующей форме, рынок исходов спорен.",
+      "independent_external_probability_range_pct": [
+        70,
+        80
+      ]
+    },
+    {
+      "competition": "Серия А",
+      "kickoff_msk": "2026-10-10T19:00:00+03:00",
+      "match": "Интер — Парма",
+      "match_en": "Inter — Parma",
+      "preliminary_pick": "ИТБ Интера 1,5",
+      "preliminary_pick_en": "Inter over 1.5 team goals",
+      "decision": "candidate",
+      "argument": "Доминирование хозяев по опасным атакам и слабая созидательная статистика «Пармы».",
+      "independent_external_probability_range_pct": null
+    },
+    {
+      "competition": "Серия А",
+      "kickoff_msk": "2026-10-10T21:45:00+03:00",
+      "match": "Наполи — Фрозиноне",
+      "match_en": "Napoli — Frosinone",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "watch",
+      "argument": "Модели резко расходятся по победителю: текущая форма гостей сильна, бренд «Наполи» не критерий.",
+      "independent_external_probability_range_pct": [
+        77,
+        88
+      ]
+    },
+    {
+      "competition": "Лига 1",
+      "kickoff_msk": "2026-10-10T18:15:00+03:00",
+      "match": "Лилль — Гавр",
+      "match_en": "Lille — Le Havre",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "candidate",
+      "argument": "Модели согласны с ограничением 3 гола; перед ЛЧ возможная ротация «Лилля».",
+      "independent_external_probability_range_pct": [
+        67,
+        74
+      ]
+    },
+    {
+      "competition": "Лига 1",
+      "kickoff_msk": "2026-10-10T21:45:00+03:00",
+      "match": "Брест — Анже",
+      "match_en": "Brest — Angers",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "watch",
+      "argument": "Завышенная неопределённость исхода; стандарты «Анже» и травмы обороны требуют проверки.",
+      "independent_external_probability_range_pct": [
+        69,
+        75
+      ]
+    },
+    {
+      "competition": "Лига 1",
+      "kickoff_msk": "2026-10-10T21:45:00+03:00",
+      "match": "Лорьян — Париж",
+      "match_en": "Lorient — Paris FC",
+      "preliminary_pick": "ТМ 3,5",
+      "preliminary_pick_en": "Under 3.5 goals",
+      "decision": "watch",
+      "argument": "Высокое расхождение моделей относительно победителя, умеренный тотал требует подтверждения.",
+      "independent_external_probability_range_pct": null
+    },
+    {
+      "competition": "Лига 1",
+      "kickoff_msk": "2026-10-10T21:45:00+03:00",
+      "match": "Монако — Тулуза",
+      "match_en": "Monaco — Toulouse",
+      "preliminary_pick": "ТБ 1,5",
+      "preliminary_pick_en": "Over 1.5 goals",
+      "decision": "candidate",
+      "argument": "Модели спорят о победе «Монако», но сходятся на минимуме двух голов.",
+      "independent_external_probability_range_pct": [
+        79,
+        86
+      ]
+    },
+    {
+      "competition": "Лига 1",
+      "kickoff_msk": "2026-10-10T21:45:00+03:00",
+      "match": "ПСЖ — Ле-Ман",
+      "match_en": "PSG — Le Mans",
+      "preliminary_pick": "ИТБ ПСЖ 1,5",
+      "preliminary_pick_en": "PSG over 1.5 team goals",
+      "decision": "watch",
+      "argument": "Выраженная разница в классе, но внешние оценки ИТБ1,5 расходятся из-за формы и вероятной ротации.",
+      "independent_external_probability_range_pct": [
+        63,
+        86
+      ]
+    }
+  ],
+  "audit_note": "The 4 entries originally marked official pending in predictions.json at 02:04:52 MSK were moved here and excluded from the official counter pending final selection. This operation does not delete their pre-event timestamp or earlier Git commit."
+}
