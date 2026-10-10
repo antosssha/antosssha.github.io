@@ -6,7 +6,7 @@
 
   const english = document.documentElement.lang === "en";
   const lang = english ? {
-    eyebrow: "AI STAVIT / PUBLIC EXPERIMENT",
+    eyebrow: "NINETYLAB / PUBLIC EXPERIMENT",
     title: "Journey to 100 predictions",
     subtitle: "Every publicly recorded pick and its result. No hindsight edits.",
     picks: "Picks", wins: "Won", losses: "Lost", pending: "Awaiting result",
@@ -20,8 +20,8 @@
     archive: "Earlier validation / separate series",
     archivedNote: "Earlier validation picks are separate from the public 100.",
     archiveWins: "won", archiveLosses: "lost",
-    note: "9 Oct: eight pre-match experimental picks were added to the public count after the results on 10 Oct; quoted odds are indicative, not verified wagers.",
-    published: "As of 10 Oct 2026",
+    note: "10 Oct: 12 won, 3 lost, 1 abandoned / void. The eight 9 Oct trial picks remain disclosed as added retrospectively.",
+    published: "As of 11 Oct 2026",
     review: "PUBLIC MATCH REVIEW", open: "Read match review:",
     view: "Read match review", close: "Close review",
     why: "Why this scenario", risk: "Main risk",
@@ -33,9 +33,9 @@
     watch: "Preliminary / WATCH. No placed bet has been verified.",
     publicOnly: "Public summary only — no private weights, formulas or internal model settings.",
     odds: "Pre-match odds", oddsCaveat: "Indicative quote; not a verified bet price.",
-    outcome: "Outcome"
+    void: "Abandoned · no result", outcome: "Outcome"
   } : {
-    eyebrow: "ИИ СТАВИТ / ПУБЛИЧНЫЙ ЭКСПЕРИМЕНТ",
+    eyebrow: "NINETYLAB / ПУБЛИЧНЫЙ ЭКСПЕРИМЕНТ",
     title: "Путь к 100 прогнозам",
     subtitle: "Каждый опубликованный прогноз и его исход. Без исправлений задним числом.",
     picks: "Прогнозов", wins: "Прошло", losses: "Не прошло", pending: "Ожидает",
@@ -49,8 +49,8 @@
     archive: "Предыдущая проверка / отдельно от серии",
     archivedNote: "Предыдущие проверочные прогнозы не входят в публичную серию 100.",
     archiveWins: "прошло", archiveLosses: "не прошло",
-    note: "9 октября: восемь предматчевых экспериментальных прогнозов включены в публичную серию 10 октября после результатов; коэффициенты ориентировочные, реальные ставки не подтверждены.",
-    published: "Актуально на 10 октября 2026",
+    note: "10 октября: 12 побед, 3 поражения, 1 матч прерван без результата. Прогнозы за 9 октября отмечены как включённые ретроспективно.",
+    published: "Актуально на 11 октября 2026",
     review: "ПУБЛИЧНЫЙ РАЗБОР", open: "Открыть разбор:",
     view: "Разбор матча", close: "Закрыть разбор",
     why: "Почему выбрали", risk: "Что могло помешать",
@@ -62,7 +62,7 @@
     watch: "Предварительно / WATCH. Фактическая ставка не подтверждена.",
     publicOnly: "Показаны только публичные аргументы — без весов, формул и внутренних настроек модели.",
     odds: "Предматчевый кф.", oddsCaveat: "Ориентир, не подтверждённый коэффициент принятой ставки.",
-    outcome: "Результат"
+    void: "Прерван · нет результата", outcome: "Результат"
   };
 
   const $ = key => root.querySelector('[data-journey="' + key + '"]');
@@ -78,7 +78,7 @@
     const match=/^(\d{4})-(\d{2})-(\d{2})$/.exec(raw||"");
     return match ? match[3]+"."+match[2]+"."+match[1] : (raw||"");
   };
-  const stateLabel=state=>state==="win"?lang.win:state==="loss"?lang.loss:lang.wait;
+  const stateLabel=state=>state==="win"?lang.win:state==="loss"?lang.loss:state==="void"?lang.void:lang.wait;
   const hasOdds=r=>r.odds!==null && r.odds!==undefined && String(r.odds)!=="";
   const oddsValue=r=>hasOdds(r)?String(r.odds):translated(r,"odds_reference");
   const reducedMotion=()=>window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -290,7 +290,7 @@
   }
 
   function renderOfficial(items){
-    const valid=items.filter(x=>x && x.official===true && Number.isInteger(x.number) && x.number>=1 && x.number<=100 && ["win","loss","pending"].includes(x.status));
+    const valid=items.filter(x=>x && x.official===true && Number.isInteger(x.number) && x.number>=1 && x.number<=100 && ["win","loss","pending","void"].includes(x.status));
     const by=new Map(valid.map(x=>[x.number,x]));
     ordered=[...by.values()].sort((a,b)=>b.number-a.number);
     activeIndex=0;
@@ -298,12 +298,14 @@
     const wins=ordered.filter(x=>x.status==="win").length;
     const losses=ordered.filter(x=>x.status==="loss").length;
     const pending=ordered.filter(x=>x.status==="pending").length;
+    const voided=ordered.filter(x=>x.status==="void").length;
     set("eyebrow",lang.eyebrow);set("title",lang.title);set("subtitle",lang.subtitle);
     set("picks-title",lang.picks);set("wins-title",lang.wins);set("losses-title",lang.losses);
     set("pending-title",lang.pending);set("pending-count",pending);
+    if(voided)set("note",lang.note+" · "+voided+" "+lang.void);
     set("n",n);set("picks-metric",n+" / 100");set("wins",wins);set("losses",losses);set("remaining",100-n);
     set("matches-title",lang.matchesTitle);set("matches-count",n);
-    set("grid-title",lang.gridTitle);set("hint",lang.hint);set("note",lang.note);set("updated",lang.published);
+    set("grid-title",lang.gridTitle);set("hint",lang.hint);if(!voided)set("note",lang.note);set("updated",lang.published);
     const progress=$("track");if(progress)progress.style.width=n+"%";
     $("track-container")?.setAttribute("aria-valuenow",String(n));
     $("track-container")?.setAttribute("aria-label",lang.picks+": "+n+" / 100");
