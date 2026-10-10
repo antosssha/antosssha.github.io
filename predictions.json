@@ -421,7 +421,7 @@
     "pick_en": "Under 3.5 goals",
     "competition": "Испания · Ла Лига",
     "competition_en": "Spain · La Liga",
-    "score": "0:0",
+    "score": "—",
     "status": "void",
     "official": true,
     "pre_match_recorded": true,
@@ -465,7 +465,8 @@
     "settlement": "void_no_result",
     "accuracy_excluded": true,
     "abandoned_score_at_stop": "0:0",
-    "void_reason": "Match abandoned due to crowd disruption; no completed match result"
+    "void_reason": "Match abandoned due to crowd disruption; no completed match result",
+    "score_at_abandonment": "0:0"
   },
   {
     "number": 13,
