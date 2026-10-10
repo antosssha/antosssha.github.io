@@ -168,3 +168,9 @@
 .prediction-journey .journey-metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
 .prediction-journey .journey-metric--pending strong{color:#c8a5fa}
 @media(max-width:630px){.prediction-journey .journey-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Void = abandoned game; excluded from graded hit-rate without deleting the pick. */
+.journey-cell--void{background:#445267;border-color:#8796ae;color:#f2f4fa;cursor:pointer}
+.journey-match-card--void{--match-accent:#a6b9d3;--match-accent-bg:rgba(141,160,186,.12)}
+.journey-match-card-status--void,.journey-pill--void{color:#c5d4e8;border-color:rgba(160,184,214,.38);background:rgba(103,130,165,.15)}
+.journey-legend .void{background:#445267}
