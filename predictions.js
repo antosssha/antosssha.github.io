@@ -304,6 +304,23 @@
     set("pending-title",lang.pending);set("pending-count",pending);
     if(voided)set("note",lang.note+" · "+voided+" "+lang.void);
     set("n",n);set("picks-metric",n+" / 100");set("wins",wins);set("losses",losses);set("remaining",100-n);
+    const graded=wins+losses;
+    const accuracy=graded?Math.round(wins*100/graded):0;
+    const dates=ordered.map(r=>r.date).filter(Boolean).sort();
+    const lastDate=dates.length?dates[dates.length-1]:"";
+    const day=ordered.filter(r=>r.date===lastDate);
+    const dayWins=day.filter(r=>r.status==="win").length;
+    const dayLosses=day.filter(r=>r.status==="loss").length;
+    const dayVoid=day.filter(r=>r.status==="void").length;
+    const dayGraded=dayWins+dayLosses;
+    const dayAccuracy=dayGraded?Math.round(dayWins*100/dayGraded):0;
+    const d=lastDate?formatDate(lastDate):"—";
+    set("accuracy",accuracy+"%");
+    set("accuracy-detail",english?(wins+" of "+graded+" graded · "+voided+" abandoned"):(wins+" из "+graded+" оценённых · "+voided+" прерван"));
+    set("latest-title",english?("Latest matchday · "+d):("Последний игровой день · "+d));
+    set("latest-result",dayWins+"/"+dayGraded+" · "+dayAccuracy+"%");
+    set("latest-status",english?(dayWins+" won · "+dayLosses+" lost · "+dayVoid+" abandoned, excluded"):(dayWins+" побед · "+dayLosses+" поражения · "+dayVoid+" прерван (не учитывается)"));
+
     set("matches-title",lang.matchesTitle);set("matches-count",n);
     set("grid-title",lang.gridTitle);set("hint",lang.hint);if(!voided)set("note",lang.note);set("updated",lang.published);
     const progress=$("track");if(progress)progress.style.width=n+"%";
