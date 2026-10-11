@@ -174,3 +174,11 @@
 .journey-match-card--void{--match-accent:#a6b9d3;--match-accent-bg:rgba(141,160,186,.12)}
 .journey-match-card-status--void,.journey-pill--void{color:#c5d4e8;border-color:rgba(160,184,214,.38);background:rgba(103,130,165,.15)}
 .journey-legend .void{background:#445267}
+
+/* Live result snapshot derived from the published 100-pick ledger. */
+.journey-snapshot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:-8px 0 22px}
+.journey-snapshot-panel{display:flex;flex-direction:column;gap:6px;justify-content:center;padding:15px 18px;border-radius:14px;border:1px solid rgba(191,143,245,.26);background:linear-gradient(130deg,rgba(137,77,207,.15),rgba(37,24,59,.43))}
+.journey-snapshot-panel>span{font-size:12px;color:#cdb9e2;line-height:1.45}
+.journey-snapshot-panel>strong{font-size:clamp(22px,3.3vw,30px);font-weight:800;color:#e8d1ff;font-variant-numeric:tabular-nums;line-height:1.1}
+.journey-snapshot-panel>small{font-size:11px;color:#a99abd;line-height:1.45}
+@media(max-width:530px){.journey-snapshot{grid-template-columns:1fr}.journey-snapshot-panel{padding:14px 16px}}
