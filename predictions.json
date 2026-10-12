@@ -1453,7 +1453,22 @@
     "odds_missing": true,
     "bet_value_status": "unverified",
     "placed_bet": false,
-    "cohort": "2026-10-12-top5-final"
+    "cohort": "2026-10-12-top5-final",
+    "public_review": {
+      "ru": {
+        "reason": "Предварительный сценарий — не больше трёх голов. В публичных аргументах отмечена нестабильная реализация моментов обеими командами.",
+        "risk": "Оборонительные ошибки, ранний гол или открытая игра могут привести к четырём и более голам. Предматчевый коэффициент не подтверждён.",
+        "outcome": "Матч ещё не завершён. Итоговый счёт и проверка прогноза будут добавлены после финального свистка.",
+        "lesson": "После игры оценим реальный темп и результативность, не заменяя оценку прогноза постфактум подобранными аргументами."
+      },
+      "en": {
+        "reason": "The early forecast is under 3.5 goals. Public notes flagged limited finishing efficiency from both sides.",
+        "risk": "Defensive errors, an early opener or an open game could push the total to four or more. No pre-match price is verified.",
+        "outcome": "The match is pending. The final score and outcome will be added after full time.",
+        "lesson": "We will compare the actual tempo and scoring with the original public scenario without rewriting it after the game."
+      }
+    },
+    "no_verified_placed_bet": true
   },
   {
     "number": 35,
@@ -1479,6 +1494,21 @@
     "odds_missing": true,
     "bet_value_status": "unverified",
     "placed_bet": false,
-    "cohort": "2026-10-12-top5-final"
+    "cohort": "2026-10-12-top5-final",
+    "public_review": {
+      "ru": {
+        "reason": "Для ТБ 1,5 нужно минимум два гола за матч. Предматчевые публичные аргументы учитывают атакующие возможности «Ньюкасла» и уязвимость обороны.",
+        "risk": "Низкая реализация «Ковентри» или закрытый сценарий 0:1 либо 1:0 оставляют высокий риск для тотала.",
+        "outcome": "Матч ещё не завершён. Счёт и результат прогноза появятся после матча.",
+        "lesson": "После финала проверим, насколько счёт зависел от реального количества моментов и сохранял ли выбранный рынок смысл."
+      },
+      "en": {
+        "reason": "Over 1.5 needs at least two total goals. The public pre-match case noted Newcastle's attacking options and defensive vulnerability.",
+        "risk": "Coventry's finishing could disappoint; a cautious 0–1 or 1–0 result would defeat the pick.",
+        "outcome": "The match is pending. A final score and outcome will be added after full time.",
+        "lesson": "After the game, we will assess whether the goals reflected repeatable chances or isolated events."
+      }
+    },
+    "no_verified_placed_bet": true
   }
 ]
