@@ -182,3 +182,9 @@
 .journey-snapshot-panel>strong{font-size:clamp(22px,3.3vw,30px);font-weight:800;color:#e8d1ff;font-variant-numeric:tabular-nums;line-height:1.1}
 .journey-snapshot-panel>small{font-size:11px;color:#a99abd;line-height:1.45}
 @media(max-width:530px){.journey-snapshot{grid-template-columns:1fr}.journey-snapshot-panel{padding:14px 16px}}
+
+/* Show unknown pre-match odds honestly, without inventing prices. */
+.journey-match-card-odds--missing{background:rgba(118,108,143,.055);border-color:rgba(145,131,170,.17)}
+.journey-match-card-odds--missing>span{color:#a59aaf}
+.journey-match-card-odds--missing>strong{color:#a79cb6}
+.journey-match-card-odds--missing>small{color:#8c7e9d}
