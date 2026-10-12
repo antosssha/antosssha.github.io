@@ -1510,5 +1510,65 @@
       }
     },
     "no_verified_placed_bet": true
+  },
+  {
+    "number": 36,
+    "date": "2026-10-12",
+    "match": "Пахтакор — Аль-Кадисия",
+    "pick": "ТБ 1,5",
+    "kickoff_msk": "2026-10-12T16:45:00+03:00",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/afc-champions-league/pakhtakor-tashkent-vs-al-quadisiya_game_259843.html"
+    ],
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-12T15:56:27.426+03:00",
+    "competition": "Азия · AFC Champions League Elite",
+    "placed_bet": false,
+    "odds_missing": true,
+    "cohort": "2026-10-12-asian-elite-final"
+  },
+  {
+    "number": 37,
+    "date": "2026-10-12",
+    "match": "Аль-Васл — Аль-Ахли (Джидда)",
+    "pick": "ТБ 1,5",
+    "kickoff_msk": "2026-10-12T19:00:00+03:00",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/afc-champions-league/al-wasl-vs-al-ahli_game_259849.html"
+    ],
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-12T15:56:27.426+03:00",
+    "competition": "Азия · AFC Champions League Elite",
+    "placed_bet": false,
+    "odds_missing": true,
+    "cohort": "2026-10-12-asian-elite-final"
+  },
+  {
+    "number": 38,
+    "date": "2026-10-12",
+    "match": "Аль-Кува Аль-Джавия — Аль-Айн",
+    "pick": "Х2 (Аль-Айн не проиграет)",
+    "kickoff_msk": "2026-10-12T21:15:00+03:00",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/afc-champions-league/al-quwa-al-jawiya-vs-al-ain_game_259862.html"
+    ],
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-12T15:56:27.426+03:00",
+    "competition": "Азия · AFC Champions League Elite",
+    "placed_bet": false,
+    "odds_missing": true,
+    "cohort": "2026-10-12-asian-elite-final"
   }
 ]
