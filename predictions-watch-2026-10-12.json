@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "scope": "Top five European leagues + AFC Champions League Elite",
+  "watch": [
+    {
+      "match": "Трактор — Аль-Шамаль",
+      "time_msk": "19:00",
+      "why": "Нейтральное поле Маскат, близкие 1X2."
+    },
+    {
+      "match": "Аль-Гарафа — Эстегляль",
+      "time_msk": "21:15",
+      "why": "Разногласия в данных и моделях 1X2."
+    },
+    {
+      "match": "Аль-Наср — Нефтчи",
+      "time_msk": "21:15",
+      "why": "Официальное поражение Аль-Насра 0:4 в первом туре, сильная форма гостей."
+    },
+    {
+      "match": "Торино — Удинезе",
+      "time_msk": "21:45",
+      "why": "Близкие вероятности исходов, кадровые риски."
+    },
+    {
+      "match": "Леванте — Севилья",
+      "time_msk": "22:00",
+      "why": "Противоречивые признаки по xG и составам."
+    }
+  ],
+  "official_play_numbers": [
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "note": "WATCH is not counted in the 100 predictions; final statuses decided before kickoffs."
+}
