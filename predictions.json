@@ -1134,5 +1134,299 @@
         "lesson": "Total-goals selection captured uncertainty about the winner; no verified value claim follows."
       }
     }
+  },
+  {
+    "number": 27,
+    "match": "Халл Сити — Эвертон",
+    "match_en": "Hull City — Everton",
+    "pick": "Х2 (Эвертон не проиграет)",
+    "pick_en": "Everton or draw (X2)",
+    "score": "2:2",
+    "competition": "Англия · АПЛ",
+    "competition_en": "England · Premier League",
+    "outcome_source_urls": [
+      "https://www.evertonfc.com/news/2026/october/11/hull-report/"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Выбран исход Х2: для прохода достаточно, чтобы «Эвертон» не проиграл. Такой рынок не требует победы гостей и учитывает вероятность ничьей.",
+        "risk": "«Халл» опасен дома: даже при игровом преимуществе гостей хозяева могли найти ответный гол и изменить исход.",
+        "outcome": "Матч закончился 2:2. «Эвертон» не проиграл, прогноз Х2 прошёл. Хозяева дважды выходили вперёд/сравнивали счёт по ходу игры.",
+        "lesson": "Страховка от ничьей сработала, но результат оказался напряжённым. Удачная ставка Х2 не равна гарантированной победе гостей."
+      },
+      "en": {
+        "reason": "X2 needed Everton to avoid defeat, rather than win outright. It includes a draw in the forecast.",
+        "risk": "Hull's home resistance was a real threat even if Everton took the lead.",
+        "outcome": "The match ended 2–2; Everton avoided defeat and X2 won. Both teams led or drew level during the second half.",
+        "lesson": "Draw protection mattered, but the contest was volatile. A correct X2 call does not imply an easy away win."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
+  },
+  {
+    "number": 28,
+    "match": "Ренн — Осер",
+    "match_en": "Rennes — Auxerre",
+    "pick": "1Х (Ренн не проиграет)",
+    "pick_en": "Rennes or draw (1X)",
+    "score": "4:1",
+    "competition": "Франция · Лига 1",
+    "competition_en": "France · Ligue 1",
+    "outcome_source_urls": [
+      "https://www.staderennais.com/actualites/ligue-1-mcdonalds/le-srfc-repart-du-bon-pied-4-1"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Вместо обязательной победы выбран 1Х: домашняя команда должна была избежать поражения. Этот сценарий оставляет пространство для ничьей.",
+        "risk": "Гол «Осера» и возможные провалы в обороне «Ренна» могли осложнить задачу, несмотря на фактор домашнего поля.",
+        "outcome": "«Ренн» выиграл 4:1. Прогноз 1Х прошёл.",
+        "lesson": "Сценарий оказался верным с большим запасом, но эффективность выбора 1Х и цены рынка нужно оценивать отдельно от крупного счёта."
+      },
+      "en": {
+        "reason": "1X backed Rennes to avoid defeat, allowing either a home victory or a draw.",
+        "risk": "Auxerre's attacking response and potential defensive lapses could still create an upset.",
+        "outcome": "Rennes won 4–1, so 1X landed.",
+        "lesson": "The football scenario cleared comfortably, but the value of a protected market is separate from the size of the win."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
+  },
+  {
+    "number": 29,
+    "match": "Ливерпуль — Манчестер Сити",
+    "match_en": "Liverpool — Manchester City",
+    "pick": "ТБ 1,5",
+    "pick_en": "Over 1.5 total goals",
+    "score": "0:3",
+    "competition": "Англия · АПЛ",
+    "competition_en": "England · Premier League",
+    "outcome_source_urls": [
+      "https://www.liverpoolfc.com/matches/mens-team/liverpool-v-manchester-city-english-premier-league-20261011"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Прогноз касался общей результативности: ТБ 1,5 требовал минимум два гола, независимо от того, кто выиграет. Победителя не выбирали.",
+        "risk": "Закрытая игра и затяжное 0:0 оставляли риск низового исхода; удаление тоже могло сильно изменить ход встречи.",
+        "outcome": "«Манчестер Сити» выиграл 3:0. Все три гола пришлись на второй тайм после удаления игрока «Ливерпуля». ТБ 1,5 прошёл.",
+        "lesson": "Успех тотала не означает, что модель предсказала победителя. Важно оценивать зависимость результата от редких событий вроде удаления."
+      },
+      "en": {
+        "reason": "Over 1.5 needed two or more total goals and did not require predicting a winning side.",
+        "risk": "A tight, goalless match was plausible; red-card risk could make the game highly path-dependent.",
+        "outcome": "Manchester City won 3–0. All three goals came after a Liverpool dismissal in the second half. Over 1.5 landed.",
+        "lesson": "A successful total-goals pick is not a forecast of the winner. The role of a red card matters when assessing how robust the scenario was."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
+  },
+  {
+    "number": 30,
+    "match": "Фрайбург — Шальке",
+    "match_en": "Freiburg — Schalke",
+    "pick": "ТБ 1,5",
+    "pick_en": "Over 1.5 total goals",
+    "score": "2:1",
+    "competition": "Германия · Бундеслига",
+    "competition_en": "Germany · Bundesliga",
+    "outcome_source_urls": [
+      "https://www.bundesliga.com/en/bundesliga/news/sport-club-freiburg-schalke-match-report-highlights-matchday-5-39510"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Выбрали тотал больше 1,5, поскольку для прохода нужно лишь два гола за матч, независимо от исхода игры.",
+        "risk": "Матч мог уйти в осторожный темп, а удаление могло снизить атакующую активность одной из сторон.",
+        "outcome": "«Фрайбург» выиграл 2:1, забив решающий гол в концовке, несмотря на игру в меньшинстве. ТБ 1,5 прошёл.",
+        "lesson": "Победа фаворита, число голов и события вроде удаления — отдельные переменные; для оценки удачного тотала важно учитывать реальный характер игры."
+      },
+      "en": {
+        "reason": "Over 1.5 focused on at least two goals rather than naming the winner.",
+        "risk": "A cautious tempo or a sending-off could suppress one team's attacking output.",
+        "outcome": "Freiburg won 2–1 with a late winner despite playing with ten men. Over 1.5 succeeded.",
+        "lesson": "Results, goal totals and red-card dynamics should be assessed separately when reviewing the original forecast."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
+  },
+  {
+    "number": 31,
+    "match": "Бетис — Осасуна",
+    "match_en": "Real Betis — Osasuna",
+    "pick": "1Х (Бетис не проиграет)",
+    "pick_en": "Real Betis or draw (1X)",
+    "score": "5:2",
+    "competition": "Испания · Ла Лига",
+    "competition_en": "Spain · La Liga",
+    "outcome_source_urls": [
+      "https://www.laliga.com/en-ES/match/temporada-2026-2027-laliga-ea-sports-real-betis-ca-osasuna-8"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Прогноз 1Х означал, что «Бетис» не должен проиграть дома. Это защитный сценарий: ничья тоже подходила.",
+        "risk": "«Осасуна» могла навязать результативную борьбу и воспользоваться ошибками хозяев.",
+        "outcome": "«Бетис» победил 5:2. Ставка 1Х прошла, хотя гости забили дважды.",
+        "lesson": "Результативная победа не отменяет рисков: для точности анализа важна не только победа, но и то, сколько моментов допустила команда."
+      },
+      "en": {
+        "reason": "1X backed Betis to avoid a home defeat, with a draw also acceptable.",
+        "risk": "Osasuna could still exploit defensive mistakes and force an open contest.",
+        "outcome": "Betis won 5–2. The 1X selection succeeded, although Osasuna scored twice.",
+        "lesson": "A large winning margin does not mean the match was risk-free; conceded chances remain part of a useful review."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
+  },
+  {
+    "number": 32,
+    "match": "Кальяри — Ювентус",
+    "match_en": "Cagliari — Juventus",
+    "pick": "ТМ 3,5",
+    "pick_en": "Under 3.5 total goals",
+    "score": "1:1",
+    "competition": "Италия · Серия А",
+    "competition_en": "Italy · Serie A",
+    "outcome_source_urls": [
+      "https://www.legaseriea.it/serie-a/news/cagliari-juventus-2026-2027-1-1-cronaca-risultato-gol"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Сценарий ТМ 3,5 предполагал не больше трёх голов за матч и не зависел от победителя.",
+        "risk": "Быстрый обмен голами, пенальти или открытая концовка могли поднять тотал до четырёх мячей.",
+        "outcome": "Ничья 1:1, всего два гола. ТМ 3,5 прошёл.",
+        "lesson": "Выбор тотала позволил не угадывать победителя. Даже уверенный проход не доказывает выгодность неизвестного коэффициента."
+      },
+      "en": {
+        "reason": "Under 3.5 assumed three goals or fewer without relying on who won.",
+        "risk": "Quick exchanges, penalties or a wide-open finish could have pushed the total to four.",
+        "outcome": "The teams drew 1–1, just two goals in total. Under 3.5 won.",
+        "lesson": "A totals market avoided picking a winner. A comfortable result alone does not establish value without verified odds."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
+  },
+  {
+    "number": 33,
+    "match": "Труа — Марсель",
+    "match_en": "Troyes — Marseille",
+    "pick": "ТБ 1,5",
+    "pick_en": "Over 1.5 total goals",
+    "score": "0:2",
+    "competition": "Франция · Лига 1",
+    "competition_en": "France · Ligue 1",
+    "outcome_source_urls": [
+      "https://www.football.fr/ligue-1/ligue-1-troyes-om-0-2-837745.html"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Прогноз ТБ 1,5 требовал два гола за матч без привязки к тому, какая команда выиграет.",
+        "risk": "Игра могла долго оставаться закрытой. При одном голе до последних минут прогноз зависел от позднего события.",
+        "outcome": "«Марсель» выиграл 2:0. Второй гол пришёл в компенсированное время, поэтому ТБ 1,5 прошёл лишь в самой концовке.",
+        "lesson": "Проход оказался пограничным по времени — это важно честно отмечать вместо того, чтобы считать все успешные прогнозы одинаково убедительными."
+      },
+      "en": {
+        "reason": "Over 1.5 required at least two total goals regardless of which side won.",
+        "risk": "A cagey match could remain at one goal until very late, leaving the pick exposed to a final-minute swing.",
+        "outcome": "Marseille won 2–0. The second goal arrived deep into stoppage time, so over 1.5 cleared only at the very end.",
+        "lesson": "This was a late, narrow success. Not every winning pick is equally convincing when reviewing forecast quality."
+      }
+    },
+    "date": "2026-10-11",
+    "status": "win",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "Финальный пул NINETYLAB 11.10.2026, утверждён до матчей; итоговая сверка 11–12.10.2026",
+    "source_en": "NINETYLAB official PLAY pool approved before kickoff, 11 Oct 2026; results checked 11–12 Oct",
+    "cohort": "2026-10-11-PLAY-locked",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_recorded",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-12",
+    "decision_note": "Public PLAY selection, pre-kickoff; no verified bookmaker ticket"
   }
 ]
