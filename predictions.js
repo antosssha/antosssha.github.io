@@ -20,8 +20,8 @@
     archive: "Earlier validation / separate series",
     archivedNote: "Earlier validation picks are separate from the public 100.",
     archiveWins: "won", archiveLosses: "lost",
-    note: "10 Oct: 12 won, 3 lost, 1 abandoned / void. The eight 9 Oct trial picks remain disclosed as added retrospectively.",
-    published: "As of 11 Oct 2026",
+    note: "11 Oct: 7 of 7 approved PLAY forecasts won. The abandoned match is excluded from accuracy; the 9 Oct trial group is disclosed as added later.",
+    published: "As of 12 Oct 2026",
     review: "PUBLIC MATCH REVIEW", open: "Read match review:",
     view: "Read match review", close: "Close review",
     why: "Why this scenario", risk: "Main risk",
@@ -32,7 +32,7 @@
     experimental: "This pick was published before kick-off as an experiment and added to the public 100 only after the result. It was not an originally confirmed PLAY bet.",
     watch: "Preliminary / WATCH. No placed bet has been verified.",
     publicOnly: "Public summary only — no private weights, formulas or internal model settings.",
-    odds: "Pre-match odds", oddsCaveat: "Indicative quote; not a verified bet price.",
+    odds: "Pre-match odds", oddsCaveat: "Indicative quote; not a verified bet price.", oddsMissing: "Not recorded", oddsMissingNote: "No reliable pre-match odds are available for this pick.", resultSource: "Verified match result", notWager: "Prediction only; no actual bookmaker wager is verified.",
     void: "Abandoned · no result", outcome: "Outcome"
   } : {
     eyebrow: "NINETYLAB / ПУБЛИЧНЫЙ ЭКСПЕРИМЕНТ",
@@ -49,8 +49,8 @@
     archive: "Предыдущая проверка / отдельно от серии",
     archivedNote: "Предыдущие проверочные прогнозы не входят в публичную серию 100.",
     archiveWins: "прошло", archiveLosses: "не прошло",
-    note: "10 октября: 12 побед, 3 поражения, 1 матч прерван без результата. Прогнозы за 9 октября отмечены как включённые ретроспективно.",
-    published: "Актуально на 11 октября 2026",
+    note: "11 октября: 7 из 7 утверждённых PLAY прошли. Прерванный матч исключён из точности; пробный пул 9 октября отмечен как включённый позднее.",
+    published: "Актуально на 12 октября 2026",
     review: "ПУБЛИЧНЫЙ РАЗБОР", open: "Открыть разбор:",
     view: "Разбор матча", close: "Закрыть разбор",
     why: "Почему выбрали", risk: "Что могло помешать",
@@ -61,7 +61,7 @@
     experimental: "Прогноз опубликован до начала игры как экспериментальный и включён в публичную сотню после результата. Изначально он не был подтверждён как PLAY.",
     watch: "Предварительно / WATCH. Фактическая ставка не подтверждена.",
     publicOnly: "Показаны только публичные аргументы — без весов, формул и внутренних настроек модели.",
-    odds: "Предматчевый кф.", oddsCaveat: "Ориентир, не подтверждённый коэффициент принятой ставки.",
+    odds: "Предматчевый кф.", oddsCaveat: "Ориентир, не подтверждённый коэффициент принятой ставки.", oddsMissing: "Нет данных", oddsMissingNote: "Подтверждённый предматчевый коэффициент для этого прогноза не сохранился.", resultSource: "Источник результата", notWager: "Это прогноз модели: факт реальной ставки у букмекера не подтверждён.",
     void: "Прерван · нет результата", outcome: "Результат"
   };
 
@@ -174,6 +174,18 @@
       return parsed.protocol==="https:" && (parsed.hostname==="t.me" || parsed.hostname==="www.t.me")?parsed.href:"";
     }catch(e){return "";}
   }
+  function safeResultSource(values){
+    const hosts=["evertonfc.com","staderennais.com","liverpoolfc.com","bundesliga.com","laliga.com","legaseriea.it","football.fr"];
+    if(!Array.isArray(values))return "";
+    for(const item of values){
+      if(typeof item!=="string")continue;
+      try{
+        const u=new URL(item);
+        if(u.protocol==="https:" && hosts.some(h=>u.hostname===h||u.hostname.endsWith("."+h)))return u.href;
+      }catch(e){continue;}
+    }
+    return "";
+  }
   function openReview(record){
     if(!modal)return;
     const body=$("review-body");
@@ -195,14 +207,17 @@
     facts.className="journey-review-facts";
     appendFact(facts,lang.pick,translated(record,"pick"));
     appendFact(facts,lang.score,record.score||"—");
-    if(oddsValue(record))appendFact(facts,lang.odds,oddsValue(record));
+    appendFact(facts,lang.odds,oddsValue(record)||lang.oddsMissing);
     body.append(facts);
     if(oddsValue(record)&&!hasOdds(record))body.append(text("p",lang.oddsCaveat,"journey-review-odds-note"));
+    if(!oddsValue(record))body.append(text("p",lang.oddsMissingNote,"journey-review-odds-note"));
 
     if(record.original_category==="experimental_prematch"){
       body.append(text("p",lang.experimental,"journey-review-disclosure"));
-    }else if(record.no_verified_placed_bet || String(record.bet_value_status||"").startsWith("watch")){
+    }else if(String(record.bet_value_status||"").startsWith("watch") && record.status==="pending"){
       body.append(text("p",lang.watch,"journey-review-disclosure"));
+    }else if(record.no_verified_placed_bet){
+      body.append(text("p",lang.notWager,"journey-review-disclosure"));
     }
 
     const review=record.public_review && (english?record.public_review.en:record.public_review.ru);
@@ -224,6 +239,16 @@
       link.className="journey-review-original";
       link.textContent=lang.sourceLink+" ↗";
       body.append(link);
+    }
+    const matchEvidence=safeResultSource(record.outcome_source_urls);
+    if(matchEvidence){
+      const a=document.createElement("a");
+      a.href=matchEvidence;
+      a.target="_blank";
+      a.rel="noopener noreferrer";
+      a.className="journey-review-original";
+      a.textContent=lang.resultSource+" ↗";
+      body.append(a);
     }
     body.append(text("p",lang.publicOnly,"journey-review-privacy"));
     if(typeof modal.showModal==="function" && !modal.open)modal.showModal();
@@ -274,9 +299,12 @@
     const score=document.createElement("div");score.className="journey-match-card-score";
     score.append(text("span",lang.score),text("strong",record.score||"—"));
     facts.append(prediction,score);card.append(facts);
-    if(oddsValue(record)){
-      const odds=document.createElement("div");odds.className="journey-match-card-odds";
-      odds.append(text("span",lang.odds),text("strong",oddsValue(record)));
+    {
+      const quote=oddsValue(record);
+      const odds=document.createElement("div");
+      odds.className="journey-match-card-odds"+(quote?"":" journey-match-card-odds--missing");
+      odds.append(text("span",lang.odds),text("strong",quote||"—"));
+      if(!quote)odds.append(text("small",lang.oddsMissing));
       card.append(odds);
     }
     card.append(text("span",lang.view+" →","journey-match-card-cta"));
@@ -305,7 +333,8 @@
     if(voided)set("note",lang.note+" · "+voided+" "+lang.void);
     set("n",n);set("picks-metric",n+" / 100");set("wins",wins);set("losses",losses);set("remaining",100-n);
     const graded=wins+losses;
-    const accuracy=graded?Math.round(wins*100/graded):0;
+    const percent=value=>new Intl.NumberFormat(english?"en-US":"ru-RU",{maximumFractionDigits:2}).format(value);
+    const accuracy=graded?percent(wins*100/graded):"0";
     const dates=ordered.map(r=>r.date).filter(Boolean).sort();
     const lastDate=dates.length?dates[dates.length-1]:"";
     const day=ordered.filter(r=>r.date===lastDate);
@@ -313,13 +342,15 @@
     const dayLosses=day.filter(r=>r.status==="loss").length;
     const dayVoid=day.filter(r=>r.status==="void").length;
     const dayGraded=dayWins+dayLosses;
-    const dayAccuracy=dayGraded?Math.round(dayWins*100/dayGraded):0;
+    const dayAccuracy=dayGraded?percent(dayWins*100/dayGraded):"0";
     const d=lastDate?formatDate(lastDate):"—";
     set("accuracy",accuracy+"%");
     set("accuracy-detail",english?(wins+" of "+graded+" graded · "+voided+" abandoned"):(wins+" из "+graded+" оценённых · "+voided+" прерван"));
     set("latest-title",english?("Latest matchday · "+d):("Последний игровой день · "+d));
     set("latest-result",dayWins+"/"+dayGraded+" · "+dayAccuracy+"%");
-    set("latest-status",english?(dayWins+" won · "+dayLosses+" lost · "+dayVoid+" abandoned, excluded"):(dayWins+" побед · "+dayLosses+" поражения · "+dayVoid+" прерван (не учитывается)"));
+    const dayLines=english?[dayWins+" won",dayLosses+" lost"]:[dayWins+" верно",dayLosses+" ошибок"];
+    if(dayVoid)dayLines.push(english?(dayVoid+" abandoned, excluded"):(dayVoid+" прерван, исключён"));
+    set("latest-status",dayLines.join(" · "));
 
     set("matches-title",lang.matchesTitle);set("matches-count",n);
     set("grid-title",lang.gridTitle);set("hint",lang.hint);if(!voided)set("note",lang.note);set("updated",lang.published);
