@@ -330,13 +330,17 @@
     set("eyebrow",lang.eyebrow);set("title",lang.title);set("subtitle",lang.subtitle);
     set("picks-title",lang.picks);set("wins-title",lang.wins);set("losses-title",lang.losses);
     set("pending-title",lang.pending);set("pending-count",pending);
-    if(voided)set("note",lang.note+" · "+voided+" "+lang.void);
+    const notes=[lang.note];
+    if(voided)notes.push(english?(voided+" abandoned, excluded from hit rate"):(voided+" прерван и исключён из точности"));
+    if(pending)notes.push(english?(pending+" awaiting a result"):(pending+" ожидают результата"));
+    set("note",notes.join(" · "));
     set("n",n);set("picks-metric",n+" / 100");set("wins",wins);set("losses",losses);set("remaining",100-n);
     const graded=wins+losses;
     const percent=value=>new Intl.NumberFormat(english?"en-US":"ru-RU",{maximumFractionDigits:2}).format(value);
     const accuracy=graded?percent(wins*100/graded):"0";
-    const dates=ordered.map(r=>r.date).filter(Boolean).sort();
-    const lastDate=dates.length?dates[dates.length-1]:"";
+    // The latest completed matchday is distinct from newly announced pending fixtures.
+    const settledDates=ordered.filter(r=>r.status==="win"||r.status==="loss").map(r=>r.date).filter(Boolean).sort();
+    const lastDate=settledDates.length?settledDates[settledDates.length-1]:"";
     const day=ordered.filter(r=>r.date===lastDate);
     const dayWins=day.filter(r=>r.status==="win").length;
     const dayLosses=day.filter(r=>r.status==="loss").length;
@@ -353,7 +357,7 @@
     set("latest-status",dayLines.join(" · "));
 
     set("matches-title",lang.matchesTitle);set("matches-count",n);
-    set("grid-title",lang.gridTitle);set("hint",lang.hint);if(!voided)set("note",lang.note);set("updated",lang.published);
+    set("grid-title",lang.gridTitle);set("hint",lang.hint);set("updated",lang.published);
     const progress=$("track");if(progress)progress.style.width=n+"%";
     $("track-container")?.setAttribute("aria-valuenow",String(n));
     $("track-container")?.setAttribute("aria-label",lang.picks+": "+n+" / 100");
