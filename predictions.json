@@ -1441,8 +1441,8 @@
     "reason": "За: слабая атакующая реализация обеих. Против: оборонительные ошибки, ранний гол и риск 4+.",
     "prob": "68–72%",
     "date": "2026-10-12",
-    "score": "",
-    "status": "pending",
+    "score": "3:1",
+    "status": "loss",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1456,19 +1456,24 @@
     "cohort": "2026-10-12-top5-final",
     "public_review": {
       "ru": {
-        "reason": "Предварительный сценарий — не больше трёх голов. В публичных аргументах отмечена нестабильная реализация моментов обеими командами.",
-        "risk": "Оборонительные ошибки, ранний гол или открытая игра могут привести к четырём и более голам. Предматчевый коэффициент не подтверждён.",
-        "outcome": "Матч ещё не завершён. Итоговый счёт и проверка прогноза будут добавлены после финального свистка.",
-        "lesson": "После игры оценим реальный темп и результативность, не заменяя оценку прогноза постфактум подобранными аргументами."
+        "reason": "За: слабая атакующая реализация обеих. Против: оборонительные ошибки, ранний гол и риск 4+.",
+        "risk": "За: слабая атакующая реализация обеих. Против: оборонительные ошибки, ранний гол и риск 4+.",
+        "outcome": "ТМ3,5 не прошёл: все четыре мяча забиты в первом тайме (4', 6', 30', 37'). Ошибка: недооценили ранние голы и сценарий 4+. По FotMob: xG 2,19:2,48, удары 22:19.",
+        "lesson": "Риск 4+ голов был отмечен до начала матча, но недостаточно учтён в окончательном решении."
       },
       "en": {
-        "reason": "The early forecast is under 3.5 goals. Public notes flagged limited finishing efficiency from both sides.",
-        "risk": "Defensive errors, an early opener or an open game could push the total to four or more. No pre-match price is verified.",
-        "outcome": "The match is pending. The final score and outcome will be added after full time.",
-        "lesson": "We will compare the actual tempo and scoring with the original public scenario without rewriting it after the game."
+        "reason": "Under 3.5 total goals",
+        "risk": "See the original pre-match audit",
+        "outcome": "Full time 3:1; official pick loss.",
+        "lesson": "The market result must be reviewed against pre-match assumptions and not retroactively modified."
       }
     },
-    "no_verified_placed_bet": true
+    "no_verified_placed_bet": true,
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-13",
+    "outcome_source_urls": [
+      "https://www.ansa.it/lombardia/notizie/2026/10/12/serie-a-atalanta-venezia-3-1_42317983-1abe-4db2-b573-35971edb9c28.html"
+    ]
   },
   {
     "number": 35,
@@ -1482,8 +1487,8 @@
     "reason": "За: атакующий потенциал Ньюкасла при его уязвимости сзади. Против: слабая реализация Ковентри и возможные 0:1 или 1:0.",
     "prob": "77–82%",
     "date": "2026-10-12",
-    "score": "",
-    "status": "pending",
+    "score": "4:1",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1497,19 +1502,24 @@
     "cohort": "2026-10-12-top5-final",
     "public_review": {
       "ru": {
-        "reason": "Для ТБ 1,5 нужно минимум два гола за матч. Предматчевые публичные аргументы учитывают атакующие возможности «Ньюкасла» и уязвимость обороны.",
-        "risk": "Низкая реализация «Ковентри» или закрытый сценарий 0:1 либо 1:0 оставляют высокий риск для тотала.",
-        "outcome": "Матч ещё не завершён. Счёт и результат прогноза появятся после матча.",
-        "lesson": "После финала проверим, насколько счёт зависел от реального количества моментов и сохранял ли выбранный рынок смысл."
+        "reason": "За: атакующий потенциал Ньюкасла при его уязвимости сзади. Против: слабая реализация Ковентри и возможные 0:1 или 1:0.",
+        "risk": "За: атакующий потенциал Ньюкасла при его уязвимости сзади. Против: слабая реализация Ковентри и возможные 0:1 или 1:0.",
+        "outcome": "ТБ1,5 прошёл: «Ковентри» выиграл 4:1. Sky Sports: xG 1,43:1,84, удары 9:19. Четыре гола хозяев — неожиданное распределение результативности.",
+        "lesson": "Сценарий 2+ голов подтверждён, но предматчевая оценка сильной атаки гостей не объясняет пять голов и разгром."
       },
       "en": {
-        "reason": "Over 1.5 needs at least two total goals. The public pre-match case noted Newcastle's attacking options and defensive vulnerability.",
-        "risk": "Coventry's finishing could disappoint; a cautious 0–1 or 1–0 result would defeat the pick.",
-        "outcome": "The match is pending. A final score and outcome will be added after full time.",
-        "lesson": "After the game, we will assess whether the goals reflected repeatable chances or isolated events."
+        "reason": "Over 1.5 total goals",
+        "risk": "See the original pre-match audit",
+        "outcome": "Full time 4:1; official pick win.",
+        "lesson": "The market result must be reviewed against pre-match assumptions and not retroactively modified."
       }
     },
-    "no_verified_placed_bet": true
+    "no_verified_placed_bet": true,
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-13",
+    "outcome_source_urls": [
+      "https://www.premierleague.com/en/news/4730413/coventry-hit-four-to-beat-newcastle-for-first-home-win"
+    ]
   },
   {
     "number": 36,
@@ -1520,8 +1530,8 @@
     "source_urls": [
       "https://www.sportsmole.co.uk/football/afc-champions-league/pakhtakor-tashkent-vs-al-quadisiya_game_259843.html"
     ],
-    "score": "",
-    "status": "pending",
+    "score": "1:1",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1529,7 +1539,26 @@
     "competition": "Азия · AFC Champions League Elite",
     "placed_bet": false,
     "odds_missing": true,
-    "cohort": "2026-10-12-asian-elite-final"
+    "cohort": "2026-10-12-asian-elite-final",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-13",
+    "outcome_source_urls": [
+      "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md2-pakhtakor-uzb-1-1-al-qadsiah-club-ksa"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "ТБ 1,5",
+        "risk": "Указанные до начала матча риски",
+        "outcome": "ТБ1,5 прошёл благодаря позднему пенальти «Пахтакора» после VAR, когда гости вели 1:0.",
+        "lesson": "Пограничный успех; судейский эпизод нельзя принимать за доказательство стабильной результативности."
+      },
+      "en": {
+        "reason": "ТБ 1,5",
+        "risk": "See the original pre-match audit",
+        "outcome": "Full time 1:1; official pick win.",
+        "lesson": "The market result must be reviewed against pre-match assumptions and not retroactively modified."
+      }
+    }
   },
   {
     "number": 37,
@@ -1540,8 +1569,8 @@
     "source_urls": [
       "https://www.sportsmole.co.uk/football/afc-champions-league/al-wasl-vs-al-ahli_game_259849.html"
     ],
-    "score": "",
-    "status": "pending",
+    "score": "1:3",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1549,7 +1578,26 @@
     "competition": "Азия · AFC Champions League Elite",
     "placed_bet": false,
     "odds_missing": true,
-    "cohort": "2026-10-12-asian-elite-final"
+    "cohort": "2026-10-12-asian-elite-final",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-13",
+    "outcome_source_urls": [
+      "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md2-al-wasl-fc-uae-1-3-al-ahli-saudi-fc-ksa"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "ТБ 1,5",
+        "risk": "Указанные до начала матча риски",
+        "outcome": "ТБ1,5 прошёл ещё к перерыву при 1:1; окончательный счёт 1:3. Soccerway: xG 0,96:1,32.",
+        "lesson": "Сценарий обмена голами оправдался, но высокая реализация не гарантирована в новых матчах."
+      },
+      "en": {
+        "reason": "ТБ 1,5",
+        "risk": "See the original pre-match audit",
+        "outcome": "Full time 1:3; official pick win.",
+        "lesson": "The market result must be reviewed against pre-match assumptions and not retroactively modified."
+      }
+    }
   },
   {
     "number": 38,
@@ -1560,8 +1608,8 @@
     "source_urls": [
       "https://www.sportsmole.co.uk/football/afc-champions-league/al-quwa-al-jawiya-vs-al-ain_game_259862.html"
     ],
-    "score": "",
-    "status": "pending",
+    "score": "1:4",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1569,6 +1617,25 @@
     "competition": "Азия · AFC Champions League Elite",
     "placed_bet": false,
     "odds_missing": true,
-    "cohort": "2026-10-12-asian-elite-final"
+    "cohort": "2026-10-12-asian-elite-final",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-13",
+    "outcome_source_urls": [
+      "https://www.uaeproleague.ae/en/news-and-gallery/afc-champions-league-elite-11"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Х2 (Аль-Айн не проиграет)",
+        "risk": "Указанные до начала матча риски",
+        "outcome": "Х2 прошёл уверенно: «Аль-Айн» выиграл 4:1, ведя 4:0 к перерыву. У гостей 19 ударов против 7 у хозяев.",
+        "lesson": "Преимущество подтверждено содержанием матча, но один из четырёх голов гостей был автоголом."
+      },
+      "en": {
+        "reason": "Х2 (Аль-Айн не проиграет)",
+        "risk": "See the original pre-match audit",
+        "outcome": "Full time 1:4; official pick win.",
+        "lesson": "The market result must be reviewed against pre-match assumptions and not retroactively modified."
+      }
+    }
   }
 ]
