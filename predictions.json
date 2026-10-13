@@ -1637,5 +1637,235 @@
         "lesson": "The market result must be reviewed against pre-match assumptions and not retroactively modified."
       }
     }
+  },
+  {
+    "number": 39,
+    "match": "Аль-Садд — Аль-Хиляль",
+    "match_en": "Al Sadd — Al Hilal",
+    "pick": "Х2 (Аль-Хиляль не проиграет)",
+    "pick_en": "Al Hilal or draw (X2)",
+    "competition": "Азия · AFC Champions League Elite",
+    "competition_en": "Asia · AFC Champions League Elite",
+    "kickoff_msk": "2026-10-13T19:00:00+03:00",
+    "odds_reference": "около 1,18 (ориентир, до матча)",
+    "odds_reference_en": "approx. 1.18 (indicative, pre-match)",
+    "odds_source_url": "https://statsbet.org/football/matches/al-sadd-vs-al-hilal-2026-10-13",
+    "source_urls": [
+      "https://www.livescore.mobi/football/2026-10-13/",
+      "https://statsbet.org/football/matches/al-sadd-vs-al-hilal-2026-10-13"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Аль-Хиляль выиграл первый матч ЛЧ Азии и заметно сильнее по составу и текущей форме; защитный Х2 учитывает риск ничьей на выезде. Отдельная ставка при таком коэффициенте не получила подтверждения +EV.",
+        "risk": "Аль-Садд опасен дома; 13 апреля команды сыграли 3:3. Низкая цена Х2, возможная ротация, ранний гол и кадровые неопределённости.",
+        "outcome": "Ожидается итоговый счёт и проверка соответствия предварительному сценарию.",
+        "lesson": "Отделять футбольную вероятность от выгодности котировки; результат не доказывает +EV."
+      },
+      "en": {
+        "reason": "Al Hilal have the stronger recent form and squad; X2 protects against an away draw. Positive bookmaker EV is not confirmed.",
+        "risk": "Al Sadd's home threat, recent 3-3 meeting and a very short X2 price.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Forecast accuracy and bet value are separate."
+      }
+    },
+    "date": "2026-10-13",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "NINETYLAB 13.10.2026 independent football PLAY forecast, time-locked before kickoff; separate bookmaker EV not verified",
+    "source_en": "NINETYLAB independent football forecast locked before kickoff; betting EV not verified",
+    "cohort": "2026-10-13-football-PLAY",
+    "recorded_at_msk": "2026-10-13T18:56:08.247+03:00",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "indicative",
+    "bet_value_status": "not_verified_no_bookmaker_bet"
+  },
+  {
+    "number": 40,
+    "match": "Арсенал — Лилль",
+    "match_en": "Arsenal — Lille",
+    "pick": "П1 (Арсенал)",
+    "pick_en": "Arsenal to win",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Europe · UEFA Champions League",
+    "kickoff_msk": "2026-10-13T22:00:00+03:00",
+    "odds_reference": "около 1,25 (ориентир, до матча)",
+    "odds_reference_en": "approx. 1.25 (indicative, pre-match)",
+    "odds_source_url": "https://www.oddsportal.com/football/europe/liga-mistrzow-2025-2026/results/",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/arsenal/champions-league/preview/arsenal-vs-lille-prediction-team-news-lineups_606658.html",
+      "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/arsenal-vs-lille-injury-suspension-list-predicted-xis_606665.html"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Домашнее преимущество Арсенала, победа над Наполи 1:0 при заметном перевесе по качеству моментов, выше класс и глубина; футбольный прогноз П1 отдельно от цены.",
+        "risk": "Салиба вне игры, Тзолис недоступен, Инкапье под вопросом; Лилль создаёт шансы и способен добиться ничьей. При коэффициенте около 1,25 положительный EV не доказан.",
+        "outcome": "Ожидается итоговый счёт.",
+        "lesson": "Не приписывать удачному фавориту ценность, которой не подтвердили расчёты."
+      },
+      "en": {
+        "reason": "Arsenal's home advantage and strong underlying display against Napoli favour a home win, irrespective of its price.",
+        "risk": "Injuries and Lille's counterattack could produce a draw; value is unverified.",
+        "outcome": "Awaiting result.",
+        "lesson": "A correct winner is not proof of betting value."
+      }
+    },
+    "date": "2026-10-13",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "NINETYLAB 13.10.2026 independent football PLAY forecast, time-locked before kickoff; separate bookmaker EV not verified",
+    "source_en": "NINETYLAB independent football forecast locked before kickoff; betting EV not verified",
+    "cohort": "2026-10-13-football-PLAY",
+    "recorded_at_msk": "2026-10-13T18:56:08.247+03:00",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "indicative",
+    "bet_value_status": "not_verified_no_bookmaker_bet"
+  },
+  {
+    "number": 41,
+    "match": "Галатасарай — Барселона",
+    "match_en": "Galatasaray — Barcelona",
+    "pick": "ТБ 1,5",
+    "pick_en": "Over 1.5 total goals",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Europe · UEFA Champions League",
+    "kickoff_msk": "2026-10-13T22:00:00+03:00",
+    "odds_reference": "около 1,08 (ориентир, до матча)",
+    "odds_reference_en": "approx. 1.08 (indicative, pre-match)",
+    "odds_source_url": "https://sport.toto.nl/wedden/wedstrijd/12384468/galatasaray-sk-vs-barcelona",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/galatasaray/champions-league/team-news/galatasaray-vs-barcelona-injury-suspension-list-predicted-xis_606692.html",
+      "https://www.sportsmole.co.uk/football/champions-league/galatasaray-vs-barcelona_game_259898.html"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Обе команды атакующие; Барселона выиграла у Фейеноорда 5:1, Галатасарай пропустил три от Спортинга. ТБ1,5 выбран без необходимости угадывать победителя.",
+        "risk": "Барселона без Рафиньи, Кристенсена и Бардгджи, де Йонг под вопросом; 0:0/1:0 всё ещё возможны. Котировка ~1,08 не подтверждает +EV.",
+        "outcome": "Ожидается итоговый счёт.",
+        "lesson": "Не считать проход дешёвого тотала подтверждением качественной ценовой ставки."
+      },
+      "en": {
+        "reason": "Attack-minded teams and recent European goal patterns favour at least two total goals, independently of the winner.",
+        "risk": "Barcelona injuries and plausible low-score scenarios; EV not verified at short odds.",
+        "outcome": "Awaiting result.",
+        "lesson": "A winning low-priced total is not proof of positive value."
+      }
+    },
+    "date": "2026-10-13",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "NINETYLAB 13.10.2026 independent football PLAY forecast, time-locked before kickoff; separate bookmaker EV not verified",
+    "source_en": "NINETYLAB independent football forecast locked before kickoff; betting EV not verified",
+    "cohort": "2026-10-13-football-PLAY",
+    "recorded_at_msk": "2026-10-13T18:56:08.247+03:00",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "indicative",
+    "bet_value_status": "not_verified_no_bookmaker_bet"
+  },
+  {
+    "number": 42,
+    "match": "Кардифф — Уотфорд",
+    "match_en": "Cardiff City — Watford",
+    "pick": "1Х (Кардифф не проиграет)",
+    "pick_en": "Cardiff City or draw (1X)",
+    "competition": "Англия · Чемпионшип",
+    "competition_en": "England · Championship",
+    "kickoff_msk": "2026-10-13T21:45:00+03:00",
+    "odds_reference": "около 1,22 (ориентир, до матча)",
+    "odds_reference_en": "approx. 1.22 (indicative, pre-match)",
+    "odds_source_url": "https://stake.bet/sports/soccer/england/championship/46968519-cardiff-watford",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/cardiff-city/preview/cardiff-vs-watford-prediction-team-news-lineups_606677.html",
+      "https://www.sportsmole.co.uk/football/championship/cardiff-city-vs-watford_game_259893.html"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "У Кардиффа устойчивее домашний профиль, Уотфорд проиграл последние три игры, в том числе 0:4 Бернли. 1Х снижает риск ничьей.",
+        "risk": "Обе команды в нижней части таблицы, защита Кардиффа без дисквалифицированного Бьелика. При цене 1,22 уверенный положительный EV не установлен.",
+        "outcome": "Ожидается итоговый счёт.",
+        "lesson": "Проверить, помогла ли защитная структура 1Х при кадровых потерях."
+      },
+      "en": {
+        "reason": "Cardiff's home profile and Watford's weak recent form support 1X, covering the draw.",
+        "risk": "Cardiff's suspension at centre-back and uncertainty in the relegation-zone matchup; no verified value.",
+        "outcome": "Awaiting result.",
+        "lesson": "Review how defensive absences affected the projected outcome."
+      }
+    },
+    "date": "2026-10-13",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "NINETYLAB 13.10.2026 independent football PLAY forecast, time-locked before kickoff; separate bookmaker EV not verified",
+    "source_en": "NINETYLAB independent football forecast locked before kickoff; betting EV not verified",
+    "cohort": "2026-10-13-football-PLAY",
+    "recorded_at_msk": "2026-10-13T18:56:08.247+03:00",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "indicative",
+    "bet_value_status": "not_verified_no_bookmaker_bet"
+  },
+  {
+    "number": 43,
+    "match": "Бирмингем — Престон",
+    "match_en": "Birmingham City — Preston North End",
+    "pick": "1Х (Бирмингем не проиграет)",
+    "pick_en": "Birmingham City or draw (1X)",
+    "competition": "Англия · Чемпионшип",
+    "competition_en": "England · Championship",
+    "kickoff_msk": "2026-10-13T22:00:00+03:00",
+    "odds_reference": "около 1,18 (ориентир, до матча)",
+    "odds_reference_en": "approx. 1.18 (indicative, pre-match)",
+    "odds_source_url": "https://1x2.expert/en/match/178749-birmingham-vs-preston",
+    "source_urls": [
+      "https://www.sportsmole.co.uk/football/birmingham-city/preview/birmingham-vs-preston-prediction-team-news-lineups_606666.html",
+      "https://www.sportsmole.co.uk/football/championship/birmingham-city-vs-preston-north-end_game_259897.html"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Бирмингем седьмой и не проигрывал дома, Престон последний с 4 очками за 9 игр. Ничья остаётся допустимой в прогнозе 1Х.",
+        "risk": "Новый тренер Престона способен изменить команду; Бирмингем часто играет вничью. Цена порядка 1,18 не означает +EV.",
+        "outcome": "Ожидается итоговый счёт.",
+        "lesson": "После матча проверить, насколько тренерская смена гостей изменила прогноз."
+      },
+      "en": {
+        "reason": "Birmingham's unbeaten home profile contrasts with bottom-placed Preston; 1X protects against a draw.",
+        "risk": "A coaching bounce and Birmingham's frequent draws; betting value not established.",
+        "outcome": "Awaiting result.",
+        "lesson": "Assess the managerial-change risk."
+      }
+    },
+    "date": "2026-10-13",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "source": "NINETYLAB 13.10.2026 independent football PLAY forecast, time-locked before kickoff; separate bookmaker EV not verified",
+    "source_en": "NINETYLAB independent football forecast locked before kickoff; betting EV not verified",
+    "cohort": "2026-10-13-football-PLAY",
+    "recorded_at_msk": "2026-10-13T18:56:08.247+03:00",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "indicative",
+    "bet_value_status": "not_verified_no_bookmaker_bet"
   }
 ]
