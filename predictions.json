@@ -1934,5 +1934,275 @@
       "source_url": "https://www.fotmob.com/en-GB/matches/preston-north-end-vs-birmingham-city/2eqp3x",
       "note": "Post-match xG values are provider-dependent and must not be treated as available before kickoff."
     }
+  },
+  {
+    "number": 44,
+    "date": "2026-10-14",
+    "match": "Фейеноорд — Комо",
+    "match_en": "Feyenoord — Como",
+    "pick": "Х2 (Комо не проиграет)",
+    "pick_en": "Como or draw (X2)",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Европа · UEFA Champions League",
+    "kickoff_msk": "2026-10-14T19:45:00+03:00",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-14T17:26:12.453+03:00",
+    "recorded_at_utc": "2026-10-14T14:26:12.453Z",
+    "source": "NINETYLAB official football PLAY final 14 Oct 2026 before kickoff; bookmaker EV unverified",
+    "source_en": "NINETYLAB official football forecast before kickoff; betting EV unverified",
+    "cohort": "2026-10-14-football-PLAY",
+    "model_revision": "NINETYLAB-stress-scenario-risk-2026-10-14",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_verified",
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "source_urls": [
+      "https://theanalyst.com/articles/uefa-champions-league-match-predictions-2026-27",
+      "https://www.uefa.com/uefachampionsleague/news/02aa-21cf3c78cf12-1c26cfd9b696-1000--champions-league-starting-and-predicted-line-ups-matchday-2-/"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Opta считает Комо фаворитом в победе (48,2%) после сильного старта, при этом Х2 страхует ничью; кадровые потери Фейеноорда значительны.",
+        "risk": "Победа Комо 4:1 над слабым по еврокубковым результатам Лейпцигом не равнозначна победе над сильной обороной; Фейеноорд выиграл 4 из 5 последних домашних матчей ЛЧ, проигрыш Барселоне 1:5 нельзя переоценивать.",
+        "outcome": "Ожидается результат матча.",
+        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+      },
+      "en": {
+        "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
+        "risk": "Rotation, injuries, early goal and one-off events may change the match.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Check chance quality, match scenario and betting value separately."
+      }
+    }
+  },
+  {
+    "number": 45,
+    "date": "2026-10-14",
+    "match": "ЛАСК — Ливерпуль",
+    "match_en": "LASK — Liverpool",
+    "pick": "П2 (Ливерпуль)",
+    "pick_en": "Liverpool to win",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Европа · UEFA Champions League",
+    "kickoff_msk": "2026-10-14T19:45:00+03:00",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-14T17:26:12.453+03:00",
+    "recorded_at_utc": "2026-10-14T14:26:12.453Z",
+    "source": "NINETYLAB official football PLAY final 14 Oct 2026 before kickoff; bookmaker EV unverified",
+    "source_en": "NINETYLAB official football forecast before kickoff; betting EV unverified",
+    "cohort": "2026-10-14-football-PLAY",
+    "model_revision": "NINETYLAB-stress-scenario-risk-2026-10-14",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_verified",
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "source_urls": [
+      "https://theanalyst.com/articles/uefa-champions-league-match-predictions-2026-27",
+      "https://www.liverpoolfc.com/news/lask-v-liverpool-champions-league-team-news"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Ливерпуль победил в 25 из 29 последних игр группового/лигoвого этапа ЛЧ. Opta перед игрой дала гостям 70,7% на победу; ЛАСК проиграл первый тур АЕК.",
+        "risk": "Ливерпуль официально подтвердил отсутствие Исака, Гакпо и Собослаи и возможную ротацию после поражения от Манчестер Сити; ничья более реальна, чем при оптимальном составе.",
+        "outcome": "Ожидается результат матча.",
+        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+      },
+      "en": {
+        "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
+        "risk": "Rotation, injuries, early goal and one-off events may change the match.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Check chance quality, match scenario and betting value separately."
+      }
+    }
+  },
+  {
+    "number": 46,
+    "date": "2026-10-14",
+    "match": "Астон Вилла — Фенербахче",
+    "match_en": "Aston Villa — Fenerbahce",
+    "pick": "1Х (Астон Вилла не проиграет)",
+    "pick_en": "Aston Villa or draw (1X)",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Европа · UEFA Champions League",
+    "kickoff_msk": "2026-10-14T22:00:00+03:00",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-14T17:26:12.453+03:00",
+    "recorded_at_utc": "2026-10-14T14:26:12.453Z",
+    "source": "NINETYLAB official football PLAY final 14 Oct 2026 before kickoff; bookmaker EV unverified",
+    "source_en": "NINETYLAB official football forecast before kickoff; betting EV unverified",
+    "cohort": "2026-10-14-football-PLAY",
+    "model_revision": "NINETYLAB-stress-scenario-risk-2026-10-14",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_verified",
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "source_urls": [
+      "https://theanalyst.com/articles/uefa-champions-league-match-predictions-2026-27",
+      "https://www.uefa.com/uefachampionsleague/news/02aa-21cf3c78cf12-1c26cfd9b696-1000--champions-league-starting-and-predicted-line-ups-matchday-2-/"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Астон Вилла выиграла десять подряд домашних еврокубковых матчей; Opta даёт 55,1% на П1, но для устойчивого сценария выбрали 1Х.",
+        "risk": "Фенербахче находится в хорошей форме и способен создавать моменты; хозяева непостоянны в чемпионате. Отсутствие Мaатсена и проблемы с другими футболистами обороны.",
+        "outcome": "Ожидается результат матча.",
+        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+      },
+      "en": {
+        "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
+        "risk": "Rotation, injuries, early goal and one-off events may change the match.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Check chance quality, match scenario and betting value separately."
+      }
+    }
+  },
+  {
+    "number": 47,
+    "date": "2026-10-14",
+    "match": "Реал Бетис — Порту",
+    "match_en": "Real Betis — Porto",
+    "pick": "ТБ 1,5",
+    "pick_en": "Over 1.5 total goals",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Европа · UEFA Champions League",
+    "kickoff_msk": "2026-10-14T22:00:00+03:00",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-14T17:26:12.453+03:00",
+    "recorded_at_utc": "2026-10-14T14:26:12.453Z",
+    "source": "NINETYLAB official football PLAY final 14 Oct 2026 before kickoff; bookmaker EV unverified",
+    "source_en": "NINETYLAB official football forecast before kickoff; betting EV unverified",
+    "cohort": "2026-10-14-football-PLAY",
+    "model_revision": "NINETYLAB-stress-scenario-risk-2026-10-14",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_verified",
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "source_urls": [
+      "https://www.uefa.com/uefachampionsleague/news/02aa-21c5297d7408-32d70b5a4443-1000--champions-league-matchday-2-key-stats-and-what-to-look-o/",
+      "https://www.sportsmole.co.uk/football/betis/champions-league/preview/betis-vs-porto-prediction-team-news-lineups_606779.html"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Бетис забивал по два и более мяча в девяти подряд европейских домашних матчах. Порту необходимо реагировать после поражения от Манчестер Сити; сценарий двух голов не зависит от победителя.",
+        "risk": "Закрытая выездная игра Порту, плохая реализация и сценарии 0:0/1:0 возможны. Короткая линия на ТБ1,5 не доказывает value.",
+        "outcome": "Ожидается результат матча.",
+        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+      },
+      "en": {
+        "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
+        "risk": "Rotation, injuries, early goal and one-off events may change the match.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Check chance quality, match scenario and betting value separately."
+      }
+    }
+  },
+  {
+    "number": 48,
+    "date": "2026-10-14",
+    "match": "Слован Братислава — Штутгарт",
+    "match_en": "Slovan Bratislava — Stuttgart",
+    "pick": "П2 (Штутгарт)",
+    "pick_en": "Stuttgart to win",
+    "competition": "Европа · UEFA Champions League",
+    "competition_en": "Европа · UEFA Champions League",
+    "kickoff_msk": "2026-10-14T22:00:00+03:00",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-14T17:26:12.453+03:00",
+    "recorded_at_utc": "2026-10-14T14:26:12.453Z",
+    "source": "NINETYLAB official football PLAY final 14 Oct 2026 before kickoff; bookmaker EV unverified",
+    "source_en": "NINETYLAB official football forecast before kickoff; betting EV unverified",
+    "cohort": "2026-10-14-football-PLAY",
+    "model_revision": "NINETYLAB-stress-scenario-risk-2026-10-14",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_verified",
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "source_urls": [
+      "https://theanalyst.com/articles/uefa-champions-league-match-predictions-2026-27",
+      "https://www.uefa.com/uefachampionsleague/news/02aa-21cf3c78cf12-1c26cfd9b696-1000--champions-league-starting-and-predicted-line-ups-matchday-2-/"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Opta оценивала победу Штутгарта в 68,8%; Слован проиграл девять матчей подряд на этой стадии турнира.",
+        "risk": "У Штутгарта травмы Нартей, Томаша, Аль-Дахиля, Жакеса, под вопросом защитники Шабо и Миттельштедт; гостевая ротация и ранний гол хозяев могут перевернуть расклад.",
+        "outcome": "Ожидается результат матча.",
+        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+      },
+      "en": {
+        "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
+        "risk": "Rotation, injuries, early goal and one-off events may change the match.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Check chance quality, match scenario and betting value separately."
+      }
+    }
+  },
+  {
+    "number": 49,
+    "date": "2026-10-14",
+    "match": "Линкольн — Вест Хэм",
+    "match_en": "Lincoln City — West Ham United",
+    "pick": "Х2 (Вест Хэм не проиграет)",
+    "pick_en": "West Ham or draw (X2)",
+    "competition": "Англия · EFL Championship",
+    "competition_en": "Англия · EFL Championship",
+    "kickoff_msk": "2026-10-14T22:00:00+03:00",
+    "score": "",
+    "status": "pending",
+    "official": true,
+    "pre_match_recorded": true,
+    "final_locked": true,
+    "recorded_at_msk": "2026-10-14T17:26:12.453+03:00",
+    "recorded_at_utc": "2026-10-14T14:26:12.453Z",
+    "source": "NINETYLAB official football PLAY final 14 Oct 2026 before kickoff; bookmaker EV unverified",
+    "source_en": "NINETYLAB official football forecast before kickoff; betting EV unverified",
+    "cohort": "2026-10-14-football-PLAY",
+    "model_revision": "NINETYLAB-stress-scenario-risk-2026-10-14",
+    "placed_bet": false,
+    "no_verified_placed_bet": true,
+    "odds_missing": true,
+    "odds_reference_type": "not_verified",
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "source_urls": [
+      "https://www.efl.com/news/2026/october/13/sky-bet-championship--pre-match-stat-pack/",
+      "https://talksport.com/betting/4640662/lincoln-west-ham-betting-tips-and-predictions/"
+    ],
+    "public_review": {
+      "ru": {
+        "reason": "Вест Хэм третий в Чемпионшипе, шесть матчей без поражений, 23 гола в чемпионате, Боуэн забил 7 в последних шести играх; защитный Х2 допускает ничью.",
+        "risk": "Линкольн дома мотивирован и конкурентоспособен против сильных соперников; турнирная позиция Вест Хэма не исключает выездной осечки.",
+        "outcome": "Ожидается результат матча.",
+        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+      },
+      "en": {
+        "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
+        "risk": "Rotation, injuries, early goal and one-off events may change the match.",
+        "outcome": "Awaiting final result.",
+        "lesson": "Check chance quality, match scenario and betting value separately."
+      }
+    }
   }
 ]
