@@ -1658,19 +1658,19 @@
       "ru": {
         "reason": "Аль-Хиляль выиграл первый матч ЛЧ Азии и заметно сильнее по составу и текущей форме; защитный Х2 учитывает риск ничьей на выезде. Отдельная ставка при таком коэффициенте не получила подтверждения +EV.",
         "risk": "Аль-Садд опасен дома; 13 апреля команды сыграли 3:3. Низкая цена Х2, возможная ротация, ранний гол и кадровые неопределённости.",
-        "outcome": "Ожидается итоговый счёт и проверка соответствия предварительному сценарию.",
-        "lesson": "Отделять футбольную вероятность от выгодности котировки; результат не доказывает +EV."
+        "outcome": "Аль-Хиляль победил 2:0, Х2 прошёл. Гол Уоткинса на 40-й минуте, пенальти Рубена Невеша на 65-й. По 365Scores: xG 0,77:2,60, удары 11:17, в створ 2:5. Преимущество гостей подтверждено содержанием встречи, но второй гол с пенальти.",
+        "lesson": "Верно определено преимущество гостей; пенальти — дополнительный фактор, а не доказательство идеальной модели. Удачный Х2 при ориентире ~1,18 не устанавливает положительный EV."
       },
       "en": {
         "reason": "Al Hilal have the stronger recent form and squad; X2 protects against an away draw. Positive bookmaker EV is not confirmed.",
         "risk": "Al Sadd's home threat, recent 3-3 meeting and a very short X2 price.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Forecast accuracy and bet value are separate."
+        "outcome": "Al Hilal won 2-0; X2 landed. Watkins scored in the 40th minute and Rúben Neves from the spot in the 65th. 365Scores xG 0.77-2.60, shots 11-17. The visitors controlled chance quality, but the second goal came via a penalty.",
+        "lesson": "The pre-match no-away-loss scenario held, with a penalty helping extend the lead. A winning short-price X2 does not establish positive EV."
       }
     },
     "date": "2026-10-13",
-    "score": "",
-    "status": "pending",
+    "score": "0:2",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1682,7 +1682,20 @@
     "no_verified_placed_bet": true,
     "odds_missing": true,
     "odds_reference_type": "indicative",
-    "bet_value_status": "not_verified_no_bookmaker_bet"
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-14",
+    "outcome_source_urls": [
+      "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md2-al-sadd-sc-qat-0-2-al-hilal-sfc-ksa",
+      "https://www.365scores.com/football/match/afc-champions-league-elite-623/al-hilal-riyadh-al-sadd-5457-6992-623"
+    ],
+    "postmatch_xg": {
+      "home": 0.77,
+      "away": 2.6,
+      "provider": "365Scores",
+      "source_url": "https://www.365scores.com/football/match/afc-champions-league-elite-623/al-hilal-riyadh-al-sadd-5457-6992-623",
+      "note": "Post-match xG values are provider-dependent and must not be treated as available before kickoff."
+    }
   },
   {
     "number": 40,
@@ -1704,19 +1717,19 @@
       "ru": {
         "reason": "Домашнее преимущество Арсенала, победа над Наполи 1:0 при заметном перевесе по качеству моментов, выше класс и глубина; футбольный прогноз П1 отдельно от цены.",
         "risk": "Салиба вне игры, Тзолис недоступен, Инкапье под вопросом; Лилль создаёт шансы и способен добиться ничьей. При коэффициенте около 1,25 положительный EV не доказан.",
-        "outcome": "Ожидается итоговый счёт.",
-        "lesson": "Не приписывать удачному фавориту ценность, которой не подтвердили расчёты."
+        "outcome": "Арсенал победил 3:0, П1 прошёл. После 0:0 к перерыву забили Тимбер (64), Эзе (67), Сака (71). По ScoutingStats: xG 1,95:0,35; удары 16:4, в створ 8:0. Замены в атаке существенно ускорили игру.",
+        "lesson": "Преимущество фаворита подтверждено качеством моментов, но первый гол пришёл только на 64-й минуте, после чего разница быстро выросла. Не приравнивать верный П1 при коэффициенте ~1,25 к +EV."
       },
       "en": {
         "reason": "Arsenal's home advantage and strong underlying display against Napoli favour a home win, irrespective of its price.",
         "risk": "Injuries and Lille's counterattack could produce a draw; value is unverified.",
-        "outcome": "Awaiting result.",
-        "lesson": "A correct winner is not proof of betting value."
+        "outcome": "Arsenal won 3-0; the home-win pick landed. The first half was goalless; Timber (64), Eze (67) and Saka (71) scored. ScoutingStats xG 1.95-0.35, shots 16-4 and shots on target 8-0.",
+        "lesson": "The superior chance quality supports the forecast, but the game stayed 0-0 until minute 64. A correct winner at ~1.25 is not proof of value."
       }
     },
     "date": "2026-10-13",
-    "score": "",
-    "status": "pending",
+    "score": "3:0",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1728,7 +1741,21 @@
     "no_verified_placed_bet": true,
     "odds_missing": true,
     "odds_reference_type": "indicative",
-    "bet_value_status": "not_verified_no_bookmaker_bet"
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-14",
+    "outcome_source_urls": [
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+      "https://www.theguardian.com/football/2026/oct/13/arsenal-lille-champions-league-match-report",
+      "https://scoutingstats.ai/champions-league/arsenal-v-losc-lille/19872635?from=league-hub"
+    ],
+    "postmatch_xg": {
+      "home": 1.95,
+      "away": 0.35,
+      "provider": "ScoutingStats",
+      "source_url": "https://scoutingstats.ai/champions-league/arsenal-v-losc-lille/19872635?from=league-hub",
+      "note": "Post-match xG values are provider-dependent and must not be treated as available before kickoff."
+    }
   },
   {
     "number": 41,
@@ -1750,19 +1777,19 @@
       "ru": {
         "reason": "Обе команды атакующие; Барселона выиграла у Фейеноорда 5:1, Галатасарай пропустил три от Спортинга. ТБ1,5 выбран без необходимости угадывать победителя.",
         "risk": "Барселона без Рафиньи, Кристенсена и Бардгджи, де Йонг под вопросом; 0:0/1:0 всё ещё возможны. Котировка ~1,08 не подтверждает +EV.",
-        "outcome": "Ожидается итоговый счёт.",
-        "lesson": "Не считать проход дешёвого тотала подтверждением качественной ценовой ставки."
+        "outcome": "Галатасарай проиграл Барселоне 1:4, ТБ 1,5 прошёл ещё до перерыва: гол хозяев на 28-й и ответный на 43-й. По StatMuse: xG 0,90:2,85; удары 5:22, в створ 3:11. После первого гола сценарий сохранил устойчивость.",
+        "lesson": "Атакующий сценарий подтверждён; ТБ 1,5 оказался не зависим от победителя и выдержал раннее лидерство хозяев. Очень низкий ориентир ~1,08 по-прежнему не подтверждает ставочную выгоду."
       },
       "en": {
         "reason": "Attack-minded teams and recent European goal patterns favour at least two total goals, independently of the winner.",
         "risk": "Barcelona injuries and plausible low-score scenarios; EV not verified at short odds.",
-        "outcome": "Awaiting result.",
-        "lesson": "A winning low-priced total is not proof of positive value."
+        "outcome": "Barcelona beat Galatasaray 4-1; over 1.5 landed before half-time (goals at 28 and 43 minutes). StatMuse xG 0.90-2.85, shots 5-22 and shots on target 3-11.",
+        "lesson": "The goals scenario proved robust despite an early home lead, but an indicative ~1.08 price is not evidence of profitable odds."
       }
     },
     "date": "2026-10-13",
-    "score": "",
-    "status": "pending",
+    "score": "1:4",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1774,7 +1801,21 @@
     "no_verified_placed_bet": true,
     "odds_missing": true,
     "odds_reference_type": "indicative",
-    "bet_value_status": "not_verified_no_bookmaker_bet"
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-14",
+    "outcome_source_urls": [
+      "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefachampionsleague/2027/match/2049576/printmatchpresskits/",
+      "https://www.fcbarcelona.com/en/matches/141466/galatasaray-fc-barcelona-uefa-champions-league-2026-2027",
+      "https://www.statmuse.com/fc/match/10-13-2026-gal-vs-fcb-113890"
+    ],
+    "postmatch_xg": {
+      "home": 0.9,
+      "away": 2.85,
+      "provider": "StatMuse",
+      "source_url": "https://www.statmuse.com/fc/match/10-13-2026-gal-vs-fcb-113890",
+      "note": "Post-match xG values are provider-dependent and must not be treated as available before kickoff."
+    }
   },
   {
     "number": 42,
@@ -1796,19 +1837,19 @@
       "ru": {
         "reason": "У Кардиффа устойчивее домашний профиль, Уотфорд проиграл последние три игры, в том числе 0:4 Бернли. 1Х снижает риск ничьей.",
         "risk": "Обе команды в нижней части таблицы, защита Кардиффа без дисквалифицированного Бьелика. При цене 1,22 уверенный положительный EV не установлен.",
-        "outcome": "Ожидается итоговый счёт.",
-        "lesson": "Проверить, помогла ли защитная структура 1Х при кадровых потерях."
+        "outcome": "Кардифф разгромил Уотфорд 5:1, прогноз 1Х прошёл. Четыре мяча хозяева забили до перерыва, включая пенальти и автогол. По Sporting Life: xG 3,67:1,46, удары 22:14. Несмотря на разгром, гости также создавали моменты.",
+        "lesson": "Домашнее преимущество подтверждено, но счёт преувеличивает разницу в угрозе: xGA Кардиффа 1,46 и пенальти/автогол требуют учитывать игровую структуру, а не только 5:1. КФ ~1,22 не подтверждает EV."
       },
       "en": {
         "reason": "Cardiff's home profile and Watford's weak recent form support 1X, covering the draw.",
         "risk": "Cardiff's suspension at centre-back and uncertainty in the relegation-zone matchup; no verified value.",
-        "outcome": "Awaiting result.",
-        "lesson": "Review how defensive absences affected the projected outcome."
+        "outcome": "Cardiff beat Watford 5-1; 1X landed. Four Cardiff goals came before the break, including a penalty and an own goal. Sporting Life xG 3.67-1.46, shots 22-14. Watford still generated some chances.",
+        "lesson": "The home edge was justified, though Cardiff allowed 1.46 xG and benefited from a penalty and own goal. The 5-1 score alone overstates forecast certainty."
       }
     },
     "date": "2026-10-13",
-    "score": "",
-    "status": "pending",
+    "score": "5:1",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1820,7 +1861,20 @@
     "no_verified_placed_bet": true,
     "odds_missing": true,
     "odds_reference_type": "indicative",
-    "bet_value_status": "not_verified_no_bookmaker_bet"
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-14",
+    "outcome_source_urls": [
+      "https://www.skysports.com/football/cardiff-vs-watford/report/560609",
+      "https://www.sportinglife.com/football/live/234288/cardiff-city-vs-watford/stats"
+    ],
+    "postmatch_xg": {
+      "home": 3.67,
+      "away": 1.46,
+      "provider": "Sporting Life",
+      "source_url": "https://www.sportinglife.com/football/live/234288/cardiff-city-vs-watford/stats",
+      "note": "Post-match xG values are provider-dependent and must not be treated as available before kickoff."
+    }
   },
   {
     "number": 43,
@@ -1842,19 +1896,19 @@
       "ru": {
         "reason": "Бирмингем седьмой и не проигрывал дома, Престон последний с 4 очками за 9 игр. Ничья остаётся допустимой в прогнозе 1Х.",
         "risk": "Новый тренер Престона способен изменить команду; Бирмингем часто играет вничью. Цена порядка 1,18 не означает +EV.",
-        "outcome": "Ожидается итоговый счёт.",
-        "lesson": "После матча проверить, насколько тренерская смена гостей изменила прогноз."
+        "outcome": "Бирмингем победил Престон 4:0, 1Х прошёл. К перерыву уже 3:0, удаление у гостей случилось на 56-й минуте; четвёртый гол на 76-й. По FotMob: xG 2,24:0,49, удары 19:6. Преимущество хозяев проявилось ещё до удаления.",
+        "lesson": "Модель правильно выбрала сторону, а защитный рынок покрыл риск ничьей. Не объяснять весь успех удалением: 3:0 было ещё до красной. Из-за низкого ориентировочного КФ ~1,18 выгодность ставки по-прежнему не установлена."
       },
       "en": {
         "reason": "Birmingham's unbeaten home profile contrasts with bottom-placed Preston; 1X protects against a draw.",
         "risk": "A coaching bounce and Birmingham's frequent draws; betting value not established.",
-        "outcome": "Awaiting result.",
-        "lesson": "Assess the managerial-change risk."
+        "outcome": "Birmingham beat Preston 4-0; 1X landed. The home side led 3-0 before the 56th-minute Preston red card; FotMob xG 2.24-0.49, shots 19-6. The advantage preceded the dismissal.",
+        "lesson": "The selected side was correct even before the red card, but low indicative 1X odds do not establish betting value."
       }
     },
     "date": "2026-10-13",
-    "score": "",
-    "status": "pending",
+    "score": "4:0",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1866,6 +1920,19 @@
     "no_verified_placed_bet": true,
     "odds_missing": true,
     "odds_reference_type": "indicative",
-    "bet_value_status": "not_verified_no_bookmaker_bet"
+    "bet_value_status": "not_verified_no_bookmaker_bet",
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-14",
+    "outcome_source_urls": [
+      "https://www.skysports.com/football/birmingham-vs-preston/report/560606",
+      "https://www.fotmob.com/en-GB/matches/preston-north-end-vs-birmingham-city/2eqp3x"
+    ],
+    "postmatch_xg": {
+      "home": 2.24,
+      "away": 0.49,
+      "provider": "FotMob",
+      "source_url": "https://www.fotmob.com/en-GB/matches/preston-north-end-vs-birmingham-city/2eqp3x",
+      "note": "Post-match xG values are provider-dependent and must not be treated as available before kickoff."
+    }
   }
 ]
