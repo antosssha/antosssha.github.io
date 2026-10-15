@@ -1945,8 +1945,8 @@
     "competition": "Европа · UEFA Champions League",
     "competition_en": "Европа · UEFA Champions League",
     "kickoff_msk": "2026-10-14T19:45:00+03:00",
-    "score": "",
-    "status": "pending",
+    "score": "3:2",
+    "status": "loss",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -1969,16 +1969,30 @@
       "ru": {
         "reason": "Opta считает Комо фаворитом в победе (48,2%) после сильного старта, при этом Х2 страхует ничью; кадровые потери Фейеноорда значительны.",
         "risk": "Победа Комо 4:1 над слабым по еврокубковым результатам Лейпцигом не равнозначна победе над сильной обороной; Фейеноорд выиграл 4 из 5 последних домашних матчей ЛЧ, проигрыш Барселоне 1:5 нельзя переоценивать.",
-        "outcome": "Ожидается результат матча.",
-        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+        "outcome": "Фейеноорд выиграл у Комо 3:2; Х2 проиграл. Комо забил первым (18'), но хозяева ответили на 20' и 52'; автогол вратаря Роберта Санчеса на 81' сделал счёт 3:1, поздний гол Комо сократил отставание. По StatMuse xG 0,54:1,24 и удары 13:11 (в створ 5:5): Комо создавал более качественные моменты, но результат оказался иным.",
+        "lesson": "Промах по фактическому исходу при преимуществе Комо по xG. Недооценили силу Фейеноорда дома и вариативность результата при небольшой сумме xG, а также риск вратарской ошибки/автогола. Травма Диао на 23-й минуте дополнительно повлияла на структуру игры; одно поражение не доказывает ошибку всей модели."
       },
       "en": {
         "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
         "risk": "Rotation, injuries, early goal and one-off events may change the match.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Check chance quality, match scenario and betting value separately."
+        "outcome": "Feyenoord beat Como 3-2; X2 lost. Como scored first but Feyenoord came back; a goalkeeper own goal at 81' proved significant. StatMuse xG 0.54-1.24, shots 13-11, on target 5-5.",
+        "lesson": "A losing forecast despite Como's stronger chance quality. Home advantage, finishing variance, keeper error/own goal and Diao's early injury mattered. Keep outcome accuracy separate from scenario quality."
       }
-    }
+    },
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-15",
+    "outcome_source_urls": [
+      "https://comofootball.com/en/feyenoord-v-como-1907-3-2-ucl-match-report/",
+      "https://www.statmuse.com/fc/match/10-14-2026-fey-vs-com-113893"
+    ],
+    "postmatch_xg": {
+      "home": 0.54,
+      "away": 1.24,
+      "provider": "StatMuse",
+      "source_url": "https://www.statmuse.com/fc/match/10-14-2026-fey-vs-com-113893",
+      "note": "Post-match xG; provider-dependent. Not a pre-match model input."
+    },
+    "postmatch_diagnostic": "loss_but_xg_leaned_toward_pick; own_goal; early_key_attacker_injury"
   },
   {
     "number": 45,
@@ -1990,8 +2004,8 @@
     "competition": "Европа · UEFA Champions League",
     "competition_en": "Европа · UEFA Champions League",
     "kickoff_msk": "2026-10-14T19:45:00+03:00",
-    "score": "",
-    "status": "pending",
+    "score": "3:6",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -2014,15 +2028,28 @@
       "ru": {
         "reason": "Ливерпуль победил в 25 из 29 последних игр группового/лигoвого этапа ЛЧ. Opta перед игрой дала гостям 70,7% на победу; ЛАСК проиграл первый тур АЕК.",
         "risk": "Ливерпуль официально подтвердил отсутствие Исака, Гакпо и Собослаи и возможную ротацию после поражения от Манчестер Сити; ничья более реальна, чем при оптимальном составе.",
-        "outcome": "Ожидается результат матча.",
-        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+        "outcome": "ЛАСК — Ливерпуль 3:6, П2 прошёл. Удары 12:26, xG 1,42:2,94 по OddAlerts. Ливерпуль создал ощутимое преимущество, хотя пропустил трижды; Баркола оформил хет-трик, ротация не помешала победе.",
+        "lesson": "Класс и глубина гостей оказались важнее ротации. Но шесть голов с 2,94 xG и три пропущенных показывают высокую дисперсию и оборонные риски: результат не должен завышать предматчевую оценку уверенности."
       },
       "en": {
         "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
         "risk": "Rotation, injuries, early goal and one-off events may change the match.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Check chance quality, match scenario and betting value separately."
+        "outcome": "LASK lost 3-6 to Liverpool; away win landed. OddAlerts xG 1.42-2.94, shots 12-26. Liverpool dominated chance creation despite conceding three. Barcola scored a hat-trick.",
+        "lesson": "Liverpool's depth absorbed rotation; the 6-3 score overstates expected-goal differences and highlights defensive fragility."
       }
+    },
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-15",
+    "outcome_source_urls": [
+      "https://theanalyst.com/articles/lask-vs-liverpool-stats-uefa-champions-league-10-2026",
+      "https://www.oddalerts.com/livescores/lask-vs-liverpool/7659-4017"
+    ],
+    "postmatch_xg": {
+      "home": 1.42,
+      "away": 2.94,
+      "provider": "OddAlerts",
+      "source_url": "https://www.oddalerts.com/livescores/lask-vs-liverpool/7659-4017",
+      "note": "Post-match xG; provider-dependent. Not a pre-match model input."
     }
   },
   {
@@ -2035,8 +2062,8 @@
     "competition": "Европа · UEFA Champions League",
     "competition_en": "Европа · UEFA Champions League",
     "kickoff_msk": "2026-10-14T22:00:00+03:00",
-    "score": "",
-    "status": "pending",
+    "score": "6:0",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -2059,15 +2086,28 @@
       "ru": {
         "reason": "Астон Вилла выиграла десять подряд домашних еврокубковых матчей; Opta даёт 55,1% на П1, но для устойчивого сценария выбрали 1Х.",
         "risk": "Фенербахче находится в хорошей форме и способен создавать моменты; хозяева непостоянны в чемпионате. Отсутствие Мaатсена и проблемы с другими футболистами обороны.",
-        "outcome": "Ожидается результат матча.",
-        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+        "outcome": "Астон Вилла — Фенербахче 6:0, 1Х прошёл. По Sporting Life xG 3,07:1,90, удары 20:15 (в створ 11:4), один из голов хозяев с пенальти. При крупной разнице в счёте гости всё же имели заметные моменты.",
+        "lesson": "Домашняя сила хозяев подтверждена. Но счёт 6:0 значительно крупнее разницы xG, поэтому не считать защитный 1Х идеальным футбольным сценарием лишь из-за разгрома; учитываем недореализацию гостей."
       },
       "en": {
         "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
         "risk": "Rotation, injuries, early goal and one-off events may change the match.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Check chance quality, match scenario and betting value separately."
+        "outcome": "Aston Villa beat Fenerbahce 6-0; 1X landed. Sporting Life xG 3.07-1.90, shots 20-15, on target 11-4; a penalty contributed to Villa's tally.",
+        "lesson": "Villa's home edge held, but the 6-0 margin exaggerated the gap in chance quality; do not over-credit the draw-protected market."
       }
+    },
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-15",
+    "outcome_source_urls": [
+      "https://www.theguardian.com/football/2026/oct/14/aston-villa-fenerbahce-champions-league-league-stage-match-report",
+      "https://www.sportinglife.com/football/live/243640/aston-villa-vs-fenerbahce/stats"
+    ],
+    "postmatch_xg": {
+      "home": 3.07,
+      "away": 1.9,
+      "provider": "Sporting Life",
+      "source_url": "https://www.sportinglife.com/football/live/243640/aston-villa-vs-fenerbahce/stats",
+      "note": "Post-match xG; provider-dependent. Not a pre-match model input."
     }
   },
   {
@@ -2080,8 +2120,8 @@
     "competition": "Европа · UEFA Champions League",
     "competition_en": "Европа · UEFA Champions League",
     "kickoff_msk": "2026-10-14T22:00:00+03:00",
-    "score": "",
-    "status": "pending",
+    "score": "3:2",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -2104,15 +2144,28 @@
       "ru": {
         "reason": "Бетис забивал по два и более мяча в девяти подряд европейских домашних матчах. Порту необходимо реагировать после поражения от Манчестер Сити; сценарий двух голов не зависит от победителя.",
         "risk": "Закрытая выездная игра Порту, плохая реализация и сценарии 0:0/1:0 возможны. Короткая линия на ТБ1,5 не доказывает value.",
-        "outcome": "Ожидается результат матча.",
-        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+        "outcome": "Бетис — Порту 3:2, ТБ 1,5 прошёл. По StatMuse xG 1,60:1,00, удары 17:11, в створ 7:5. Общие пять голов соответствуют открытому сценарию, хотя реализация превысила объём ожидаемых голов.",
+        "lesson": "Верно выбрали сценарий с голами без необходимости предсказывать победителя. Однако 5 голов при суммарных 2,60 xG — эффект повышенной реализации; не переносить эту результативность автоматически на следующие матчи."
       },
       "en": {
         "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
         "risk": "Rotation, injuries, early goal and one-off events may change the match.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Check chance quality, match scenario and betting value separately."
+        "outcome": "Betis beat Porto 3-2, so over 1.5 landed. StatMuse xG 1.60-1.00, shots 17-11 and on target 7-5; goals exceeded combined xG.",
+        "lesson": "Goal-based selection worked, but five goals from 2.60 combined xG also reflect finishing variance."
       }
+    },
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-15",
+    "outcome_source_urls": [
+      "https://www.rte.ie/sport/results/soccer/champions-league/47760/results/",
+      "https://www.statmuse.com/fc/match/10-14-2026-bet-vs-por-113897"
+    ],
+    "postmatch_xg": {
+      "home": 1.6,
+      "away": 1,
+      "provider": "StatMuse",
+      "source_url": "https://www.statmuse.com/fc/match/10-14-2026-bet-vs-por-113897",
+      "note": "Post-match xG; provider-dependent. Not a pre-match model input."
     }
   },
   {
@@ -2125,8 +2178,8 @@
     "competition": "Европа · UEFA Champions League",
     "competition_en": "Европа · UEFA Champions League",
     "kickoff_msk": "2026-10-14T22:00:00+03:00",
-    "score": "",
-    "status": "pending",
+    "score": "0:3",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -2149,15 +2202,28 @@
       "ru": {
         "reason": "Opta оценивала победу Штутгарта в 68,8%; Слован проиграл девять матчей подряд на этой стадии турнира.",
         "risk": "У Штутгарта травмы Нартей, Томаша, Аль-Дахиля, Жакеса, под вопросом защитники Шабо и Миттельштедт; гостевая ротация и ранний гол хозяев могут перевернуть расклад.",
-        "outcome": "Ожидается результат матча.",
-        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+        "outcome": "Слован — Штутгарт 0:3, П2 прошёл. По Flashscore xG 0,73:1,89, удары 15:16, в створ 1:8. Выездной фаворит создал более опасные моменты, несмотря на кадровые потери.",
+        "lesson": "Кадровые потери не нивелировали разницу в опасности ударов. Важно не принимать почти равное число ударов за равенство качества: 1:8 в створ и xG говорят об ином. Успех П2 не доказывает +EV."
       },
       "en": {
         "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
         "risk": "Rotation, injuries, early goal and one-off events may change the match.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Check chance quality, match scenario and betting value separately."
+        "outcome": "Slovan lost 0-3 to Stuttgart; away win landed. Flashscore xG 0.73-1.89, shots 15-16, on target 1-8.",
+        "lesson": "Similar shot counts masked a major disparity in shot quality and accuracy. Winning P2 is not evidence of positive betting EV."
       }
+    },
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-15",
+    "outcome_source_urls": [
+      "https://www.rte.ie/sport/results/soccer/champions-league/47760/results/",
+      "https://www.flashscore.com/match/football/slovan-bratislava-QRaWdwQf/vfb-stuttgart-nJQmYp1B/summary/stats/"
+    ],
+    "postmatch_xg": {
+      "home": 0.73,
+      "away": 1.89,
+      "provider": "Flashscore",
+      "source_url": "https://www.flashscore.com/match/football/slovan-bratislava-QRaWdwQf/vfb-stuttgart-nJQmYp1B/summary/stats/",
+      "note": "Post-match xG; provider-dependent. Not a pre-match model input."
     }
   },
   {
@@ -2170,8 +2236,8 @@
     "competition": "Англия · EFL Championship",
     "competition_en": "Англия · EFL Championship",
     "kickoff_msk": "2026-10-14T22:00:00+03:00",
-    "score": "",
-    "status": "pending",
+    "score": "0:6",
+    "status": "win",
     "official": true,
     "pre_match_recorded": true,
     "final_locked": true,
@@ -2194,15 +2260,29 @@
       "ru": {
         "reason": "Вест Хэм третий в Чемпионшипе, шесть матчей без поражений, 23 гола в чемпионате, Боуэн забил 7 в последних шести играх; защитный Х2 допускает ничью.",
         "risk": "Линкольн дома мотивирован и конкурентоспособен против сильных соперников; турнирная позиция Вест Хэма не исключает выездной осечки.",
-        "outcome": "Ожидается результат матча.",
-        "lesson": "После матча проверить качество моментов, кадровое влияние и соответствие футбольному сценарию. Проход исхода сам по себе не доказывает +EV."
+        "outcome": "Линкольн — Вест Хэм 0:6, Х2 прошёл. Два удаления у Линкольна — на 3-й и 23-й минутах — радикально изменили сценарий. По Sporting Life xG 0,35:3,20; на перерыв ушли при 0:1, остальные пять мячей гости забили во втором тайме.",
+        "lesson": "Прошедший Х2 не является чистым подтверждением силы исходной модели: матч фактически был сломан двумя очень ранними удалениями. Для оценки отбора помечаем результат как WIN с низкой диагностической ценностью для игры 11 на 11."
       },
       "en": {
         "reason": "Pre-match analysis supports the specified football scenario. See source_urls.",
         "risk": "Rotation, injuries, early goal and one-off events may change the match.",
-        "outcome": "Awaiting final result.",
-        "lesson": "Check chance quality, match scenario and betting value separately."
+        "outcome": "Lincoln lost 0-6 to West Ham; X2 landed. Lincoln had two men sent off in the 3rd and 23rd minutes, radically altering the game. Sporting Life xG 0.35-3.20.",
+        "lesson": "An X2 win strongly confounded by two early red cards. Mark as WIN but low diagnostic value for the original 11v11 forecast."
       }
-    }
+    },
+    "final_score_confirmed": true,
+    "postmatch_recorded_on": "2026-10-15",
+    "outcome_source_urls": [
+      "https://www.efl.com/news/2026/october/14/sky-bet-championship-midweek-round-up/",
+      "https://www.sportinglife.com/football/live/234266/lincoln-city-vs-west-ham-united/commentary"
+    ],
+    "postmatch_xg": {
+      "home": 0.35,
+      "away": 3.2,
+      "provider": "Sporting Life",
+      "source_url": "https://www.sportinglife.com/football/live/234266/lincoln-city-vs-west-ham-united/commentary",
+      "note": "Post-match xG; provider-dependent. Not a pre-match model input."
+    },
+    "postmatch_diagnostic": "win_confounded_by_two_early_red_cards; 11v11_evidence_weak"
   }
 ]
