@@ -1,0 +1,21 @@
+/* Client testimonials on the A-LAB home pages */
+.alab-reviews{position:relative}
+.alab-reviews-head{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:26px}
+.alab-reviews-head h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.065em;margin:10px 0}
+.alab-reviews-head p{color:#9f99aa;max-width:570px;font-size:13px}
+.alab-avito-link{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid rgba(142,196,103,.38);border-radius:12px;color:#c5e8b0;font-weight:800;font-size:11px;background:rgba(116,179,82,.06);white-space:nowrap;transition:.2s}
+.alab-avito-link:hover{border-color:rgba(142,196,103,.8);background:rgba(116,179,82,.12);color:#fff}
+.alab-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.alab-review{border:1px solid rgba(255,255,255,.1);border-radius:19px;padding:22px;background:linear-gradient(145deg,rgba(22,24,36,.9),rgba(10,11,19,.98));display:flex;flex-direction:column;min-height:262px}
+.alab-review:first-child{border-color:rgba(124,169,255,.34);background:linear-gradient(145deg,rgba(35,44,68,.7),rgba(13,14,23,.98))}
+.alab-review-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.alab-review-person{color:#f3f1fa;font-size:14px;font-weight:800}
+.alab-review-stars{color:#ffbe3d;letter-spacing:.035em;font-size:14px;white-space:nowrap}
+.alab-review-quote{font-size:13px;color:#cecbd6;line-height:1.74;margin:18px 0 26px;flex:1}
+.alab-review-foot{padding-top:13px;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#a29cac;font-size:10px}
+.alab-review-foot em{font-style:normal;color:#b1dda0;font-weight:800}
+.alab-review-source{margin-top:16px;color:#736d7b;font-size:10px;line-height:1.55}
+.alab-review-more{margin-top:20px;font-size:11px;font-weight:800;color:#c7adff;display:inline-block}
+.alab-review-more:hover{color:white}
+@media(max-width:950px){.alab-review-grid{grid-template-columns:1fr 1fr}.alab-review:first-child{grid-column:1/-1;min-height:0}}
+@media(max-width:650px){.alab-reviews-head{align-items:start;flex-direction:column}.alab-review-grid{grid-template-columns:1fr}.alab-review:first-child{grid-column:auto}.alab-review{min-height:0}.alab-review-quote{margin-bottom:18px}}
