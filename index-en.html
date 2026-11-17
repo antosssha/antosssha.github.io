@@ -212,7 +212,7 @@
       <form id="review-form">
         <div class="field-row">
           <div class="field"><label for="customer-name">Your name</label><input name="name" id="customer-name" required minlength="2" maxlength="70" autocomplete="name" placeholder="How should we address you?"></div>
-          <div class="field"><label for="customer-service">Service</label><select name="project" id="customer-service" required><option value="stream">OBS and streaming</option><option value="pc">PC setup</option><option value="automation">Automation</option></select></div>
+          <div class="field"><label for="customer-service">Service</label><input type="text" name="project" id="customer-service" required minlength="2" maxlength="80" autocomplete="off" placeholder="e.g. PC setup or website development"></div>
         </div>
         <div class="stars-label" id="rating-label">Your rating</div>
         <div class="rating-picker" role="group" aria-labelledby="rating-label">

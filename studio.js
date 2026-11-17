@@ -41,7 +41,7 @@
         const card = el('article','site-review');
         const top = el('div','site-review-head');
         top.append(el('strong','',String(review.name||'')),el('span','stars','★'.repeat(score)+'☆'.repeat(5-score)));
-        card.append(top,el('p','',String(review.body||'')),el('small','',t.service[review.project]||''));
+        card.append(top,el('p','',String(review.body||'')),el('small','',t.service[review.project]||String(review.project||'').slice(0,80)));
         list.append(card);
       }
     } catch (_) {
@@ -74,7 +74,7 @@
     const data = new FormData(form);
     const payload = {
       name:String(data.get('name')||'').trim(),
-      project:String(data.get('project')||''),
+      project:String(data.get('project')||'').trim().replace(/\s+/g,' '),
       body:String(data.get('body')||'').trim(),
       website:String(data.get('website')||''),
       rating,

@@ -212,7 +212,7 @@
       <form id="review-form">
         <div class="field-row">
           <div class="field"><label for="customer-name">Ваше имя</label><input name="name" id="customer-name" required minlength="2" maxlength="70" autocomplete="name" placeholder="Как к вам обращаться"></div>
-          <div class="field"><label for="customer-service">Услуга</label><select name="project" id="customer-service" required><option value="stream">OBS и трансляции</option><option value="pc">Настройка ПК</option><option value="automation">Автоматизация</option></select></div>
+          <div class="field"><label for="customer-service">Услуга</label><input type="text" name="project" id="customer-service" required minlength="2" maxlength="80" autocomplete="off" placeholder="Например: настройка ПК или разработка сайта"></div>
         </div>
         <div class="stars-label" id="rating-label">Ваша оценка</div>
         <div class="rating-picker" role="group" aria-labelledby="rating-label">
