@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IRL-стрим для курьера | A-LAB</title><meta name="description" content="Кейс настройки IRL-трансляции: iPhone, Android-навигация, OBS, Twitch, сцены, донаты и статистика смены.">
+<meta property="og:type" content="article"><meta property="og:title" content="IRL-стрим для курьера | A-LAB"><meta property="og:description" content="Кейс настройки IRL-трансляции: iPhone, Android-навигация, OBS, Twitch, сцены, донаты и статистика смены.">
+<link rel="canonical" href="https://antosssha.github.io/irl-stream.html">
+<link rel="alternate" hreflang="ru" href="https://antosssha.github.io/irl-stream.html"><link rel="alternate" hreflang="en" href="https://antosssha.github.io/irl-stream-en.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="studio.css?v=20261117-5"><link rel="stylesheet" href="cable-case.css"><link rel="stylesheet" href="portfolio-cases.css">
+</head>
+<body class="cable-page portfolio-case-page" id="top">
+<header class="site-header"><div class="shell head-inner">
+<a class="wordmark" href="index.html#top" aria-label="A-LAB"><span>A</span><i>—</i><span>LAB</span></a>
+<nav class="cable-nav" aria-label="Навигация"><a class="back-link" href="index.html#work">← Все проекты</a><a class="lang-button" href="irl-stream-en.html" lang="en">EN</a></nav>
+<a class="btn btn-primary top-cta" href="https://t.me/ant0sssha" target="_blank" rel="noopener noreferrer">Обсудить задачу ↗</a>
+</div></header>
+<main>
+<section class="cable-hero"><div class="shell cable-hero-inner">
+<div><span class="cable-eyebrow">КЛИЕНТСКИЙ ПРОЕКТ / OBS</span><div><span class="cable-status">Реализован · настройка завершена</span></div>
+<h1>IRL-стрим.<br><span class="serif">Всё в одной трансляции.</span></h1>
+<p class="cable-lead">Настроили техническую схему прямого эфира для курьера: мобильные камеры, навигация, сцены OBS, донаты и отображение информации о смене. Система должна работать не только красиво, но и в движении.</p>
+<div class="cable-actions"><a class="btn btn-primary" href="#workflow">Смотреть решение ↘</a><a class="btn btn-outline" href="https://t.me/ant0sssha" rel="noopener noreferrer" target="_blank">Обсудить похожую задачу ↗</a></div>
+<div class="cable-tags"><span>OBS Studio</span><span>Twitch</span><span>Мобильный IRL</span></div></div>
+<aside class="cable-aside"><div><b>ЗАДАЧА</b><p>Объединить видео с телефона, навигацию с Android и элементы эфира в одном управляемом потоке.</p></div>
+<div><b>ИТОГ</b><p>Подключения и сцены настроены, работоспособность решения подтверждена заказчиком.</p></div></aside></div></section>
+<section class="cable-section"><div class="shell">
+<div class="cable-heading"><div><span class="cable-eyebrow">ЗАДАЧА → РЕШЕНИЕ</span><h2>Из нескольких устройств — один эфир.</h2></div><p>В такой схеме главная сложность не дизайн, а стабильное получение источников и удобство переключения.</p></div>
+<div class="cable-steps"><article class="cable-step"><small>01 / 03</small><h3>Источник видео</h3><p>Две камеры iPhone используются в мобильной трансляции. Настроены подключения видеопотоков к OBS на ПК.</p></article>
+<article class="cable-step"><small>02 / 03</small><h3>Навигация в эфире</h3><p>Экран Android с навигатором добавлен отдельным источником; учтены особенности подключения и соотношения сторон.</p></article>
+<article class="cable-step"><small>03 / 03</small><h3>Управление эфиром</h3><p>Собраны сцены с навигацией и без неё, экран паузы, чат, QR для донатов и показатели смены.</p></article></div>
+</div></section>
+<section class="cable-demo-section" id="workflow"><div class="shell">
+<div class="cable-heading"><div><span class="cable-eyebrow">СХЕМА РЕШЕНИЯ</span><h2>Схема потока.</h2></div><p>Источники объединяются в OBS, где формируются итоговая сцена и элементы интерфейса.</p></div>
+<div class="story-diagram"><div class="story-top"><span class="story-led"><i></i>A—LAB / IRL-STREAM</span><span class="story-top-caption">АРХИТЕКТУРА ПРОЦЕССА</span></div>
+<div class="story-flow"><div class="story-node"><span class="story-num">01 / VIDEO</span><strong>iPhone</strong><p>Камеры и видеопотоки</p></div>
+<div class="story-node"><span class="story-num">02 / MAP</span><strong>Android</strong><p>Навигация и экран заказа</p></div>
+<div class="story-node"><span class="story-num">03 / CONTROL</span><strong>OBS Studio</strong><p>Сцены, звук, чат и HUD</p></div>
+<div class="story-node"><span class="story-num">04 / OUTPUT</span><strong>Twitch</strong><p>Финальная трансляция</p></div></div>
+<div class="story-bottom">Для мобильной связи и доставки картинки использовались VDO.Ninja и Tailscale; параметры соединения подбирались под ограничения устройств.</div></div>
+<div class="story-actions"><a class="story-secondary-link" href="https://twitch.tv/gydochik" target="_blank" rel="noopener noreferrer">Канал клиента на Twitch ↗</a></div>
+</div></section>
+<section class="cable-section"><div class="shell">
+<div class="cable-heading"><div><span class="cable-eyebrow">ПОДРОБНОСТИ ПРОЕКТА</span><h2>Что вошло в работу.</h2></div><p>Техническая настройка, интеграция источников и практическая проверка сценариев использования.</p></div>
+<div class="cable-features"><article class="cable-feature"><small>01 / 04</small><h3>Несколько сцен</h3><p>Главная сцена с навигацией, вариант без навигатора и экран паузы для перерывов.</p></article>
+<article class="cable-feature"><small>02 / 04</small><h3>Видеосвязь устройств</h3><p>Подключение iPhone и Android к OBS с учётом ограничений сети и поведения фоновых приложений.</p></article>
+<article class="cable-feature"><small>03 / 04</small><h3>Оформление эфира</h3><p>Чат, алерты, QR для DonationAlerts и аккуратное размещение камеры и навигации.</p></article>
+<article class="cable-feature"><small>04 / 04</small><h3>Показатели смены</h3><p>Блок со статистикой заказов и заработка курьера; настройка расположения элементов.</p></article></div><div class="cable-disclosure">Кейс описывает завершённую настройку конкретного клиента. Внутренние ключи трансляции, доступы и персональные данные в портфолио не размещаются.</div></div></section>
+<section class="cable-cta"><div class="shell"><div><span class="cable-eyebrow">A—LAB / ТЕХНИЧЕСКИЕ РЕШЕНИЯ</span><h2>Нужна такая настройка трансляции?</h2><p>Подберём схему под ваши устройства и настроим OBS, камеры, звук и интерфейс.</p></div><a class="btn btn-primary" href="https://t.me/ant0sssha" rel="noopener noreferrer" target="_blank">Написать в Telegram ↗</a></div></section>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="index.html#top"><span>A</span><i>—</i><span>LAB</span></a><span class="footer-note">A-LAB · Практические IT-решения · © 2026</span><a class="text-link" href="index.html#work">← Все проекты</a></div></footer>
+</body></html>

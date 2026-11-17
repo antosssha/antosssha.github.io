@@ -1,0 +1,23 @@
+/* Shared diagrams for IRL, PC and NINETYLAB: same editorial system as the cable case. */
+.portfolio-case-page .cable-hero{min-height:0}
+.portfolio-case-page .cable-hero h1{max-width:850px}
+.portfolio-case-page .cable-lead{max-width:740px}
+.portfolio-case-page .cable-status{background:#fff}
+.story-diagram{border:1px solid #40536b;border-radius:12px;overflow:hidden;background:#e9eef5;color:#1e3147;box-shadow:0 30px 70px #070d1850}
+.story-top{min-height:60px;background:#111e2d;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 26px}
+.story-led{font-size:12px;letter-spacing:.12em;font-weight:850;color:#e1eafb;display:flex;gap:12px;align-items:center}
+.story-led i{display:block;width:9px;height:9px;background:#75a8ed;border-radius:50%;box-shadow:0 0 0 4px #75a8ed24}
+.story-top-caption{font-size:10px;color:#7d9ab7;letter-spacing:.12em;font-weight:800}
+.story-flow{padding:42px 26px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;background:radial-gradient(circle at 0% 0%,#eaf3ff,#f4f7fb 65%)}
+.story-node{min-height:165px;border:1px solid #d6e0eb;border-radius:10px;padding:22px 17px;background:#fff;display:flex;flex-direction:column;position:relative;box-shadow:0 12px 26px #1232530a}
+.story-node:not(:last-child):after{content:"→";position:absolute;right:-19px;top:calc(50% - 12px);color:#5379b9;font-size:20px;font-weight:900;z-index:1}
+.story-num{font-size:10px;color:#416ec7;font-weight:850;letter-spacing:.08em}
+.story-node strong{display:block;font-size:clamp(15px,1.5vw,23px);line-height:1.25;letter-spacing:-.045em;margin:20px 0 7px;color:#21344e}
+.story-node p{margin:0;color:#6c7d90;font-size:11px;line-height:1.7}
+.story-bottom{padding:19px 26px;color:#5a7089;background:#e6edf6;border-top:1px solid #d6e0ec;line-height:1.85;font-size:12px}
+.story-actions{margin-top:23px}
+.story-secondary-link{display:inline-flex;align-items:center;font-size:12px;font-weight:800;color:#d2e2ff;text-decoration:underline;text-underline-offset:5px}
+.story-secondary-link:hover{color:#fff}
+@media(max-width:960px){.story-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.story-node:nth-child(2):after{display:none}.story-node:nth-child(3):after{content:"→"}}
+@media(max-width:600px){.story-top{padding:14px 16px}.story-top-caption{display:none}.story-flow{grid-template-columns:1fr;gap:12px;padding:20px 16px}.story-node{min-height:auto;padding:17px 18px}.story-node strong{margin:11px 0 7px}.story-node:not(:last-child):after{content:"↓";top:auto;right:18px;bottom:-15px;font-size:18px}.story-node:nth-child(2):after{display:block;content:"↓"}.story-node:nth-child(3):after{content:"↓"}.story-bottom{padding:17px 18px}}
+@media(prefers-reduced-motion:reduce){.portfolio-case-page *{scroll-behavior:auto!important}}

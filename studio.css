@@ -393,8 +393,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 /* Guard against legacy cached labels and redundant portfolio disclaimers. */
 #work .case-visual .legend,#work .section-heading .section-side,#work .case-footnote{display:none!important}
 
-/* Actual cable-panel interface rendered from the deployed app source with synthetic inventory entries. */
-.cable-visual{padding:0;display:block;position:relative;isolation:isolate;background:#eaf1f7;overflow:hidden}
-.cable-panel-screenshot{display:block;width:100%;height:100%;object-fit:cover;object-position:center 8%;filter:none}
-.cable-shot-frame{pointer-events:none;position:absolute;inset:0;box-shadow:inset 0 0 0 1px #7792b644}
-@media(max-width:760px){.cable-panel-screenshot{object-position:center 5%}}
+
+/* All four portfolio cards use the same markup scale, vertical rhythm and link position. */
+.case-card .case-body{display:flex;flex-direction:column}
+.case-card .case-meta{margin-top:auto}
+.case-card .case-link{min-height:24px;display:inline-flex;align-items:center;gap:8px;margin-top:15px}
+.cable-case-card .cable-visual{display:flex;align-items:center;justify-content:center;padding:19px}
