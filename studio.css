@@ -389,3 +389,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .case-link{margin-top:15px;align-self:flex-start;font-size:12px;font-weight:800;color:#c4d9ff;text-decoration:underline;text-underline-offset:5px}
 .case-link:hover{color:#fff}
 @media(max-width:760px){.case-grid{grid-template-columns:1fr}}
+
+/* Guard against legacy cached labels and redundant portfolio disclaimers. */
+#work .case-visual .legend,#work .section-heading .section-side,#work .case-footnote{display:none!important}
