@@ -1,0 +1,16 @@
+
+/* Image gallery for bilingual project case pages. Existing portfolio cards stay unchanged. */
+.case-gallery-section{padding:86px 0 92px;background:#f4f6f8}
+.case-gallery-section .cable-heading{margin-bottom:27px}
+.case-gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.case-gallery-grid.count-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.case-gallery-item{margin:0;min-width:0;overflow:hidden;border:1px solid #dce4eb;border-radius:12px;background:#fff;box-shadow:0 10px 28px rgba(19,43,68,.035)}
+.case-gallery-item a{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1.52;background:#e8eef5;overflow:hidden;position:relative}
+.case-gallery-item img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .3s ease}
+.case-gallery-item a:hover img{transform:scale(1.025)}
+.case-gallery-item a:after{content:"↗";position:absolute;bottom:12px;right:13px;width:31px;height:31px;border-radius:100px;background:rgba(21,32,47,.83);color:#fff;display:grid;place-items:center;font:700 16px/1 Manrope,system-ui,sans-serif;box-shadow:0 3px 12px rgba(12,25,41,.16)}
+.case-gallery-item figcaption{padding:15px 19px 18px;font-size:12px;font-weight:750;line-height:1.7;color:#40536a}
+.case-gallery-grid.count-3 .case-gallery-item figcaption{min-height:66px}
+@media(max-width:960px){.case-gallery-grid.count-3{grid-template-columns:repeat(2,minmax(0,1fr))}.case-gallery-grid.count-3 .case-gallery-item:last-child{grid-column:1/-1}.case-gallery-grid.count-3 .case-gallery-item:last-child a{aspect-ratio:2.5}}
+@media(max-width:700px){.case-gallery-section{padding:65px 0}.case-gallery-grid,.case-gallery-grid.count-3{grid-template-columns:1fr;gap:14px}.case-gallery-grid.count-3 .case-gallery-item:last-child{grid-column:auto}.case-gallery-grid.count-3 .case-gallery-item:last-child a{aspect-ratio:1.52}.case-gallery-item figcaption{padding:13px 16px 16px}}
+@media(prefers-reduced-motion:reduce){.case-gallery-item img{transition:none}}
