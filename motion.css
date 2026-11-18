@@ -1,0 +1,136 @@
+/* A-LAB motion system | restrained, compositor-friendly, progressive enhancement.
+   No content is hidden until JS attaches an IntersectionObserver. */
+@media (prefers-reduced-motion: no-preference) {
+  /* Native same-origin page transition in supported browsers, graceful fallback elsewhere. */
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root) { animation: al-page-out 150ms ease-in both; }
+  ::view-transition-new(root) { animation: al-page-in 340ms cubic-bezier(.2,.75,.3,1) both; }
+
+  @keyframes al-page-out { to { opacity: .45; } }
+  @keyframes al-page-in { from { opacity: .62; } to { opacity: 1; } }
+  @keyframes al-enter {
+    from { opacity: 0; transform: translate3d(0,18px,0); }
+    to   { opacity: 1; transform: translate3d(0,0,0); }
+  }
+  @keyframes al-menu-open {
+    from { opacity:0; transform:translate3d(0,-8px,0) scale(.985); }
+    to { opacity:1; transform:translate3d(0,0,0) scale(1); }
+  }
+  @keyframes al-list-open {
+    from { opacity: .18; transform: translate3d(0,-8px,0); }
+    to { opacity: 1; transform: translate3d(0,0,0); }
+  }
+
+  /* Intro enters even without JS. Do not reveal-hide the intro headings again. */
+  .trust-section .intro-grid > div:first-child,
+  .trust-section .intro-copy,
+  .cable-hero-inner > div:first-child,
+  .cable-hero-inner > aside {
+    animation: al-enter 680ms cubic-bezier(.2,.8,.24,1) both;
+  }
+  .trust-section .intro-copy,
+  .cable-hero-inner > aside { animation-delay: 120ms; }
+
+  /* Only elements opted in by motion.js get the opacity/translation effect. */
+  .motion-enabled .motion-reveal {
+    opacity: 0;
+    translate: 0 17px;
+    transition: opacity 680ms cubic-bezier(.2,.8,.2,1),
+                translate 680ms cubic-bezier(.2,.8,.2,1);
+    transition-delay: var(--motion-delay, 0ms);
+  }
+  .motion-enabled .motion-reveal.is-revealed {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .site-header { transition: box-shadow 320ms ease, background-color 320ms ease; }
+  .site-header.has-scrolled { box-shadow: 0 10px 32px rgb(21 35 59 / .08); }
+  .top-nav a { position:relative; }
+  .top-nav a::after {
+    content:"";
+    position:absolute;
+    bottom:-8px;
+    left:0;right:0;
+    height:2px;
+    border-radius:2px;
+    background: var(--blue);
+    transform:scaleX(0);
+    transform-origin:left center;
+    transition:transform 260ms cubic-bezier(.2,.8,.2,1);
+  }
+  .top-nav a:hover::after,
+  .top-nav a:focus-visible::after { transform:scaleX(1); }
+
+  /* Light passes across main CTAs on hover without a perpetual animation. */
+  .btn-primary { position:relative; overflow:hidden; isolation:isolate; }
+  .btn-primary::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(110deg, transparent 10%, rgb(255 255 255 / .2) 49%, transparent 84%);
+    transform:translateX(-135%);
+    transition:transform 580ms cubic-bezier(.2,.8,.2,1);
+  }
+  .mobile-menu[open] .mobile-menu-links { transform-origin:top right;animation:al-menu-open 220ms cubic-bezier(.2,.8,.2,1) both; }
+  .services-more[open] .service-list-additional { animation:al-list-open 340ms cubic-bezier(.2,.8,.2,1) both; }
+}
+
+/* Motion is additive: maintain simple, readable layouts without JavaScript. */
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .btn-primary:hover::before { transform:translateX(135%); }
+  .case-card {
+    transition:transform 320ms cubic-bezier(.2,.8,.2,1),
+               box-shadow 320ms ease,
+               border-color 320ms ease;
+  }
+  .case-card:hover {
+    transform:translateY(-5px);
+    border-color:#607aa2;
+    box-shadow:0 17px 35px rgb(7 15 28 / .24);
+  }
+  .case-card .preview-window,
+  .case-card .cable-preview {
+    transition:transform 360ms cubic-bezier(.2,.8,.2,1);
+  }
+  .case-card:hover .preview-window,
+  .case-card:hover .cable-preview { transform:translateY(-2px) scale(1.023); }
+  .process-card,
+  .cable-step,
+  .cable-feature,
+  .story-node {
+    transition:transform 300ms cubic-bezier(.2,.8,.2,1),
+               box-shadow 300ms ease,
+               border-color 300ms ease;
+  }
+  .process-card:hover,
+  .cable-step:hover,
+  .cable-feature:hover,
+  .story-node:hover {
+    transform:translateY(-3px);
+    border-color:#b5c7e4;
+    box-shadow:0 12px 28px rgb(21 50 87 / .08);
+  }
+  .service-row:hover a {
+    transform:rotate(45deg);
+    border-color:var(--blue);
+    background:var(--blue);
+    color:white;
+  }
+  .service-row a { transition:transform 240ms ease, color 240ms ease, border-color 240ms ease, background 240ms ease; }
+  .case-action-row a span { display:inline-block;transition:translate 260ms ease; }
+  .case-action-row a:hover span { translate:3px -3px; }
+}
+/* Clear focus and accessible defaults for keyboard/touch users. */
+.top-nav a:focus-visible,.btn:focus-visible,.case-link:focus-visible,.case-ask:focus-visible,
+.mobile-menu summary:focus-visible,.services-more summary:focus-visible {
+  outline:2px solid #4776cf;
+  outline-offset:4px;
+}
+@media (prefers-reduced-motion:reduce) {
+  .motion-reveal,.motion-reveal.is-revealed { opacity:1!important;translate:none!important; }
+  .case-card:hover,.process-card:hover,.cable-step:hover,.cable-feature:hover,
+  .story-node:hover { transform:none!important;box-shadow:none!important; }
+  .btn-primary::before { display:none; }
+}
