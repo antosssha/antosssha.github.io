@@ -18,6 +18,14 @@
     service: {stream:'OBS и трансляции',pc:'Настройка ПК',automation:'Автоматизация'}
   };
 
+  // Native details navigation remains usable without JavaScript.
+  const mobileMenu=document.querySelector('.mobile-menu');
+  if(mobileMenu){
+    mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.open=false;}));
+    document.addEventListener('keydown',event=>{if(event.key==='Escape')mobileMenu.open=false;});
+    document.addEventListener('click',event=>{if(mobileMenu.open&&!mobileMenu.contains(event.target))mobileMenu.open=false;});
+  }
+
   const list = document.getElementById('site-review-list');
   const el = (tag, className, contents) => {
     const n = document.createElement(tag);
