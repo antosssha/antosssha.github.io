@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Политика конфиденциальности A-LAB Shorts — Google OAuth и YouTube API</title>
+<meta name="description" content="Как A-LAB Shorts получает, использует, хранит и удаляет данные Google и YouTube: разрешения youtube.upload и youtube.readonly, облачный монтаж, доступ к токенам и отзыв согласия.">
+<meta name="theme-color" content="#f7f7f4">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Политика конфиденциальности — A-LAB Shorts">
+<meta property="og:description" content="Назначение OAuth-доступа, обработка данных YouTube и способы отзыва разрешений.">
+<meta property="og:url" content="https://antosssha.github.io/a-lab-shorts-privacy.html">
+<link rel="canonical" href="https://antosssha.github.io/a-lab-shorts-privacy.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="a-lab-shorts.css?v=20261119">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="/" aria-label="A-LAB, главная"><span>A</span><i>—</i><span>LAB</span><span class="brand-detail">Shorts</span></a>
+    <nav class="nav" aria-label="Навигация A-LAB Shorts"><a href="a-lab-shorts.html">О приложении</a><a href="a-lab-shorts.html#terms">Условия</a><a href="#contact">Контакт</a></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="policy-title">
+    <div class="shell hero-inner">
+      <div class="kicker">A—LAB / Privacy &amp; data use</div>
+      <h1 id="policy-title">Конфиденциальность.<br><em>Без скрытых условий.</em></h1>
+      <p>Как A-LAB Shorts использует доступ к YouTube, где хранятся временные файлы и как прекратить обработку данных.</p>
+      <div class="hero-meta"><span>Google OAuth</span><span>Минимум данных</span><span>Контроль у владельца канала</span></div>
+    </div>
+  </section>
+  <div class="shell content">
+    <div class="legal">
+      <div class="overline">Официальная информация A-LAB Shorts</div>
+      <p class="updated">Дата вступления в силу: 19 ноября 2026 года · Последнее обновление: 19 ноября 2026 года</p>
+      <div class="disclosure"><strong>Коротко:</strong> A-LAB Shorts предназначен для обработки разрешённых клипов и загрузки коротких видео в личный YouTube-канал. Google-доступ используется для проверки выбранного канала и загрузки новых роликов со статусом Private. Мы не продаём данные Google и не используем их для рекламы.</div>
+
+      <h2 id="operator">1. Кто обрабатывает данные</h2>
+      <p>Оператор приложения — <strong>A-LAB</strong>, независимый разработчик внутреннего инструмента A-LAB Shorts. Контакт по вопросам конфиденциальности и удаления данных: <a class="mail" href="mailto:edanovanton@gmail.com">edanovanton@gmail.com</a>. Описание продукта: <a class="inline-link" href="a-lab-shorts.html">A-LAB Shorts</a>.</p>
+      <p>Это инструмент с ограниченным доступом, предназначенный для владельца авторизованного YouTube-канала. На информационных страницах нет регистрационной формы и не запрашиваются пароли Google.</p>
+
+      <h2 id="data">2. Какие данные запрашиваются и для чего</h2>
+      <h3>Google / YouTube</h3>
+      <ul class="list">
+        <li><strong>Разрешение <code>youtube.readonly</code></strong> — получение идентификатора YouTube-канала, его названия и технических сведений, необходимых для проверки, что OAuth-доступ предоставлен нужному каналу. Приложение не использует его для сбора личных видео других пользователей.</li>
+        <li><strong>Разрешение <code>youtube.upload</code></strong> — передача подготовленного MP4 и пользовательских метаданных (название, описание, категория и теги) в собственный канал YouTube после явного решения владельца. Автоматическая загрузка в предусмотренном конвейере выполняется <strong>только со статусом Private</strong>.</li>
+        <li><strong>OAuth-реквизиты</strong> — идентификатор клиента, секрет клиента, токен обновления (refresh token) и ожидаемый ID канала. Они используются для безопасного обращения к YouTube API. Мы не запрашиваем пароль Google и не храним его.</li>
+        <li><strong>Результат операции</strong> — ID загруженного видео, ссылка и статус закрытого доступа; используется для проверки результата и предотвращения повторной загрузки.</li>
+      </ul>
+      <p>Доступ не запрашивается к Gmail, Google Drive, контактам, сообщениям или истории поиска. Данные Google применяются исключительно для указанных функций. Разрешения Google выдаются пользователем в официальном окне OAuth и могут быть отозваны.</p>
+      <h3>Исходные видео и метаданные</h3>
+      <p>Если владелец добавляет ссылку на разрешённый Twitch-клип, сервис получает адрес исходника, имя стримера, его краткое описание, подтверждение наличия прав и выбранные параметры монтажа. Эти данные не извлекаются из Google-аккаунта. При рендеринге временно обрабатываются исходное видео и оригинальная звуковая дорожка.</p>
+
+      <h2 id="purposes">3. Использование данных</h2>
+      <ul class="list">
+        <li>Проверить ID и название авторизованного YouTube-канала до любой загрузки.</li>
+        <li>Подготовить короткое вертикальное видео с оригинальным звуком и сформировать метаданные.</li>
+        <li>Загрузить видео как закрытый черновик исключительно по запросу владельца канала.</li>
+        <li>Показать результат операции, диагностировать технические ошибки и предотвратить случайные дубли.</li>
+      </ul>
+      <p>Мы не передаём данные Google рекламодателям и брокерам данных, не продаём их, не используем для персонализированной рекламы, кредитного скоринга или обучения моделей ИИ. Использование, хранение и допустимая передача данных Google соответствуют <a class="inline-link" href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer" target="_blank">Google API Services User Data Policy, включая требования Limited Use</a>.</p>
+
+      <h2 id="sharing">4. Кому передаются данные</h2>
+      <ul class="list">
+        <li><strong>Google / YouTube:</strong> OAuth-процедура, проверка канала и загрузка пользовательского видео по официальному YouTube Data API.</li>
+        <li><strong>GitHub Actions:</strong> выполнение задач облачного монтажа и загрузки. Секреты GitHub Actions предоставляются процессам только при выполнении соответствующих задач. GitHub обрабатывает технические данные в соответствии со своими условиями и политикой конфиденциальности.</li>
+        <li><strong>Twitch:</strong> исходные видео скачиваются по выбранным пользователем ссылкам для монтажа при наличии разрешения правообладателя; приложение не передаёт токены Google сервису Twitch.</li>
+      </ul>
+      <p>Сторонние сервисы не получают независимого права использовать данные Google для своих рекламных или иных целей. Передача ограничивается техническими задачами приложения, выбранными и разрешёнными владельцем канала, либо обязательными законными требованиями.</p>
+
+      <h2 id="storage">5. Хранение и сроки</h2>
+      <ul class="list">
+        <li><strong>OAuth refresh token и клиентские реквизиты</strong> — в закрытых GitHub Actions Repository secrets до отзыва согласия или удаления владельцем репозитория. Они не публикуются в коде сайта и не предназначены для открытых журналов.</li>
+        <li><strong>Исходные клипы на сервере рендера</strong> — временные файлы одноразового задания GitHub Actions, удаляемые после завершения и освобождения временного окружения.</li>
+        <li><strong>Готовый MP4 и JSON-метаданные</strong> — закрытый GitHub Actions Artifact со сроком хранения, установленным в текущем конвейере, **3 дня**.</li>
+        <li><strong>Квитанция загрузки (ID, ссылка, статус)</strong> — закрытый GitHub Actions Artifact, **14 дней**. Данные о выполнении рабочих процессов и технические журналы могут храниться дольше в соответствии с политиками и настройками GitHub.</li>
+        <li><strong>Загруженное видео в YouTube</strong> — хранится в аккаунте YouTube до изменения или удаления владельцем канала, согласно правилам YouTube.</li>
+      </ul>
+      <p>Если настройки GitHub или функции сервиса изменятся, политика будет обновлена. Владелец может досрочно удалить артефакты, результаты и секреты в настройках соответствующих сервисов.</p>
+
+      <h2 id="security">6. Безопасность</h2>
+      <p>Рабочий репозиторий A-LAB Shorts является закрытым. Для выдачи разрешений используется стандартный OAuth Google; доступ к видео и идентификации канала ограничен согласованными областями доступа. Загрузка публикуемого ролика и публичная доступность — разные действия: конвейер не выполняет автоматическую публичную публикацию. Ни один технический способ защиты не исключает все риски, поэтому рекомендуем периодически проверять активные подключения Google и GitHub.</p>
+
+      <h2 id="control">7. Как отозвать доступ и запросить удаление</h2>
+      <ol class="list">
+        <li>Перейдите в <a class="inline-link" href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">настройки подключённых приложений Google</a> и отмените доступ A-LAB Shorts (название отображается согласно настройкам экрана согласия).</li>
+        <li>Владельцу репозитория GitHub следует удалить значения <code>YOUTUBE_CLIENT_ID</code>, <code>YOUTUBE_CLIENT_SECRET</code>, <code>YOUTUBE_REFRESH_TOKEN</code> и <code>YOUTUBE_EXPECTED_CHANNEL_ID</code> в настройках Actions Secrets; при необходимости удалить Actions Artifacts.</li>
+        <li>Для запроса сведений об обработке данных, прекращения обработки и удаления доступных оператору сохранённых данных отправьте письмо на <a class="mail" href="mailto:edanovanton@gmail.com?subject=A-LAB%20Shorts%20%E2%80%94%20privacy%20request">edanovanton@gmail.com</a>. В письме опишите запрос и данные, которые нужно удалить, без паролей и токенов.</li>
+      </ol>
+      <p>Отзыв OAuth-доступа прекращает будущие авторизованные обращения приложения к YouTube. Уже загруженные ролики необходимо удалять отдельно в YouTube Studio, если владелец хочет удалить и их.</p>
+
+      <h2 id="site">8. Эти публичные страницы</h2>
+      <p>Страницы <a class="inline-link" href="a-lab-shorts.html">описания приложения</a> и этой политики — статические. Мы не размещаем на них собственные аналитические скрипты, рекламные пиксели и формы сбора персональных данных. При посещении GitHub Pages хостинг-провайдер может обрабатывать стандартные технические журналы запросов согласно собственной политике.</p>
+
+      <h2 id="updates">9. Обновления политики</h2>
+      <p>Политика может меняться при изменении функциональности, используемых API или способов хранения. Актуальная редакция всегда размещается по адресу <a class="inline-link" href="https://antosssha.github.io/a-lab-shorts-privacy.html">https://antosssha.github.io/a-lab-shorts-privacy.html</a>. При существенном изменении использования данных Google до начала нового способа обработки будет запрошено необходимое согласие.</p>
+
+      <h2 id="contact">10. Контакты</h2>
+      <p><strong>A-LAB / A-LAB Shorts</strong><br>
+      Адрес электронной почты: <a class="mail" href="mailto:edanovanton@gmail.com">edanovanton@gmail.com</a><br>
+      Сайт: <a class="inline-link" href="https://antosssha.github.io/a-lab-shorts.html">A-LAB Shorts</a><br>
+      <a class="inline-link" href="a-lab-shorts.html#terms">Условия использования</a></p>
+
+      <hr>
+
+      <section lang="en" aria-labelledby="english-privacy-title">
+        <div class="overline">English privacy summary</div>
+        <h2 id="english-privacy-title">How we handle YouTube account data.</h2>
+        <p><strong>Operator:</strong> A-LAB, contact <a class="mail" href="mailto:edanovanton@gmail.com">edanovanton@gmail.com</a>. <strong>Purpose:</strong> privately prepare and upload user-authorized short videos to the owner's YouTube channel. <strong>Scopes:</strong> <code>youtube.readonly</code> to verify the authenticated channel ID/title, and <code>youtube.upload</code> to upload approved MP4 files as private videos. We do not request Gmail, Drive, contacts or passwords.</p>
+        <p><strong>Storage and sharing:</strong> OAuth credentials are stored as encrypted GitHub Actions repository secrets until removed or revoked; Google/YouTube receives only authorized API requests and uploads. GitHub Actions runs temporary processing jobs; output video artifacts are retained for 3 days, upload receipts for 14 days, and workflow logs according to GitHub's retention settings. No Google user data is sold, used in advertising or for AI model training. Google API data use adheres to the <a class="inline-link" href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy including Limited Use</a>.</p>
+        <p><strong>Control and deletion:</strong> revoke app authorization at <a class="inline-link" href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">Google Account connections</a>; repository owners may delete GitHub secrets and artifacts. Contact <a class="mail" href="mailto:edanovanton@gmail.com">edanovanton@gmail.com</a> for access or deletion requests. YouTube uploads remain under the channel owner's control and must be separately deleted in YouTube Studio if desired.</p>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer"><div class="shell footer-inner"><a class="wordmark" href="/" aria-label="A-LAB"><span>A</span><i>—</i><span>LAB</span></a><span class="copy">© 2026 A-LAB · Защита данных пользователя</span><nav class="footer-links" aria-label="Навигация"><a href="/">Портфолио</a><a href="a-lab-shorts.html">О приложении</a><a href="a-lab-shorts.html#terms">Условия использования</a></nav></div></footer>
+</body>
+</html>
