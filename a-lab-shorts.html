@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A-LAB Shorts — облачный монтаж и подготовка YouTube Shorts</title>
+<meta name="description" content="A-LAB Shorts — внутренний инструмент A-LAB для подготовки коротких видео из разрешённых исходников и загрузки на собственный YouTube-канал. Назначение OAuth-доступа и конфиденциальность.">
+<meta name="theme-color" content="#f7f7f4">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A-LAB Shorts — облачный видеоконвейер">
+<meta property="og:description" content="Облачная подготовка Shorts с оригинальной аудиодорожкой и закрытой загрузкой на YouTube с разрешения владельца канала.">
+<meta property="og:url" content="https://antosssha.github.io/a-lab-shorts.html">
+<link rel="canonical" href="https://antosssha.github.io/a-lab-shorts.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="a-lab-shorts.css?v=20261119">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="/" aria-label="A-LAB, главная"><span>A</span><i>—</i><span>LAB</span><span class="brand-detail">Shorts</span></a>
+    <nav class="nav" aria-label="Навигация A-LAB Shorts">
+      <a href="#how-it-works">Как работает</a>
+      <a href="#terms">Условия</a>
+      <a href="a-lab-shorts-privacy.html">Конфиденциальность</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="app-title">
+    <div class="shell hero-inner">
+      <div class="kicker">A—LAB / Собственная разработка</div>
+      <h1 id="app-title">A-LAB Shorts.<br><em>Контент без рутины.</em></h1>
+      <p>Внутренний инструмент для создания вертикальных роликов из видеоклипов, на использование которых получено разрешение, и подготовки их к размещению на собственном YouTube-канале.</p>
+      <div class="hero-meta"><span>Облачный монтаж</span><span>Оригинальный звук</span><span>YouTube API</span><span>Загрузка только Private</span></div>
+    </div>
+  </section>
+  <div class="shell content">
+    <section class="intro" aria-labelledby="what-title">
+      <div>
+        <div class="overline">01 / Назначение приложения</div>
+        <h2 id="what-title">Меньше ручной работы.<br>Больше контроля.</h2>
+        <p class="lead">A-LAB Shorts помогает владельцу канала формировать короткие вертикальные видео, сохранять оригинальный звук автора, готовить название и описание и — после отдельного разрешения владельца — загружать результат через YouTube Data API в закрытом доступе.</p>
+        <p>Это личный инструмент производства контента. Публичной регистрации, автоматической загрузки чужих видео без разрешения, сбора подписчиков или просмотра личных видео других пользователей в приложении нет.</p>
+      </div>
+      <aside class="box-note">
+        <b>Статус · Частное использование</b>
+        <p>Монтаж в GitHub Actions протестирован. Google OAuth и автоматическая загрузка на YouTube находятся на этапе подключения. Само наличие сайта не означает, что канал уже подключён.</p>
+      </aside>
+    </section>
+    <section id="how-it-works" aria-labelledby="workflow-title">
+      <div class="overline">02 / Workflow</div>
+      <h2 id="workflow-title">От разрешённого клипа — к черновику.</h2>
+      <div class="steps">
+        <article class="step"><small>01 / Исходник</small><h3>Проверка прав</h3><p>Владелец канала выбирает клип и подтверждает право на его монтаж и самостоятельную загрузку. Система не заменяет разрешение правообладателя.</p></article>
+        <article class="step"><small>02 / Обработка</small><h3>Монтаж в облаке</h3><p>GitHub Actions создаёт вертикальный MP4. Звук берётся из оригинального видео; ИИ-озвучка и автоматические субтитры не добавляются.</p></article>
+        <article class="step"><small>03 / YouTube</small><h3>Закрытая загрузка</h3><p>После подключения Google OAuth и явного согласия владельца результат можно загрузить на выбранный YouTube-канал только со статусом Private.</p></article>
+      </div>
+    </section>
+    <div class="rule" aria-hidden="true"></div>
+    <section aria-labelledby="access-title">
+      <div class="overline">03 / Google OAuth</div>
+      <h2 id="access-title">Для чего требуется доступ к Google.</h2>
+      <p class="lead">Разрешения ограничены функциями YouTube, необходимыми для проверки канала и загрузки видео. Приложение не запрашивает доступ к Gmail, Google Drive, контактам, истории поиска и паролям.</p>
+      <div class="panels">
+        <article class="panel">
+          <h3>youtube.readonly</h3>
+          <p>Используется для получения идентификатора и названия авторизованного YouTube-канала, чтобы не загрузить видео на другой канал по ошибке.</p>
+        </article>
+        <article class="panel">
+          <h3>youtube.upload</h3>
+          <p>Используется только для загрузки подготовленного MP4 с названием и описанием на выбранный YouTube-канал после подтверждения владельца. Загрузка выполняется со статусом Private.</p>
+        </article>
+      </div>
+      <div class="flex-actions">
+        <a class="btn btn-primary" href="a-lab-shorts-privacy.html">Политика конфиденциальности ↗</a>
+        <a class="btn btn-outline" href="#terms">Условия использования ↓</a>
+      </div>
+    </section>
+    <div class="rule" aria-hidden="true"></div>
+    <section id="terms" class="legal" aria-labelledby="terms-title">
+      <div class="overline">04 / Условия использования · Terms of Service</div>
+      <h2 id="terms-title">Прозрачные правила работы.</h2>
+      <p class="updated">Редакция: 19 ноября 2026 г.</p>
+      <h3>Назначение и доступ</h3>
+      <p>A-LAB Shorts разработан и поддерживается A-LAB как внутренний инструмент для владельца собственного YouTube-канала. Приложение предоставляется в текущем состоянии, без публичного доступа для сторонних пользователей и без гарантий непрерывной работы.</p>
+      <h3>Права на видео</h3>
+      <p>Пользователь обязан иметь необходимые права или разрешения на исходные видеоклипы, музыку, изображения и другие материалы. Подтверждение в интерфейсе не является автоматической юридической проверкой. Владелец канала несёт ответственность за публикуемый контент и соблюдение правил Twitch, YouTube и правообладателей.</p>
+      <h3>Управление каналом</h3>
+      <p>Приложение использует OAuth-разрешения только после явного согласия владельца канала. Любая загрузка через предусмотренный облачный процесс должна выполняться со статусом Private; публичная публикация остаётся отдельным решением владельца канала. Доступ можно отозвать в настройках безопасности Google.</p>
+      <h3>Данные и удаление</h3>
+      <p>Обработка и сроки хранения описаны в <a class="inline-link" href="a-lab-shorts-privacy.html">политике конфиденциальности</a>. По вопросам обработки данных, удаления временных материалов или прекращения доступа к приложению обращайтесь по адресу <a class="mail" href="mailto:edanovanton@gmail.com">edanovanton@gmail.com</a>.</p>
+      <h3>Отсутствие аффилированности</h3>
+      <p>A-LAB Shorts не является продуктом и не поддерживается официально Google, YouTube, Twitch или Rockstar Games. Названия и товарные знаки принадлежат их правообладателям.</p>
+    </section>
+    <div class="rule" aria-hidden="true"></div>
+    <section class="panel" aria-labelledby="eng-title" lang="en">
+      <div class="overline">English summary</div>
+      <h2 id="eng-title">Private YouTube Shorts workflow.</h2>
+      <p>A-LAB Shorts is an internal content-production tool operated by A-LAB. It renders vertical video from source clips for which the channel owner has usage rights. It requests YouTube read-only access to confirm the channel identity and YouTube upload access to submit approved videos as <strong>private uploads only</strong>. It does not publish publicly without the channel owner's separate action. See the <a class="inline-link" href="a-lab-shorts-privacy.html">Privacy Policy</a> and the <a class="inline-link" href="#terms">Terms of Service</a>. Contact: <a class="mail" href="mailto:edanovanton@gmail.com">edanovanton@gmail.com</a>.</p>
+    </section>
+  </div>
+</main>
+<footer class="footer"><div class="shell footer-inner"><a class="wordmark" href="/" aria-label="A-LAB"><span>A</span><i>—</i><span>LAB</span></a><span class="copy">© 2026 A-LAB · Независимый инструмент</span><nav class="footer-links" aria-label="Правовая информация"><a href="/">Портфолио</a><a href="#terms">Условия использования</a><a href="a-lab-shorts-privacy.html">Конфиденциальность</a></nav></div></footer>
+</body>
+</html>
